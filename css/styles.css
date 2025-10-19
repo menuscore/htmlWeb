@@ -1,0 +1,146 @@
+:root{
+  /* Professional, accessible palette */
+  --color-bg: #ffffff;
+  --color-surface: #f7f9fb; /* very light */
+  --color-primary: #0b5566; /* deep teal */
+  --color-primary-600: #0e6f7f;
+  --color-accent: #c66f2a; /* warm accent */
+  --color-purple: #5b2e8a; /* new purple for header/footer */
+  --color-purple-dark: #4a2370;
+  --color-muted: #58616a; /* copy muted */
+  --color-heading: #122028; /* near-black with cool tone */
+  --color-link: #0e90a0; /* slightly brighter for links */
+  --color-inverse: #ffffff;
+  --focus-ring: 4px rgba(14,111,128,0.14);
+}
+body{font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--color-heading); background:var(--color-bg)}
+.header-bg{background: linear-gradient(180deg, var(--color-surface), var(--color-bg));}
+.header-purple{background: linear-gradient(180deg, var(--color-purple), var(--color-purple-dark)); color:var(--color-inverse)}
+.card-title{color:var(--color-heading);} 
+footer a:hover{text-decoration:underline}
+
+/* simple responsive tweaks */
+@media (max-width: 767px){
+  header .display-5{font-size:1.6rem}
+}
+
+/* accessibility: skip link */
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  left:10px;
+  top:10px;
+  width:auto;
+  height:auto;
+  padding:8px 12px;
+  background:var(--color-heading);
+  color:var(--color-inverse);
+  z-index:1000;
+  border-radius:6px;
+}
+
+/* responsive images */
+img{max-width:100%;height:auto}
+
+/* focus styles for keyboard users */
+/* prefer not to remove outlines globally to preserve accessibility */
+:focus{outline: none}
+:focus-visible{box-shadow: 0 0 0 4px rgba(13,110,253,0.12), 0 0 0 3px rgba(13,110,253,0.18); outline: none; border-radius:6px}
+
+/* ensure fixed/sticky nav doesn't cover anchored headings */
+:target{scroll-margin-top:84px}
+
+/* link colors */
+a{color:var(--color-link)}
+a:focus-visible{box-shadow:var(--focus-ring); border-radius:4px}
+
+
+/* hero mockup container: white card with padding to separate from buttons */
+.hero-mockup-container{
+  background:var(--color-bg);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 8px 22px rgba(17,30,35,0.06);
+  display:inline-block;
+  margin-top:18px; /* separation from buttons */
+}
+.hero-mockup{
+  display:block;
+  max-height:420px;
+  width:auto;
+  object-fit:contain;
+}
+@media (max-width:767px){
+  .hero-mockup-container{padding:12px;margin-top:12px}
+  .hero-mockup{max-height:320px}
+}
+
+/* CTA store text bigger */
+.store-cta{
+  font-size:1.25rem;
+  font-weight:600;
+}
+/* hero store text emphasis */
+.store-hero{font-size:1.3rem; font-weight:700; color:var(--color-purple); margin-bottom:0.5rem}
+@media (min-width:992px){
+  .store-hero{font-size:1.5rem}
+}
+@media (min-width:992px){
+  .store-cta{font-size:1.5rem}
+}
+
+/* menu engineering gallery spacing */
+.gallery img{border-radius:8px}
+
+/* improve tappable target size for buttons */
+.btn{min-height:44px; padding-top:.6rem; padding-bottom:.6rem}
+
+/* ensure links on dark backgrounds are readable */
+
+/* footer link color contrast */
+footer a{color: #dbeef3}
+
+/* CTA minimal card */
+.bg-light-cta{background:linear-gradient(180deg,var(--color-surface),var(--color-bg))}
+.cta-card{max-width:820px; border-radius:12px; background:var(--color-bg)}
+.cta-card h3{letter-spacing:-0.2px; color:var(--color-heading)}
+.cta-card p{color:var(--color-muted)}
+
+/* store badge styles */
+.store-badge{border-radius:10px; padding:.45rem .6rem; gap:.6rem; border:1px solid transparent; background:transparent; color:var(--color-purple)}
+.store-badge .badge-icon{width:38px; height:38px; flex:0 0 38px}
+.store-badge .badge-text small{font-size:0.65rem}
+.store-badge .badge-text strong{font-size:0.95rem}
+.store-badge:hover{transform:translateY(-2px); box-shadow:0 10px 30px rgba(91,46,138,0.06)}
+.store-badge:focus-visible{box-shadow: var(--focus-ring); outline: none}
+
+/* solid variant for hero (prominent) */
+.store-badge.solid{background:var(--color-purple); color:var(--color-inverse); border: none}
+.store-badge.solid .badge-text strong{color:var(--color-inverse)}
+.store-badge.solid .badge-text small{color:rgba(255,255,255,0.95)}
+.store-badge.solid .badge-icon path{fill:var(--color-inverse)}
+.store-badge.solid:hover{transform:translateY(-2px); box-shadow:0 10px 30px rgba(74,35,112,0.12)}
+.store-badge.solid:focus-visible{box-shadow: 0 0 0 6px rgba(91,46,138,0.18)}
+
+/* footer purple style */
+.footer-purple{background:var(--color-purple); color:var(--color-inverse)}
+.footer-purple a{color:rgba(255,255,255,0.9)}
+.footer-purple a:hover{text-decoration:underline}
+
+/* minimal header/footer spacing */
+.navbar.header-purple .navbar-brand{color:var(--color-inverse)}
+.navbar.header-purple .nav-link{color:rgba(255,255,255,0.92)}
+.navbar.header-purple .nav-link:hover{color:var(--color-surface)}
+.cta-card{padding:2rem}
+
+@media (max-width:576px){
+  .store-badge{padding:.5rem .75rem}
+  .store-badge .badge-icon{width:30px;height:30px}
+  .cta-card{padding:1rem}
+}
