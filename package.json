@@ -1,0 +1,12 @@
+{
+  "name": "menuscore-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dev server and scripts for MenuScore static site",
+  "scripts": {
+    "start": "live-server --port=3000 --open=./index.html --watch=."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

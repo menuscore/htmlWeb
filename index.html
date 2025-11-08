@@ -3,9 +3,9 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MiApp — Landing</title>
-  <meta name="description" content="MiApp — Menús digitales, pedidos online y analytics para restaurantes.">
-  <meta name="theme-color" content="#0d6efd">
+  <title>MenuScore — Optimiza tu carta</title>
+  <meta name="description" content="MenuScore: menús digitales, analítica de platos y recomendaciones para aumentar la rentabilidad de tu restaurante.">
+  <meta name="theme-color" content="#0e6f7f">
   <!-- i18n scaffolding -->
   <link rel="alternate" hreflang="en" href="/en/index.html">
   <link rel="alternate" hreflang="es" href="/index.html">
@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="about.html">Quiénes somos</a></li>
-            <li class="nav-item"><a class="nav-link" href="docs/index.html">Guía</a></li>
+            <li class="nav-item"><a class="nav-link" href="guia.html">Guía</a></li>
             <li class="nav-item"><a class="nav-link" href="blog/index.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
           </ul>
@@ -37,12 +37,17 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
-              <h1 class="display-5 fw-bold" data-i18n="hero.title">La mejor forma de gestionar tu restaurante</h1>
-              <p class="lead text-muted" data-i18n="hero.subtitle">Una app sencilla para optimizar tu menú y maximizar el rendimiento de tu negocio</p>
-      <div class="text-center mt-3">
-                <p class="mb-2 fw-semibold store-hero" data-i18n="cta.store">Descárgala gratis</p>
-                <div class="d-flex gap-2 justify-content-center">
-                  <a class="store-badge d-inline-flex align-items-center" href="#" role="button" aria-label="Google Play" target="_blank" rel="noopener noreferrer">
+              <div class="hero-content">
+                  <h1 class="display-5 fw-bold lead-hero" data-i18n="hero.title">Optimiza tu carta con datos</h1>
+                  <p class="lead text-muted" data-i18n="hero.subtitle">Analiza rentabilidad, rotación y preferencia para tomar decisiones que aumenten beneficios y reduzcan desperdicio.</p>
+
+                  <div class="mt-4 d-flex gap-2 align-items-center">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Comienza gratis</a>
+                    <a class="btn btn-outline-secondary btn-lg" href="#menu-engineering" role="button">Ver cómo funciona</a>
+                  </div>
+
+                  <div class="mt-3 d-flex gap-3 align-items-center">
+                  <a class="store-badge lift-on-hover d-inline-flex align-items-center" href="#" role="button" aria-label="Google Play" target="_blank" rel="noopener noreferrer">
                     <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" fill="currentColor">
                       <path d="M325.3 234.3L104.1 14.2c-7.6-7.6-20.3-7.6-27.9 0L14.2 76.5c-7.6 7.6-7.6 20.3 0 27.9l221.2 220.1 89.9-90.2z"/>
                     </svg>
@@ -51,7 +56,7 @@
                     </div>
                   </a>
 
-                  <a class="store-badge d-inline-flex align-items-center" href="#" role="button" aria-label="App Store" target="_blank" rel="noopener noreferrer">
+                  <a class="store-badge lift-on-hover d-inline-flex align-items-center" href="#" role="button" aria-label="App Store" target="_blank" rel="noopener noreferrer">
                     <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" fill="currentColor">
                       <path d="M318.7 268.7c.5 72.6 62.7 96 63.7 96.4-1 3.7-9.9 34.9-32.7 69.8-19.7 30-40.2 59.8-72.6 59.8-31.9 0-41.2-20-77.1-20-35.8 0-45.5 20-77.3 20-33.8 0-54.3-30.4-74-60.6C30.6 377.1 0 324.7 0 266.8c0-37.8 12.2-73.5 34.3-101.1 23-29.5 58.6-48.4 98.6-48.4 34.1 0 64.8 19.8 86.8 19.8 22.5 0 55.3-25.8 92.9-25.8 15.6 0 60 2.6 88.5 41.4-2 1.2-54.4 31.8-54.4 93z"/>
                     </svg>
@@ -64,29 +69,57 @@
             </div>
             <div class="col-md-6 d-flex justify-content-center">
               <div class="hero-mockup-container" aria-hidden="true">
-                <img src="assets/images/image_app1.jpg" loading="lazy" alt="Mockup de la app MiApp mostrando menú en móvil" class="img-fluid hero-mockup">
+                <img src="assets/images/Imagen_ms1.jpg" loading="lazy" alt="Mockup de la app MenuScore mostrando menú en móvil" class="img-fluid hero-mockup">
               </div>
             </div>
           </div>
         </div>
       </header>
       
+      <!-- Features section -->
+      <section class="py-5" id="features">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-4">
+              <div class="feature-card">
+                <h3 class="h5 fw-bold mb-2">Analítica de platos</h3>
+                <p class="text-muted small">Mide rentabilidad y popularidad por plato para saber qué potenciar y qué retirar.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-card">
+                <h3 class="h5 fw-bold mb-2">Recomendaciones accionables</h3>
+                <p class="text-muted small">Recibe sugerencias prácticas para mejorar márgenes y rotación con cambios fáciles de aplicar.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-card">
+                <h3 class="h5 fw-bold mb-2">Integraciones</h3>
+                <p class="text-muted small">Conecta con tu TPV y plataformas de pedidos para sincronizar ventas y costes automáticamente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!-- Menu engineering section -->
+      <!-- How it works / Menu engineering section -->
       <section class="py-5" id="menu-engineering">
         <div class="container">
           <h2 class="h3 fw-bold mb-3" id="menu-engineering-title">Sácale partido a tus platos con ingeniería de menú</h2>
-          <p class="text-muted mb-4">MenuScore utiliza la ciencia para que cada minuto e ingrediente de tus platos juegue a favor de tu restaurante. Analizamos rentabilidad, rotación y preferencia del cliente para optimizar tu oferta.</p>
+          <p class="text-muted mb-4">MenuScore aplica métricas sencillas para priorizar mejoras en carta. Analizamos coste, ventas y preferencia para que tomes decisiones rentables.</p>
 
           <div class="row mb-4 g-3">
             <div class="col-md-4">
-              <img src="assets/images/image_slider1.jpg" alt="Pantalla: análisis de platos" class="img-fluid rounded">
+              <img src="assets/images/Imagen_ms2.jpg" alt="Pantalla: análisis de platos" class="img-fluid rounded">
             </div>
             <div class="col-md-4">
-              <img src="assets/images/image_slider2.jpg" alt="Pantalla: recomendaciones" class="img-fluid rounded">
+              <img src="assets/images/Imagen_ms3.jpg" alt="Pantalla: recomendaciones" class="img-fluid rounded">
             </div>
             <div class="col-md-4">
-              <img src="assets/images/image_app1.jpg" alt="Pantalla: dashboard" class="img-fluid rounded">
+              <img src="assets/images/Imagen_ms4.jpg" alt="Pantalla: dashboard" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+              <img src="assets/images/Imagen_ms5.jpg" alt="Pantalla: dashboard" class="img-fluid rounded">
             </div>
           </div>
 
@@ -95,6 +128,27 @@
               <source src="assets/video/demo.mp4" type="video/mp4">
               Tu navegador no soporta video HTML5.
             </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="py-5" id="testimonials">
+        <div class="container">
+          <h2 class="h4 fw-bold mb-3">Lo que dicen los restaurantes</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <blockquote class="feature-card mb-0">
+                <p class="mb-2">"Con MenuScore detectamos platos poco rentables y aumentamos el ticket medio un 12% en dos meses."</p>
+                <footer class="text-muted small">— Restaurante La Esquina</footer>
+              </blockquote>
+            </div>
+            <div class="col-md-6">
+              <blockquote class="feature-card mb-0">
+                <p class="mb-2">"Las recomendaciones son prácticas y fáciles de implementar. El equipo lo usa a diario."</p>
+                <footer class="text-muted small">— Chef & Co.</footer>
+              </blockquote>
+            </div>
           </div>
         </div>
       </section>
@@ -132,7 +186,7 @@
 
     <footer class="py-4 footer-purple">
       <div class="container d-flex justify-content-between align-items-center">
-        <div aria-hidden="true">© 2025 MiApp</div>
+        <div aria-hidden="true">© 2025 MenuScore</div>
         <div>
           <a class="text-decoration-none me-3" href="#" data-i18n="footer.privacy">Privacidad</a>
           <a class="text-decoration-none me-3" href="#" data-i18n="footer.terms">Términos</a>
