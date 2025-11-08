@@ -1,0 +1,36 @@
+{
+  "title": "MenuScore — Optimiza tu carta",
+  "nav": {
+    "features": "Características",
+    "how": "Cómo funciona",
+    "contact": "Contacto",
+    "cta": "Prueba gratis"
+  },
+  "hero": {
+    "title": "OPTIMIZA TU MENÚ, MAXIMIZA TUS BENEFICIOS",
+    "subtitle": "MenuScore analiza tus platos y ventas con fórmulas matemáticas para que tomes las mejores decisiones para tu negocio"
+  },
+  "stores": {
+    "appstore": "App Store",
+    "google": "Google Play"
+  },
+  "features": {
+    "plateAnalytics": {"title":"Analítica de platos","desc":"Mide rentabilidad y popularidad por plato para decidir qué potenciar."},
+    "recommendations": {"title":"Recomendaciones accionables","desc":"Sugerencias prácticas para mejorar márgenes y rotación."},
+    "integrations": {"title":"Integraciones","desc":"Conecta con TPV y plataformas para sincronizar ventas y costes."}
+  },
+  "menuEngineering": {
+    "title":"Cómo funciona — en 3 pasos",
+    "steps": {
+      "one": {"title":"1. Conecta ventas","desc":"Sincroniza en segundos con tu TPV."},
+      "two": {"title":"2. Calcula rentabilidad","desc":"Cálculos automáticos por plato y por día."},
+      "three": {"title":"3. Aplica cambios","desc":"Recomendaciones sencillas con impacto real."}
+    }
+  },
+  "testimonials": {
+    "one": {"quote":"Detectamos platos poco rentables y aumentamos el ticket medio un 12% en dos meses.","attrib":"— Restaurante La Esquina"},
+    "two": {"quote":"Las recomendaciones son prácticas y fáciles de implementar.","attrib":"— Chef & Co."}
+  },
+  "footer": {"privacy":"Privacidad","terms":"Términos","contact":"Contacto"}
+  ,"lang": {"en":"English","es":"Español"}
+}

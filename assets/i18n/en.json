@@ -1,0 +1,36 @@
+{
+  "title": "MenuScore — Optimize your menu",
+  "nav": {
+    "features": "Features",
+    "how": "How it works",
+    "contact": "Contact",
+    "cta": "Try free"
+  },
+  "hero": {
+    "title": "OPTIMIZE YOUR MENU, MAXIMIZE YOUR PROFITS",
+    "subtitle": "MenuScore analyzes your dishes and sales with mathematical models so you can make the best decisions for your business"
+  },
+  "stores": {
+    "appstore": "App Store",
+    "google": "Google Play"
+  },
+  "features": {
+    "plateAnalytics": {"title":"Plate analytics","desc":"Measure plate profitability and popularity to know what to promote."},
+    "recommendations": {"title":"Actionable recommendations","desc":"Practical suggestions to improve margins and turnover."},
+    "integrations": {"title":"Integrations","desc":"Connect to POS and platforms to sync sales and costs."}
+  },
+  "menuEngineering": {
+    "title":"How it works — in 3 steps",
+    "steps": {
+      "one": {"title":"1. Connect sales","desc":"Sync with your POS in seconds."},
+      "two": {"title":"2. Calculate margin","desc":"Automatic per-plate and per-day calculations."},
+      "three": {"title":"3. Apply changes","desc":"Simple recommendations with real impact."}
+    }
+  },
+  "testimonials": {
+    "one": {"quote":"We spotted low-margin plates and increased average ticket by 12% in two months.","attrib":"— La Esquina Restaurant"},
+    "two": {"quote":"Recommendations are practical and easy to implement.","attrib":"— Chef & Co."}
+  },
+  "footer": {"privacy":"Privacy","terms":"Terms","contact":"Contact"}
+  ,"lang": {"en":"English","es":"Español"}
+}

@@ -4,9 +4,11 @@
   "private": true,
   "description": "Dev server and scripts for MenuScore static site",
   "scripts": {
-    "start": "live-server --port=3000 --open=./index.html --watch=."
+    "start": "live-server --port=3000 --open=./index.html --watch=.",
+    "dev:bs": "npx browser-sync start --server --files \"./**/*\" --port 3000 --startPath ./index.html"
   },
   "devDependencies": {
+    "eslint": "^9.39.1",
     "live-server": "^1.2.2"
   }
 }

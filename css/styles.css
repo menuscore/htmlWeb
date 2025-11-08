@@ -1,20 +1,40 @@
 :root{
   /* Professional, accessible palette */
-  --color-bg: #ffffff;
-  --color-surface: #f7f9fb; /* very light */
-  --color-primary: #0b5566; /* deep teal */
-  --color-primary-600: #0e6f7f;
-  --color-accent: #c66f2a; /* warm accent */
-  --color-purple: #1e5a8e; /* new purple for header/footer */
-  --color-purple-dark: #1e5a8e;
-  --color-muted: #58616a; /* copy muted */
-  --color-heading: #122028; /* near-black with cool tone */
-  --color-link: #0e90a0; /* slightly brighter for links */
+  /* neutral surfaces */
+  --color-bg: #fafbfd; /* page background */
+  --color-surface: #f3f6f8; /* panels / cards */
+
+  /* Blue palette (scale) */
+  --blue-50:  #f5f9ff;
+  --blue-100: #e6f4ff;
+  --blue-200: #cfe6ff;
+  --blue-300: #b3d9ff;
+  --blue-400: #80c0ff;
+  --blue-500: #4a9fe6;
+  --blue-600: #3679b8;
+  --blue-700: #2a578f;
+  --blue-800: #1f3f66;
+  --blue-900: #172a47;
+  --brand-blue: #3679b8; /* brand color set per request */
+
+  /* mapping core tokens to the blue scale */
+  --color-primary: var(--blue-600);
+  --color-primary-600: var(--blue-700);
+  --mf-cta: var(--blue-600);
+  --mf-cta-strong: var(--blue-700);
+
+  --color-accent: #ff7a59; /* warm accent */
+  --color-purple: #1e5a8e; /* kept for legacy pieces */
+  --color-purple-dark: #163e63;
+  --color-muted: #6b7780; /* copy muted */
+  --color-heading: #0f1a1d; /* near-black with cool tone */
+  --color-link: var(--color-primary);
   --color-inverse: #ffffff;
-  --focus-ring: 4px rgba(14,111,128,0.14);
+  --focus-ring: 4px rgba(54,121,184,0.12);
 }
 /* Import Inter (Google Fonts) - free, variable-friendly, used site-wide */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
 body{font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--color-heading); background:var(--color-bg)}
 .header-bg{background: linear-gradient(180deg, var(--color-surface), var(--color-bg));}
 .header-purple{background: linear-gradient(180deg, var(--color-purple), var(--color-purple-dark)); color:var(--color-inverse)}
@@ -53,7 +73,7 @@ img{max-width:100%;height:auto}
 /* focus styles for keyboard users */
 /* prefer not to remove outlines globally to preserve accessibility */
 :focus{outline: none}
-:focus-visible{box-shadow: 0 0 0 4px rgba(13,110,253,0.12), 0 0 0 3px rgba(13,110,253,0.18); outline: none; border-radius:6px}
+:focus-visible{box-shadow: 0 0 0 4px rgba(50,79,102,0.12), 0 0 0 3px rgba(50,79,102,0.18); outline: none; border-radius:6px}
 
 /* ensure fixed/sticky nav doesn't cover anchored headings */
 :target{scroll-margin-top:84px}
@@ -80,8 +100,7 @@ a:focus-visible{box-shadow:var(--focus-ring); border-radius:4px}
 }
 @media (max-width:767px){
   .hero-mockup-container{padding:12px;margin-top:12px}
-  .hero-mockup{max-height:320px}
-}
+  .hero-mockup{max-height:320px; width:90vw; max-width:none}
 
 /* CTA store text bigger */
 .store-cta{
@@ -115,12 +134,22 @@ footer a{color: #dbeef3}
 .cta-card p{color:var(--color-muted)}
 
 /* store badge styles */
-.store-badge{border-radius:10px; padding:.45rem .6rem; gap:.6rem; border:1px solid transparent; background:transparent; color:var(--color-purple)}
+.store-badge{border-radius:0; padding:0; gap:0; border:none; background:transparent; color:inherit; display:inline-block}
 .store-badge .badge-icon{width:38px; height:38px; flex:0 0 38px}
+  .btn:focus-visible{box-shadow:0 0 0 6px rgba(50,79,102,0.12)}
+  .navbar.header-purple.navbar-solid{background:var(--mf-panel); box-shadow:0 4px 18px rgba(50,79,102,0.06); border-bottom:1px solid rgba(50,79,102,0.04)}
 .store-badge .badge-text small{font-size:0.65rem}
 .store-badge .badge-text strong{font-size:0.95rem}
-.store-badge:hover{transform:translateY(-2px); box-shadow:0 10px 30px rgba(91,46,138,0.06)}
-.store-badge:focus-visible{box-shadow: var(--focus-ring); outline: none}
+.store-badge:hover{transform:none; box-shadow:none}
+.store-badge:focus-visible{box-shadow:none; outline:none}
+
+/* store badge sizing */
+.store-badge-img{height:44px; width:auto; display:inline-block; vertical-align:middle; margin:0; border:none}
+@media (max-width:767px){ .store-badge-img{height:36px} }
+
+/* promo image under badges */
+.promo-image{max-width:640px; width:100%; border-radius:12px}
+@media (max-width:767px){ .promo-image{width:90vw; max-width:none} }
 
 /* solid variant for hero (prominent) */
 .store-badge.solid{background:var(--color-purple); color:var(--color-inverse); border: none}
@@ -136,9 +165,9 @@ footer a{color: #dbeef3}
 .footer-purple a:hover{text-decoration:underline}
 
 /* minimal header/footer spacing */
-.navbar.header-purple .navbar-brand{color:var(--color-inverse)}
-.navbar.header-purple .nav-link{color:rgba(255,255,255,0.92)}
-.navbar.header-purple .nav-link:hover{color:var(--color-surface)}
+.navbar.header-purple .navbar-brand{color:var(--color-heading)}
+.navbar.header-purple .nav-link{color:var(--mf-muted)}
+.navbar.header-purple .nav-link:hover{color:var(--color-heading)}
 .cta-card{padding:2rem}
 
 @media (max-width:576px){
@@ -149,7 +178,9 @@ footer a{color: #dbeef3}
 
 /* ------------------ Product-site styling (inspired by macrofactorapp) ------------------ */
 /* Global typography tweaks */
-body{font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; font-size:16px; color:var(--color-heading); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+h1, .display-5{font-family: 'Poppins', Inter, system-ui, sans-serif}
+body{font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; font-size:16px; color:var(--color-heading); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+h1, .display-5{font-weight:800}
 h1, .display-5{font-weight:700; letter-spacing:-0.4px; color:var(--color-heading)}
 h1{font-size:2.25rem}
 h2{font-size:1.375rem}
@@ -168,8 +199,8 @@ h3{font-size:1.125rem}
 /* Hero: centered, generous spacing and subtle max-width for text column */
 header.bg-light{background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 60%)}
 .hero-content{max-width:640px}
-.display-5.lead-hero{font-size:2.5rem; line-height:1.02}
-.lead.text-muted{font-size:1.0625rem}
+.display-5.lead-hero{font-size:2.9rem; line-height:0.98; font-family: 'Poppins', Inter, system-ui, sans-serif; letter-spacing:-1px; text-transform:uppercase}
+.lead.text-muted{font-size:1.0625rem; color:var(--mf-muted)}
 
 /* Cards/features: subtle elevated cards with soft radius similar to product sites */
 .feature-card{background:var(--color-bg); border-radius:14px; padding:1.25rem; box-shadow:0 8px 30px rgba(17,30,35,0.06); border:1px solid rgba(17,30,35,0.03)}
@@ -180,8 +211,57 @@ header.bg-light{background: linear-gradient(180deg, var(--color-surface) 0%, var
 .docs-sidebar .nav-link.active, .docs-sidebar .nav-link:focus, .docs-sidebar .nav-link:hover{color:var(--color-heading)}
 
 /* Buttons: primary CTA closer to macrofactor style */
-.btn-primary{background:var(--color-primary); border:none; box-shadow:0 8px 24px rgba(14,111,128,0.12)}
+.btn-primary{background:var(--color-primary); border:none; box-shadow:0 8px 24px rgba(50,79,102,0.12)}
 .btn-primary:active{transform:translateY(1px)}
+
+/* MacroFactor-like hero CTA styles */
+.mf-hero{display:flex; flex-direction:column; align-items:center; text-align:center}
+.mf-hero .lead-hero{font-size:2.8rem; color:var(--color-heading); margin-bottom:0.35rem}
+.mf-hero .lead{color:var(--mf-muted); margin-bottom:1rem; max-width:640px}
+
+.btn-mf-primary{
+  background:var(--color-primary-600); /* bluish-gray */
+  color:var(--color-inverse);
+  border-radius:12px;
+  padding:.9rem 1.25rem;
+  font-weight:700;
+  box-shadow:0 18px 45px rgba(50,79,102,0.12);
+  border: none;
+  transition: transform .14s ease, box-shadow .14s ease, background .12s ease;
+}
+.btn-mf-primary:hover{transform:translateY(-3px); box-shadow:0 30px 80px rgba(50,79,102,0.12); background:var(--color-primary)}
+.btn-mf-primary:active{transform:translateY(1px)}
+
+.btn-mf-outline{
+  background:transparent;
+  color:var(--color-heading);
+  border-radius:12px;
+  padding:.65rem 1rem;
+  font-weight:600;
+  border:1px solid rgba(11,11,11,0.08);
+}
+.btn-mf-outline:hover{background:rgba(11,11,11,0.02)}
+
+/* Slightly reduce gap between the CTA buttons and badges for a compact look */
+.mf-stores{margin-top:0.8rem; display:flex; gap:0.75rem; justify-content:center}
+/* tighten subtitle to badges spacing in hero v2 */
+header.hero-v2 .mf-stores{margin-top:0.25rem}
+
+/* Make the hero mockup larger and card-like on desktop */
+.hero-mockup-container{padding:18px; border-radius:36px; box-shadow:0 28px 80px rgba(17,30,35,0.12); background:linear-gradient(180deg, #fff, #fff)}
+.hero-mockup-container::before{content:''; position:absolute; left:50%; transform:translateX(-50%); width:88%; height:calc(100% + 36px); border-radius:40px; top:-18px; box-shadow:0 38px 120px rgba(11,11,11,0.08); pointer-events:none}
+.hero-mockup{max-height:560px; border-radius:28px; display:block}
+
+@media (max-width:768px){
+  .mf-hero .lead-hero{font-size:1.9rem}
+  .hero-mockup{max-height:320px}
+}
+
+/* video placeholder styling */
+.video-placeholder{border-radius:10px; overflow:hidden}
+
+/* ensure primary CTA has sufficient contrast on small screens */
+.btn-mf-primary{background:var(--color-primary-600); color:var(--color-inverse)}
 
 /* Responsive adjustments for hero text on small screens */
 @media (max-width:767px){
@@ -193,3 +273,170 @@ header.bg-light{background: linear-gradient(180deg, var(--color-surface) 0%, var
 .lift-on-hover:hover{transform:translateY(-4px); transition:all 180ms ease; box-shadow:0 14px 40px rgba(17,30,35,0.08)}
 
 /* End product-site styling */
+
+/* ------------------ Global redesign overrides (MacroFactor-inspired) ------------------ */
+
+:root{
+  --mf-bg: #fafbfd;
+  --mf-panel: #ffffff;
+  --mf-muted: #6b7780;
+  --mf-cta: #0b5566; /* primary */
+  --mf-cta-strong: #0e6f7f;
+  --mf-accent: #ff7a59; /* warm accent */
+}
+
+html,body{background:var(--mf-bg);}
+
+/* NAVBAR: minimal, transparent on top, compact */
+.navbar.header-purple{background:transparent; box-shadow:none; padding:.6rem 0}
+.navbar.header-purple.navbar-solid{background:var(--mf-panel); box-shadow:0 4px 18px rgba(17,30,35,0.06); border-bottom:1px solid rgba(17,30,35,0.04)}
+.navbar .navbar-brand{font-weight:900; font-size:1.6rem; color:var(--brand-blue)}
+/* ensure brand color inherits the underline blue even if other rules try to override it */
+.header-blue .navbar-brand{color:var(--brand-blue) !important}
+@media (min-width:1200px){
+  .navbar .navbar-brand{font-size:2rem}
+}
+.navbar.header-blue .navbar-brand,
+.navbar.header-blue.navbar-solid .navbar-brand,
+#mainNav.navbar.header-blue .navbar-brand{color:var(--brand-blue) !important}
+.navbar .nav-link{color:var(--mf-muted); padding:.45rem .6rem}
+.navbar .nav-link:hover{color:var(--color-heading)}
+
+/* Language toggle placement and style when moved into the nav */
+.nav-lang{display:flex; align-items:center}
+.nav-lang .btn{padding:.35rem .6rem; font-size:0.9rem}
+
+/* On the white header we want the toggle to look subtle (white icon/text when required) */
+.header-blue .nav-lang .btn{
+  background:transparent;
+  color:var(--color-inverse);
+  border-color:rgba(255,255,255,0.12);
+}
+.header-blue .nav-lang .btn:hover{background:rgba(255,255,255,0.06)}
+.header-blue .nav-lang .dropdown-menu{min-width:9rem}
+
+/* On small screens keep the toggle visible inside the collapsed menu and ensure it's full width for touch */
+@media (max-width:991px){
+  .nav-lang{width:100%}
+  .nav-lang .btn{width:100%; text-align:left}
+  .nav-lang .dropdown-menu{width:100%}
+}
+
+/* header-blue: white background with blue underline to separate the nav visually */
+.header-blue{background:#ffffff}
+.header-blue{border-bottom:4px solid var(--brand-blue)}
+.header-blue .nav-link,
+.header-blue .navbar-toggler{
+  color:var(--color-heading) !important;
+}
+.header-blue .nav-link{opacity:1}
+.header-blue .navbar-toggler-icon{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2317191d' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");}
+
+/* style language toggle for white header: dark text, subtle border */
+.header-blue #langToggle,
+.header-blue #langToggleV2{
+  background:transparent;
+  color:var(--color-heading);
+  border-color:rgba(17,30,35,0.08);
+}
+.header-blue #langToggle:hover,
+.header-blue #langToggleV2:hover{background:rgba(17,30,35,0.04)}
+.header-blue #langToggle:focus,
+.header-blue #langToggleV2:focus{box-shadow:0 0 0 4px rgba(74,159,230,0.12); outline:none}
+
+/* ensure toggler icon is dark on light navbar */
+.navbar-light .navbar-toggler-icon{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(17,30,35,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");}
+
+/* Force dark text for header when navbar-solid is used (override .header-purple color:white) */
+.navbar.header-purple, .navbar.header-purple *{
+  color:inherit;
+}
+.navbar.header-purple.navbar-solid .navbar-brand,
+.navbar.header-purple.navbar-solid .nav-link,
+.navbar.header-purple.navbar-solid .navbar-toggler{
+  color:var(--color-heading) !important;
+}
+.navbar.header-purple.navbar-solid .nav-link{opacity:1}
+
+/* HERO: card-like left column with compact copy and strong CTA */
+header.py-5.bg-light{padding-top:4.5rem; padding-bottom:4.5rem}
+.hero-content{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95)); padding:2.25rem; border-radius:14px; box-shadow:0 18px 50px rgba(17,30,35,0.06);}
+.display-5.lead-hero{font-size:2.75rem; line-height:1; margin-bottom:0.5rem}
+.lead.text-muted{color:var(--mf-muted); font-size:1.0625rem}
+
+.hero-columns{display:flex; gap:3rem; align-items:center}
+.hero-columns .col-md-6{flex:1}
+
+/* CTA styles more product-like */
+.btn-mf-primary{background:var(--mf-cta-strong); color:var(--color-inverse); padding:.85rem 1.25rem; border-radius:12px; box-shadow:0 18px 45px rgba(14,111,128,0.14); font-size:1.05rem}
+.btn-mf-primary:hover{background:var(--mf-cta)}
+.btn-mf-outline{border:1px solid rgba(16,24,28,0.06); background:transparent; color:var(--color-heading)}
+
+/* smaller subtle badges under primary CTAs */
+.mf-stores .store-badge{border-radius:8px; padding:.35rem .5rem; background:transparent; color:var(--mf-muted); border:1px solid rgba(16,24,28,0.03)}
+
+/* mockup: float and larger on desktop */
+.hero-mockup-container{margin-top:0; transform:translateY(-6px);}
+.hero-mockup{max-height:520px}
+
+/* Features/cards: grid with subtle border and less shadow */
+.feature-card{box-shadow:none; border:1px solid rgba(17,30,35,0.04); background:var(--mf-panel)}
+
+/* CTA band (near footer) stronger, centered) */
+.bg-light-cta{background:linear-gradient(180deg, var(--mf-bg), var(--mf-bg)); padding:3rem 0}
+.cta-card{box-shadow:0 20px 50px rgba(17,30,35,0.06); border-radius:16px}
+
+/* typography scaling */
+h1, .display-5{font-weight:800}
+h2{font-weight:700}
+
+/* responsive: stack hero on small screens */
+@media (max-width:991px){
+  .hero-columns{flex-direction:column}
+  .hero-mockup{max-height:420px}
+  .display-5.lead-hero{font-size:1.9rem}
+  .hero-content{padding:1.15rem}
+}
+
+@media (max-width:767px){
+  header.py-5.bg-light{padding-top:2.5rem; padding-bottom:2.5rem}
+  .hero-content{padding:1rem}
+  .display-5.lead-hero{font-size:1.3rem; letter-spacing:0.6px}
+  .lead.text-muted{font-size:0.97rem}
+  .hero-mockup{max-height:260px}
+  .mf-stores{display:flex; gap:.5rem; flex-wrap:wrap}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+  .display-5.lead-hero{font-size:2.25rem}
+  .hero-mockup{max-height:420px}
+}
+
+/* utility: tighter container widths similar to product sites */
+.container{max-width:1100px}
+
+/* small adjustments for buttons and focus */
+.btn{border-radius:10px}
+.btn:focus-visible{box-shadow:0 0 0 6px rgba(14,111,128,0.12)}
+
+/* ensure code-friendly contrast for CTA */
+.btn-mf-primary{color:#fff}
+
+/* End redesign overrides */
+
+/* ------------------ index.v2 specific overrides ------------------ */
+header.hero-v2{background:transparent}
+header.hero-v2 .hero-content{background:transparent; padding:0; border-radius:0; box-shadow:none;}
+header.hero-v2 .mf-stores .store-badge{background:#0b0b0b; color:#fff; padding:.5rem .85rem; border-radius:0; gap:.6rem; display:inline-flex; align-items:center}
+header.hero-v2 .store-badge .badge-icon{width:24px; height:24px}
+header.hero-v2 .store-badge .badge-text{color:#fff; font-weight:700; margin-left:.4rem}
+header.hero-v2 .hero-mockup{max-width:880px; width:100%; height:auto; border-radius:20px; box-shadow:0 40px 140px rgba(11,11,11,0.08)}
+@media (max-width:991px){
+  header.hero-v2 .hero-mockup{max-width:560px}
+}
+
+/* ensure container isn't boxed visually in v2 */
+header.hero-v2 .container{max-width:1100px}
+}
+
+/* end index.v2 overrides */
