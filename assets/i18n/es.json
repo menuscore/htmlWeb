@@ -7,8 +7,10 @@
     "cta": "Prueba gratis"
   },
   "hero": {
-    "title": "OPTIMIZA TU MENÚ, MAXIMIZA TUS BENEFICIOS",
-    "subtitle": "MenuScore analiza tus platos y ventas con fórmulas matemáticas para que tomes las mejores decisiones para tu negocio"
+    "title": "ENTIENDE. ACTÚA. MEJORA.",
+    "subtitle": "MenuScore analiza tus platos y ventas con fórmulas matemáticas para que tomes las mejores decisiones para tu negocio",
+    "cta": "Prueba gratis 30 días",
+    "cta_sub": "Sin tarjeta de crédito · Cancela cuando quieras"
   },
   "stores": {
     "appstore": "App Store",
@@ -27,10 +29,28 @@
       "three": {"title":"3. Aplica cambios","desc":"Recomendaciones sencillas con impacto real."}
     }
   },
+  "benefits": {
+    "sales": {
+      "title": "Aumenta tus ventas",
+      "text": "Identifica los platos más rentables y optimiza tu carta para aumentar ingresos hasta un 30%"
+    },
+    "data": {
+      "title": "Decisiones basadas en datos",
+      "text": "Analítica avanzada con fórmulas matemáticas probadas para tomar las mejores decisiones"
+    },
+    "optimize": {
+      "title": "Optimización continua",
+      "text": "Mejora constante de tu menú con recomendaciones personalizadas y actualizaciones en tiempo real"
+    }
+  },
+  "proof": {
+    "number": "+100",
+    "text": "Restaurantes confían en MenuScore"
+  },
   "testimonials": {
     "one": {"quote":"Detectamos platos poco rentables y aumentamos el ticket medio un 12% en dos meses.","attrib":"— Restaurante La Esquina"},
     "two": {"quote":"Las recomendaciones son prácticas y fáciles de implementar.","attrib":"— Chef & Co."}
   },
-  "footer": {"privacy":"Privacidad","terms":"Términos","contact":"Contacto"}
-  ,"lang": {"en":"English","es":"Español"}
+  "footer": {"privacy":"Privacidad","terms":"Términos","contact":"Contacto"},
+  "lang": {"en":"English","es":"Español"}
 }

@@ -20,152 +20,166 @@
     </style>
   </head>
   <body>
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light sticky-top header-blue" role="navigation" aria-label="Navegación principal">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="/">MenuScore</a>
-        <!-- language dropdown removed from this spot and moved into the nav list for better UX -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenuV2" aria-controls="navmenuV2" aria-expanded="false" aria-label="Alternar navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenuV2">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="#features" data-i18n="nav.features">Características</a></li>
-            <li class="nav-item"><a class="nav-link" href="#menu-engineering" data-i18n="nav.how">Cómo funciona</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contacto</a></li>
-            <!-- language dropdown moved here so it's visually on the right side of the nav (desktop) and inside the collapsed menu on mobile -->
-            <li class="nav-item nav-lang d-flex align-items-center ms-2">
-              <div class="btn-group">
-                <button id="langToggle" type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-controls="langMenu" aria-label="Seleccionar idioma">ES</button>
-                <ul class="dropdown-menu dropdown-menu-end" id="langMenu" role="menu" aria-labelledby="langToggle">
-                  <li><button class="dropdown-item lang-select" type="button" data-lang="es" role="menuitemradio" aria-checked="false" tabindex="0">ES — Español</button></li>
-                  <li><button class="dropdown-item lang-select" type="button" data-lang="en" role="menuitemradio" aria-checked="false" tabindex="0">EN — English</button></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item ms-3 d-none d-lg-block"><a class="btn btn-mf-primary" href="#" data-i18n="nav.cta">Prueba gratis</a></li>
-          </ul>
-        </div>
+  <!-- NAVBAR: Minimalista y sticky -->
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top bg-ms-blue" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+  <img src="assets/SVG/icono.svg" alt="MenuScore icono" style="height:2.1rem;width:auto;display:inline-block;vertical-align:middle;">
+    <span style="color:#fecf15;font-weight:800;font-size:2.1rem;line-height:1;">MenuScore</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenuV2" aria-controls="navmenuV2" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navmenuV2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features" data-i18n="nav.features">Características</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu-engineering" data-i18n="nav.how">Cómo funciona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contacto</a>
+          </li>
+          
+          <!-- Selector de idioma -->
+          <li class="nav-item nav-lang">
+            <div class="btn-group">
+              <button id="langToggle" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Seleccionar idioma">
+                ES
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                <li><button class="dropdown-item lang-select" type="button" data-lang="es">🇪🇸 Español</button></li>
+                <li><button class="dropdown-item lang-select" type="button" data-lang="en">🇬🇧 English</button></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item ms-3 d-none d-lg-block">
+            <a class="btn btn-mf-primary" href="#" data-i18n="nav.cta">Prueba gratis</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <main id="main">
-      <header class="hero-v2 bg-light">
+      <!-- HERO: Fondo amarillo con gradiente, texto azul, centrado vertical/mobile -->
+      <header class="hero-v2">
         <div class="container text-center">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-              <div class="hero-content mf-hero">
-                <h1 class="display-super fw-bold" data-i18n="hero.title">OPTIMIZA TU MENÚ, MAXIMIZA TUS BENEFICIOS</h1>
-                <p class="lead text-muted mx-auto" style="max-width:680px" data-i18n="hero.subtitle">MenuScore analiza tus platos y ventas con fórmulas matemáticas para que tomes las mejores decisiones para tu negocio</p>
+          <div class="hero-content">
+            <h1 class="display-super" id="heroTitle" data-i18n="hero.title" style="color:#316cb3; font-size:clamp(2rem,7vw,4rem); letter-spacing:0.08em;">Entiende. Actúa. Mejora.</h1>
+            <p class="lead mx-auto" data-i18n="hero.subtitle">MenuScore analiza tus platos y ventas con fórmulas matemáticas para que tomes las mejores decisiones para tu negocio</p>
 
-                <div class="mt-2 d-flex justify-content-center">
-                  <div class="mf-stores d-flex gap-3 align-items-center">
-                    <a class="store-badge d-inline-flex align-items-center" href="#" aria-label="App Store">
-                      <img src="assets/images/app-store-edit.svg" alt="App Store" class="store-badge-img">
-                    </a>
+            <!-- CTA Principal -->
+            <div class="hero-cta-wrapper">
+              <a href="#" class="btn-hero-cta" data-i18n="hero.cta">Prueba gratis 30 días</a>
+              <p class="cta-subtext" data-i18n="hero.cta_sub">Sin tarjeta de crédito · Cancela cuando quieras</p>
+            </div>
 
-                    <a class="store-badge d-inline-flex align-items-center" href="#" aria-label="Google Play">
-                      <img src="assets/images/google-play-badge-edit.svg" alt="Google Play" class="store-badge-img">
-                    </a>
-                  </div>
-                </div>
-               
+            <!-- Store Badges -->
+            <div class="mf-stores">
+              <a class="store-badge" href="#" aria-label="Descargar en App Store">
+                <img src="assets/images/app-store-edit.svg" alt="App Store" class="store-badge-img">
+              </a>
+              <a class="store-badge" href="#" aria-label="Descargar en Google Play">
+                <img src="assets/images/google-play-badge-edit.svg" alt="Google Play" class="store-badge-img">
+              </a>
+            </div>
 
-                <!-- promo image under badges -->
-                <div class="mt-3 d-flex justify-content-center">
-                  <img src="assets/images/image_app1.jpg" alt="Promotional" class="promo-image img-fluid">
-                </div>
-
-              </div>
+            <!-- Icono negro SVG bajo los botones -->
+            <div class="mt-3">
+              <img src="assets/SVG/icono fondo amarillo 1080px.svg" alt="MenuScore icono fondo amarillo" class="promo-image">
             </div>
           </div>
         </div>
       </header>
 
-      <section id="features" class="py-5">
+      <!-- BENEFITS SECTION: 3 tarjetas con iconos -->
+      <section class="benefits-section">
         <div class="container">
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="feature-card p-4 text-center">
-                <h3 class="h5 fw-bold" data-i18n="features.plateAnalytics.title">Analítica de platos</h3>
-                <p class="text-muted small" data-i18n="features.plateAnalytics.desc">Mide rentabilidad y popularidad por plato para decidir qué potenciar.</p>
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                  </svg>
+                </div>
+                <h3 class="benefit-title" data-i18n="benefits.sales.title">Aumenta tus ventas</h3>
+                <p class="benefit-text" data-i18n="benefits.sales.text">Identifica los platos más rentables y optimiza tu carta para aumentar ingresos hasta un 30%</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="feature-card p-4 text-center">
-                <h3 class="h5 fw-bold" data-i18n="features.recommendations.title">Recomendaciones accionables</h3>
-                <p class="text-muted small" data-i18n="features.recommendations.desc">Sugerencias prácticas para mejorar márgenes y rotación.</p>
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                  </svg>
+                </div>
+                <h3 class="benefit-title" data-i18n="benefits.data.title">Decisiones basadas en datos</h3>
+                <p class="benefit-text" data-i18n="benefits.data.text">Analítica avanzada con fórmulas matemáticas probadas para tomar las mejores decisiones</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="feature-card p-4 text-center">
-                <h3 class="h5 fw-bold" data-i18n="features.integrations.title">Integraciones</h3>
-                <p class="text-muted small" data-i18n="features.integrations.desc">Conecta con TPV y plataformas para sincronizar ventas y costes.</p>
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                  </svg>
+                </div>
+                <h3 class="benefit-title" data-i18n="benefits.optimize.title">Optimización continua</h3>
+                <p class="benefit-text" data-i18n="benefits.optimize.text">Mejora constante de tu menú con recomendaciones personalizadas y actualizaciones en tiempo real</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="menu-engineering" class="py-5 bg-light">
-        <div class="container">
-          <h2 class="h3 fw-bold mb-3" data-i18n="menuEngineering.title">Cómo funciona — en 3 pasos</h2>
-          <div class="row g-3 align-items-center">
-            <div class="col-md-4">
-              <div class="feature-card p-3 text-center">
-                <h4 class="h6 fw-bold" data-i18n="menuEngineering.steps.one.title">1. Conecta ventas</h4>
-                <p class="small text-muted" data-i18n="menuEngineering.steps.one.desc">Sincroniza en segundos con tu TPV.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-card p-3 text-center">
-                <h4 class="h6 fw-bold" data-i18n="menuEngineering.steps.two.title">2. Calcula rentabilidad</h4>
-                <p class="small text-muted" data-i18n="menuEngineering.steps.two.desc">Cálculos automáticos por plato y por día.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-card p-3 text-center">
-                <h4 class="h6 fw-bold" data-i18n="menuEngineering.steps.three.title">3. Aplica cambios</h4>
-                <p class="small text-muted" data-i18n="menuEngineering.steps.three.desc">Recomendaciones sencillas con impacto real.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonials" class="py-5">
-        <div class="container">
-          <h2 class="h4 fw-bold mb-3" data-i18n="testimonials.heading">Lo que dicen los restaurantes</h2>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <blockquote class="feature-card mb-0 p-4">
-                <p class="mb-2" data-i18n="testimonials.one.quote">"Detectamos platos poco rentables y aumentamos el ticket medio un 12% en dos meses."</p>
-                <footer class="text-muted small" data-i18n="testimonials.one.attrib">— Restaurante La Esquina</footer>
-              </blockquote>
-            </div>
-            <div class="col-md-6">
-              <blockquote class="feature-card mb-0 p-4">
-                <p class="mb-2" data-i18n="testimonials.two.quote">"Las recomendaciones son prácticas y fáciles de implementar."</p>
-                <footer class="text-muted small" data-i18n="testimonials.two.attrib">— Chef & Co.</footer>
-              </blockquote>
-            </div>
+      <!-- SOCIAL PROOF SECTION -->
+      <section class="social-proof-section">
+        <div class="container text-center">
+          <div class="social-proof-badge">
+            <div class="proof-number" data-i18n="proof.number">+100</div>
+            <div class="proof-text" data-i18n="proof.text">Restaurantes confían en MenuScore</div>
           </div>
         </div>
       </section>
 
     </main>
 
-    <footer class="py-4 footer-purple">
+    <!-- FOOTER: Simple y azul corporativo -->
+    <footer class="footer-purple">
       <div class="container d-flex justify-content-between align-items-center">
-        <div aria-hidden="true">© 2025 MenuScore</div>
+        <div>© 2025 MenuScore</div>
         <div>
-          <a class="text-decoration-none me-3" href="#" data-i18n="footer.privacy">Privacidad</a>
-          <a class="text-decoration-none me-3" href="#" data-i18n="footer.terms">Términos</a>
-          <a class="text-decoration-none" href="contact.html" data-i18n="footer.contact">Contacto</a>
+          <a href="#" data-i18n="footer.privacy">Privacidad</a>
+          <span class="mx-2">·</span>
+          <a href="#" data-i18n="footer.terms">Términos</a>
+          <span class="mx-2">·</span>
+          <a href="contact.html" data-i18n="footer.contact">Contacto</a>
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Cierra el menú hamburguesa al hacer clic fuera
+      document.addEventListener('click', function(e) {
+        var navCollapse = document.getElementById('navmenuV2');
+        var toggler = document.querySelector('.navbar-toggler');
+        var isOpen = navCollapse.classList.contains('show');
+        if (!isOpen) return;
+        var clickInsideMenu = navCollapse.contains(e.target) || toggler.contains(e.target);
+        if (!clickInsideMenu) {
+          var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapse);
+          bsCollapse.hide();
+        }
+      });
+    </script>
     <script>
       // navbar: make solid when scrolling
       (function(){
