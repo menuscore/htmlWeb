@@ -8,49 +8,99 @@
   },
   "hero": {
     "title": "ENTIENDE. ACTÚA. MEJORA.",
-    "subtitle": "MenuScore analiza tus platos y ventas con fórmulas matemáticas para que tomes las mejores decisiones para tu negocio",
-    "cta": "Prueba gratis 30 días",
-    "cta_sub": "Sin tarjeta de crédito · Cancela cuando quieras"
+    "subtitle": "La app de gestión de menús que te ayuda a maximizar los beneficios de tu restaurante",
+    "cta": "Descarga gratis",
+    "cta_sub": "100% gratuita · Disponible en iOS y Android"
   },
   "stores": {
     "appstore": "App Store",
     "google": "Google Play"
   },
   "features": {
-    "plateAnalytics": {"title":"Analítica de platos","desc":"Mide rentabilidad y popularidad por plato para decidir qué potenciar."},
-    "recommendations": {"title":"Recomendaciones accionables","desc":"Sugerencias prácticas para mejorar márgenes y rotación."},
-    "integrations": {"title":"Integraciones","desc":"Conecta con TPV y plataformas para sincronizar ventas y costes."}
+    "plateAnalytics": {
+      "title": "Analítica de platos",
+      "desc": "Mide rentabilidad y popularidad por plato para decidir qué potenciar."
+    },
+    "recommendations": {
+      "title": "Recomendaciones accionables",
+      "desc": "Sugerencias prácticas para mejorar márgenes y rotación."
+    },
+    "integrations": {
+      "title": "Integraciones",
+      "desc": "Conecta con TPV y plataformas para sincronizar ventas y costes."
+    }
   },
   "menuEngineering": {
-    "title":"Cómo funciona — en 3 pasos",
+    "title": "Cómo funciona — en 3 pasos",
     "steps": {
-      "one": {"title":"1. Conecta ventas","desc":"Sincroniza en segundos con tu TPV."},
-      "two": {"title":"2. Calcula rentabilidad","desc":"Cálculos automáticos por plato y por día."},
-      "three": {"title":"3. Aplica cambios","desc":"Recomendaciones sencillas con impacto real."}
+      "one": {
+        "title": "1. Conecta ventas",
+        "desc": "Sincroniza en segundos con tu TPV."
+      },
+      "two": {
+        "title": "2. Calcula rentabilidad",
+        "desc": "Cálculos automáticos por plato y por día."
+      },
+      "three": {
+        "title": "3. Aplica cambios",
+        "desc": "Recomendaciones sencillas con impacto real."
+      }
     }
   },
   "benefits": {
     "sales": {
-      "title": "Aumenta tus ventas",
-      "text": "Identifica los platos más rentables y optimiza tu carta para aumentar ingresos hasta un 30%"
+      "title": "Entiende",
+      "text": "Descubre qué platos son realmente rentables:",
+      "items": [
+        "Clasifica automáticamente cada plato según margen y popularidad",
+        "Identifica tus Estrellas, Tractores, Ganchos y Lastres",
+        "Visualiza tendencias de ventas y rendimiento"
+      ]
     },
     "data": {
-      "title": "Decisiones basadas en datos",
-      "text": "Analítica avanzada con fórmulas matemáticas probadas para tomar las mejores decisiones"
+      "title": "Actúa",
+      "text": "Toma decisiones con datos reales:",
+      "items": [
+        "Calcula el coste exacto de cada plato en tiempo real",
+        "Conoce el margen real que estás ganando",
+        "Simula cambios de precio e ingredientes"
+      ]
     },
     "optimize": {
-      "title": "Optimización continua",
-      "text": "Mejora constante de tu menú con recomendaciones personalizadas y actualizaciones en tiempo real"
+      "title": "Mejora",
+      "text": "Aumenta tus beneficios con recomendaciones:",
+      "items": [
+        "Sugerencias personalizadas para cada plato",
+        "Estrategias de precio y promoción",
+        "Seguimiento de progreso semanal"
+      ]
     }
+  },
+  "download": {
+    "title": "Descarga MenuScore",
+    "subtitle": "Disponible en iOS y Android"
   },
   "proof": {
     "number": "+100",
     "text": "Restaurantes confían en MenuScore"
   },
   "testimonials": {
-    "one": {"quote":"Detectamos platos poco rentables y aumentamos el ticket medio un 12% en dos meses.","attrib":"— Restaurante La Esquina"},
-    "two": {"quote":"Las recomendaciones son prácticas y fáciles de implementar.","attrib":"— Chef & Co."}
+    "one": {
+      "quote": "Detectamos platos poco rentables y aumentamos el ticket medio un 12% en dos meses.",
+      "attrib": "— Restaurante La Esquina"
+    },
+    "two": {
+      "quote": "Las recomendaciones son prácticas y fáciles de implementar.",
+      "attrib": "— Chef & Co."
+    }
   },
-  "footer": {"privacy":"Privacidad","terms":"Términos","contact":"Contacto"},
-  "lang": {"en":"English","es":"Español"}
+  "footer": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "contact": "Contacto"
+  },
+  "lang": {
+    "en": "English",
+    "es": "Español"
+  }
 }

@@ -8,49 +8,99 @@
   },
   "hero": {
     "title": "Understand. Act. Improve",
-    "subtitle": "MenuScore analyzes your dishes and sales with mathematical models so you can make the best decisions for your business",
-    "cta": "Try free for 30 days",
-    "cta_sub": "No credit card required · Cancel anytime"
+    "subtitle": "The menu management app that helps you maximize your restaurant's profits",
+    "cta": "Download free",
+    "cta_sub": "100% free · Available on iOS and Android"
   },
   "stores": {
     "appstore": "App Store",
     "google": "Google Play"
   },
   "features": {
-    "plateAnalytics": {"title":"Plate analytics","desc":"Measure plate profitability and popularity to know what to promote."},
-    "recommendations": {"title":"Actionable recommendations","desc":"Practical suggestions to improve margins and turnover."},
-    "integrations": {"title":"Integrations","desc":"Connect to POS and platforms to sync sales and costs."}
+    "plateAnalytics": {
+      "title": "Plate analytics",
+      "desc": "Measure plate profitability and popularity to know what to promote."
+    },
+    "recommendations": {
+      "title": "Actionable recommendations",
+      "desc": "Practical suggestions to improve margins and turnover."
+    },
+    "integrations": {
+      "title": "Integrations",
+      "desc": "Connect to POS and platforms to sync sales and costs."
+    }
   },
   "menuEngineering": {
-    "title":"How it works — in 3 steps",
+    "title": "How it works — in 3 steps",
     "steps": {
-      "one": {"title":"1. Connect sales","desc":"Sync with your POS in seconds."},
-      "two": {"title":"2. Calculate margin","desc":"Automatic per-plate and per-day calculations."},
-      "three": {"title":"3. Apply changes","desc":"Simple recommendations with real impact."}
+      "one": {
+        "title": "1. Connect sales",
+        "desc": "Sync with your POS in seconds."
+      },
+      "two": {
+        "title": "2. Calculate margin",
+        "desc": "Automatic per-plate and per-day calculations."
+      },
+      "three": {
+        "title": "3. Apply changes",
+        "desc": "Simple recommendations with real impact."
+      }
     }
   },
   "benefits": {
     "sales": {
-      "title": "Increase your sales",
-      "text": "Identify the most profitable dishes and optimize your menu to boost revenue by up to 30%"
+      "title": "Understand",
+      "text": "Discover which dishes are truly profitable:",
+      "items": [
+        "Automatically classifies each dish by margin and popularity",
+        "Identify your Stars, Workhorses, Puzzles and Dogs",
+        "Visualize sales trends and performance"
+      ]
     },
     "data": {
-      "title": "Data-driven decisions",
-      "text": "Advanced analytics with proven mathematical formulas to make the best decisions"
+      "title": "Act",
+      "text": "Make decisions with real data:",
+      "items": [
+        "Calculate the exact cost of each dish in real-time",
+        "Know the real margin you're making",
+        "Simulate price and ingredient changes"
+      ]
     },
     "optimize": {
-      "title": "Continuous optimization",
-      "text": "Constant improvement of your menu with personalized recommendations and real-time updates"
+      "title": "Improve",
+      "text": "Increase your profits with recommendations:",
+      "items": [
+        "Personalized suggestions for each dish",
+        "Pricing and promotion strategies",
+        "Weekly progress tracking"
+      ]
     }
+  },
+  "download": {
+    "title": "Download MenuScore",
+    "subtitle": "Available on iOS and Android"
   },
   "proof": {
     "number": "+100",
     "text": "Restaurants trust MenuScore"
   },
   "testimonials": {
-    "one": {"quote":"We spotted low-margin plates and increased average ticket by 12% in two months.","attrib":"— La Esquina Restaurant"},
-    "two": {"quote":"Recommendations are practical and easy to implement.","attrib":"— Chef & Co."}
+    "one": {
+      "quote": "We spotted low-margin plates and increased average ticket by 12% in two months.",
+      "attrib": "— La Esquina Restaurant"
+    },
+    "two": {
+      "quote": "Recommendations are practical and easy to implement.",
+      "attrib": "— Chef & Co."
+    }
   },
-  "footer": {"privacy":"Privacy","terms":"Terms","contact":"Contact"},
-  "lang": {"en":"English","es":"Español"}
+  "footer": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact"
+  },
+  "lang": {
+    "en": "English",
+    "es": "Español"
+  }
 }
