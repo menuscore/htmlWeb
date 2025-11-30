@@ -1613,3 +1613,17 @@ blockquote footer {
     grid-template-columns: 1fr;
   }
 }
+/* === IMAGE CARD === */
+/* Clean card class for portada images without animations or shadows */
+.image-card {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.image-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
