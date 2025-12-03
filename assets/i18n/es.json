@@ -1,13 +1,14 @@
 {
   "title": "MenuScore — Optimiza tu carta",
   "nav": {
+    "home": "Inicio",
     "features": "Características",
-    "how": "Cómo funciona",
+    "guide": "Guía",
     "contact": "Contacto",
     "cta": "Prueba gratis"
   },
   "hero": {
-    "title": "ENTIENDE  ->  ACTÚA  ->3 MEJORA",
+    "title": "ENTIENDE → ACTÚA → MEJORA",
     "subtitle": "La app de gestión de menús que te ayuda a maximizar los beneficios de tu restaurante",
     "cta": "Descarga gratis",
     "cta_sub": "100% gratuita · Disponible en iOS y Android"
@@ -15,37 +16,6 @@
   "stores": {
     "appstore": "App Store",
     "google": "Google Play"
-  },
-  "features": {
-    "plateAnalytics": {
-      "title": "Analítica de platos",
-      "desc": "Mide rentabilidad y popularidad por plato para decidir qué potenciar."
-    },
-    "recommendations": {
-      "title": "Recomendaciones accionables",
-      "desc": "Sugerencias prácticas para mejorar márgenes y rotación."
-    },
-    "integrations": {
-      "title": "Integraciones",
-      "desc": "Conecta con TPV y plataformas para sincronizar ventas y costes."
-    }
-  },
-  "menuEngineering": {
-    "title": "Cómo funciona — en 3 pasos",
-    "steps": {
-      "one": {
-        "title": "1. Conecta ventas",
-        "desc": "Sincroniza en segundos con tu TPV."
-      },
-      "two": {
-        "title": "2. Calcula rentabilidad",
-        "desc": "Cálculos automáticos por plato y por día."
-      },
-      "three": {
-        "title": "3. Aplica cambios",
-        "desc": "Recomendaciones sencillas con impacto real."
-      }
-    }
   },
   "benefits": {
     "sales": {
@@ -80,24 +50,411 @@
     "title": "Descarga MenuScore",
     "subtitle": "Disponible en iOS y Android"
   },
-  "proof": {
-    "number": "+100",
-    "text": "Restaurantes confían en MenuScore"
-  },
-  "testimonials": {
-    "one": {
-      "quote": "Detectamos platos poco rentables y aumentamos el ticket medio un 12% en dos meses.",
-      "attrib": "— Restaurante La Esquina"
-    },
-    "two": {
-      "quote": "Las recomendaciones son prácticas y fáciles de implementar.",
-      "attrib": "— Chef & Co."
-    }
-  },
   "footer": {
+    "copyright": "© 2025 MenuScore",
     "privacy": "Privacidad",
     "terms": "Términos",
     "contact": "Contacto"
+  },
+  "featuresPage": {
+    "title": "Características",
+    "subtitle": "Todo lo que necesitas para gestionar tu menú y maximizar beneficios",
+    "menu": {
+      "title": "Tu Carta",
+      "subtitle": "Gestiona y analiza todos tus platos",
+      "items": {
+        "classification": {
+          "title": "Clasificación automática",
+          "desc": "Cada plato se clasifica como Estrella, Tractor, Gancho o Lastre según margen y ventas"
+        },
+        "costs": {
+          "title": "Cálculo de costes y márgenes",
+          "desc": "Conoce el coste real, margen en € y % de cada plato incluyendo mano de obra"
+        },
+        "suggestions": {
+          "title": "Sugerencias personalizadas",
+          "desc": "Consejos específicos para mejorar precio, promoción o ingredientes de cada plato"
+        },
+        "score": {
+          "title": "Puntuación MenuScore",
+          "desc": "Puntuación global de 0 a 100 que evalúa la salud de tu carta completa"
+        }
+      }
+    },
+    "ingredients": {
+      "title": "Gestión de Ingredientes",
+      "subtitle": "Control total sobre tus ingredientes y costes",
+      "items": {
+        "catalog": {
+          "title": "Catálogo predefinido",
+          "desc": "Cientos de ingredientes comunes listos para añadir con tus precios"
+        },
+        "calculation": {
+          "title": "Cálculo automático",
+          "desc": "Calcula el coste por unidad de uso automáticamente según precio de compra"
+        },
+        "analysis": {
+          "title": "Análisis de ingredientes",
+          "desc": "Insights sobre ingredientes más vendidos, rentables y en riesgo"
+        },
+        "stock": {
+          "title": "Control de stock opcional",
+          "desc": "Gestiona inventario con alertas de stock bajo y descuento automático"
+        }
+      }
+    },
+    "sales": {
+      "title": "Ventas y Análisis",
+      "subtitle": "Registra ventas y visualiza la evolución de tu negocio",
+      "items": {
+        "weekly": {
+          "title": "Registro semanal de ventas",
+          "desc": "Registra cuántas unidades vendiste de cada plato cada semana"
+        },
+        "csv": {
+          "title": "Importar CSV",
+          "desc": "Importa ventas desde archivo CSV de tu TPV automáticamente"
+        },
+        "dashboard": {
+          "title": "Dashboard con gráficos",
+          "desc": "Visualiza ingresos, unidades vendidas y márgenes por semana"
+        },
+        "compare": {
+          "title": "Comparar platos",
+          "desc": "Compara la evolución de hasta 2 platos en las últimas 4, 8 o 12 semanas"
+        }
+      }
+    },
+    "additional": {
+      "title": "Funcionalidades Adicionales",
+      "subtitle": "Herramientas para personalizar y proteger tus datos",
+      "items": {
+        "categories": {
+          "title": "Categorías personalizables",
+          "desc": "Crea, renombra y reordena categorías para organizar tu carta"
+        },
+        "backup": {
+          "title": "Backup y restauración",
+          "desc": "Exporta y restaura todos tus datos: platos, ingredientes, ventas y categorías"
+        },
+        "settings": {
+          "title": "Ajustes personalizables",
+          "desc": "Configura coste de mano de obra, gastos generales e IVA según tu negocio"
+        },
+        "noregister": {
+          "title": "Sin registro necesario",
+          "desc": "Empieza a usar la app inmediatamente, sin crear cuenta"
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para optimizar tu menú?",
+      "subtitle": "Descarga MenuScore gratis y empieza a maximizar tus beneficios hoy",
+      "button": "Descarga gratis",
+      "subtext": "100% gratuita · Disponible en iOS y Android"
+    }
+  },
+  "guidePage": {
+    "title": "Guía de uso",
+    "subtitle": "Aprende a sacar el máximo provecho de MenuScore",
+    "sidebar": {
+      "title": "Contenido",
+      "start": "Primeros pasos",
+      "menu": "Tu Carta",
+      "ingredients": "Ingredientes",
+      "sales": "Ventas",
+      "dashboard": "Dashboard",
+      "categories": "Categorías",
+      "stock": "Control de Stock",
+      "backup": "Backup",
+      "settings": "Ajustes"
+    },
+    "sections": {
+      "start": {
+        "title": "Primeros pasos",
+        "intro": "Bienvenido a MenuScore. Esta guía te ayudará a empezar a optimizar tu menú de forma rápida y sencilla.",
+        "step1": {
+          "title": "1. Descarga la app",
+          "desc": "MenuScore está disponible en iOS y Android. Descárgala desde tu tienda de aplicaciones favorita."
+        },
+        "step2": {
+          "title": "2. Empieza a usar la app",
+          "desc": "No necesitas crear cuenta ni registrarte. Abre la app y empieza a añadir tus platos e ingredientes directamente."
+        },
+        "step3": {
+          "title": "3. Las 4 secciones principales",
+          "desc": "MenuScore se organiza en 4 pestañas en la parte inferior:",
+          "items": [
+            "<strong>Carta:</strong> Ver y gestionar todos tus platos",
+            "<strong>Ingredientes:</strong> Gestionar precios y stock de ingredientes",
+            "<strong>Ventas:</strong> Registrar lo que vendes cada semana",
+            "<strong>Dashboard:</strong> Ver gráficos y evolución del negocio"
+          ]
+        }
+      },
+      "menu": {
+        "title": "Tu Carta",
+        "intro": "En la sección de Carta verás todos tus platos organizados por categorías y la puntuación MenuScore de tu carta.",
+        "score": {
+          "title": "La puntuación MenuScore",
+          "desc": "En la parte superior de la sección Carta verás un número del 0 al 100 que representa <strong>la salud general de tu carta completa</strong>:",
+          "items": [
+            "<strong>80-100:</strong> 🟢 Excelente - Tu carta está muy bien equilibrada",
+            "<strong>60-79:</strong> 🟡 Buena - Hay margen de mejora pero funciona bien",
+            "<strong>40-59:</strong> 🟠 Regular - Revisa algunos platos",
+            "<strong>0-39:</strong> 🔴 Necesita atención - Hay problemas que resolver"
+          ],
+          "note": "Toca la puntuación para ver qué factores la afectan y cómo mejorarla. Esta puntuación evalúa el conjunto de todos tus platos, no cada plato individual."
+        },
+        "add": {
+          "title": "Añadir un plato nuevo",
+          "desc": "Pulsa el botón <strong>+</strong> y rellena:",
+          "items": [
+            "<strong>Nombre</strong> del plato",
+            "<strong>Precio de venta</strong> (lo que cobras)",
+            "<strong>Categoría</strong> (Entrantes, Principales, etc.)",
+            "<strong>Trabajo estimado</strong> - Cuánto tiempo/esfuerzo requiere:",
+            "<strong>Ingredientes</strong> - Selecciona del catálogo y pon las cantidades"
+          ],
+          "subitems": [
+            "Mínimo: Ensaladas, platos fríos",
+            "Rápido: Plancha, frituras",
+            "Normal: La mayoría de platos",
+            "Complejo: Platos elaborados con salsas"
+          ]
+        },
+        "info": {
+          "title": "Información de cada plato",
+          "desc": "Al tocar un plato verás:",
+          "items": [
+            "<strong>Precio de venta</strong> - Lo que cobras al cliente",
+            "<strong>Coste real</strong> - Lo que te cuesta prepararlo (ingredientes + trabajo)",
+            "<strong>Margen</strong> - Cuánto ganas con cada plato (en € y en %)",
+            "<strong>Precio recomendado</strong> - Si el margen es bajo, te sugiere un precio mejor",
+            "<strong>Clasificación</strong> - Estrella ⭐, Tractor 🚜, Gancho 🧩 o Lastre ⚓"
+          ]
+        },
+        "classification": {
+          "title": "Clasificación de platos",
+          "desc": "Cada plato recibe una etiqueta según su rendimiento:",
+          "items": [
+            "<strong>⭐ Estrella:</strong> Vende mucho Y da buen margen - ¡Perfecto! Mantenerlo destacado",
+            "<strong>🚜 Tractor:</strong> Vende mucho PERO da poco margen - Subir precio o reducir costes",
+            "<strong>🧩 Gancho:</strong> Da buen margen PERO vende poco - Promocionarlo más",
+            "<strong>⚓ Lastre:</strong> Vende poco Y da poco margen - Plantearse eliminarlo"
+          ]
+        },
+        "suggestions": {
+          "title": "Sugerencias inteligentes",
+          "desc": "MenuScore analiza tu carta y te da consejos personalizados como:",
+          "items": [
+            "\"El margen de Ensalada César es solo del 45%. Considera subir el precio a 12,50€\"",
+            "\"Risotto de setas tiene buen margen pero vende poco. ¿Lo destacas más en carta?\"",
+            "\"Hamburguesa no tiene ingredientes añadidos. Añádelos para calcular el coste real\""
+          ]
+        }
+      },
+      "ingredients": {
+        "title": "Ingredientes",
+        "intro": "Gestiona tu catálogo de ingredientes para calcular costes precisos de cada plato.",
+        "add": {
+          "title": "Añadir ingredientes",
+          "desc": "Dos formas:",
+          "items": [
+            "<strong>Desde el catálogo:</strong> MenuScore incluye cientos de ingredientes comunes. Solo tienes que buscar, añadir y poner tu precio",
+            "<strong>Crear nuevo:</strong> Si no está en el catálogo, créalo desde cero"
+          ]
+        },
+        "config": {
+          "title": "Configurar un ingrediente",
+          "desc": "Para cada ingrediente defines:",
+          "items": [
+            "<strong>Precio de compra:</strong> Ej. 15€",
+            "<strong>Cantidad que compras:</strong> Ej. 1 kg",
+            "<strong>Unidad para cocinar:</strong> Ej. gramos"
+          ],
+          "note": "MenuScore calcula automáticamente que cada gramo te cuesta 0,015€."
+        },
+        "analysis": {
+          "title": "Análisis de ingredientes (Pestaña \"Insights\")",
+          "desc": "Información valiosa sobre tus ingredientes:",
+          "items": [
+            "<strong>📊 Lo más vendido:</strong> Qué ingredientes mueves más (basado en ventas de los últimos 30 días)",
+            "<strong>💎 Lo más rentable:</strong> Qué ingredientes te generan más ingresos",
+            "<strong>⚠️ Ingredientes en riesgo:</strong> Ingredientes que solo usas en un plato (si ese plato no vende, el ingrediente se queda parado)",
+            "<strong>📦 Valor del inventario:</strong> El valor total de tu despensa (si usas control de stock)"
+          ]
+        }
+      },
+      "sales": {
+        "title": "Ventas",
+        "intro": "Registra las ventas de tus platos para analizar su popularidad real y mejorar la clasificación.",
+        "why": {
+          "title": "¿Para qué registrar ventas?",
+          "desc": "MenuScore necesita saber qué vendes realmente para:",
+          "items": [
+            "Clasificar correctamente cada plato (Estrella, Tractor, etc.)",
+            "Mostrarte tendencias en el Dashboard",
+            "Darte consejos más precisos",
+            "Descontar stock automáticamente (si lo tienes activado)"
+          ]
+        },
+        "how": {
+          "title": "Cómo registrar ventas",
+          "items": [
+            "Ve a la pestaña <strong>Ventas</strong>",
+            "Selecciona la <strong>semana</strong> que quieres registrar",
+            "Pulsa <strong>+</strong> para abrir el registro",
+            "Indica <strong>cuántas unidades</strong> de cada plato vendiste",
+            "Guarda"
+          ]
+        },
+        "csv": {
+          "title": "Importar desde archivo CSV",
+          "desc": "Si tienes los datos en un archivo CSV (por ejemplo, de tu TPV):",
+          "items": [
+            "Pulsa el icono de importar",
+            "Selecciona tu archivo CSV",
+            "MenuScore asocia automáticamente los nombres",
+            "Revisa y confirma"
+          ],
+          "format": "<strong>Formato del CSV:</strong>"
+        }
+      },
+      "dashboard": {
+        "title": "Dashboard",
+        "intro": "Visualiza la evolución de tu negocio con gráficos interactivos.",
+        "charts": {
+          "title": "Gráficos disponibles",
+          "items": [
+            "<strong>💵 Ingresos por semana:</strong> ¿Estoy facturando más o menos que antes?",
+            "<strong>📦 Unidades vendidas:</strong> ¿Estoy vendiendo más platos?",
+            "<strong>📊 Margen:</strong> ¿Mi rentabilidad mejora o empeora?"
+          ]
+        },
+        "compare": {
+          "title": "Comparar platos",
+          "desc": "Puedes seleccionar hasta 2 platos para comparar su evolución:",
+          "items": [
+            "\"¿La hamburguesa vende más que el mes pasado?\"",
+            "\"¿Qué plato tiene mejor tendencia?\""
+          ]
+        },
+        "periods": {
+          "title": "Períodos",
+          "desc": "Elige ver las últimas 4, 8 o 12 semanas."
+        }
+      },
+      "categories": {
+        "title": "Categorías",
+        "intro": "Organiza tu carta con categorías personalizadas.",
+        "manage": {
+          "title": "Gestionar categorías",
+          "desc": "Desde el menú lateral puedes:",
+          "items": [
+            "<strong>Crear</strong> nuevas categorías (Entrantes, Principales, Postres, Bebidas, etc.)",
+            "<strong>Renombrar</strong> las existentes",
+            "<strong>Reordenar</strong> con arrastrar y soltar",
+            "<strong>Eliminar</strong> las que ya no uses"
+          ]
+        }
+      },
+      "stock": {
+        "title": "Control de Stock (Opcional)",
+        "intro": "Controla tu inventario de ingredientes y recibe alertas cuando algo esté bajo.",
+        "benefits": {
+          "title": "¿Qué aporta?",
+          "desc": "Si activas el control de stock:",
+          "items": [
+            "<strong>Ves cuánto tienes</strong> de cada ingrediente",
+            "<strong>Se descuenta automáticamente</strong> cuando registras ventas",
+            "<strong>Alertas</strong> cuando algo está bajo mínimos",
+            "<strong>Valor del inventario</strong> en tiempo real"
+          ]
+        },
+        "config": {
+          "title": "Configurar stock",
+          "desc": "Para cada ingrediente puedes definir:",
+          "items": [
+            "<strong>Stock actual:</strong> Cuánto tienes ahora",
+            "<strong>Stock mínimo:</strong> Cuándo te avisamos"
+          ]
+        },
+        "recurring": {
+          "title": "Stock recurrente",
+          "desc": "Para ingredientes que repones semanalmente:",
+          "items": [
+            "Activa \"Stock recurrente\"",
+            "Indica la cantidad semanal",
+            "MenuScore lo añade automáticamente cada lunes"
+          ]
+        }
+      },
+      "backup": {
+        "title": "Backup y Restauración",
+        "intro": "Protege tus datos exportando copias de seguridad.",
+        "export": {
+          "title": "Exportar copia de seguridad",
+          "desc": "Desde el menú lateral > \"Backup\":",
+          "items": [
+            "Exporta todos tus datos a un archivo",
+            "Guárdalo en tu móvil o en la nube",
+            "Útil antes de cambiar de móvil"
+          ]
+        },
+        "restore": {
+          "title": "Restaurar datos",
+          "desc": "Si cambias de móvil o pierdes datos:",
+          "items": [
+            "Selecciona tu archivo de backup",
+            "MenuScore restaura todo: platos, ingredientes, ventas, categorías"
+          ]
+        }
+      },
+      "settings": {
+        "title": "Ajustes",
+        "intro": "Personaliza los cálculos según tu negocio.",
+        "config": {
+          "title": "Configuración de costes",
+          "desc": "En Ajustes puedes configurar:",
+          "items": [
+            "<strong>Costes operativos mensuales:</strong> Afecta al coste calculado de cada plato",
+            "<strong>Gastos extra (%):</strong> Un porcentaje extra sobre el coste base",
+            "<strong>Beneficios por bebidas (%):</strong> Un porcentaje esperado de beneficios por la venta de bebidas",
+            "<strong>IVA (%):</strong> Para cálculos de precios"
+          ]
+        },
+        "lang": {
+          "title": "Idioma",
+          "desc": "MenuScore está disponible en:",
+          "items": [
+            "🇪🇸 Español",
+            "🇬🇧 English"
+          ]
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Necesitas más ayuda?",
+      "subtitle": "Contáctanos y te ayudaremos a sacar el máximo provecho de MenuScore",
+      "button": "Contactar"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes alguna pregunta? Estamos aquí para ayudarte",
+    "info": {
+      "title": "Información de contacto",
+      "email": "Email",
+      "response": "Tiempo de respuesta: 24-48 horas"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "send": "Enviar mensaje"
+    }
   },
   "lang": {
     "en": "English",

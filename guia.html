@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guía de uso — MenuScore</title>
+    <title data-i18n="guidePage.title">Guía de uso — MenuScore</title>
     <meta name="description"
         content="Aprende a usar MenuScore: cómo crear platos, añadir ingredientes, registrar ventas y más.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,10 +29,28 @@
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="features.html">Características</a></li>
-                    <li class="nav-item"><a class="nav-link" href="guia.html">Guía</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/" data-i18n="nav.home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html"
+                            data-i18n="nav.features">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guia.html" data-i18n="nav.guide">Guía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contacto</a>
+                    </li>
+
+                    <!-- Selector de idioma -->
+                    <li class="nav-item nav-lang">
+                        <div class="btn-group">
+                            <button id="langToggle" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false" aria-label="Seleccionar idioma">
+                                ES
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                                <li><button class="dropdown-item lang-select" type="button" data-lang="es">🇪🇸
+                                        Español</button></li>
+                                <li><button class="dropdown-item lang-select" type="button" data-lang="en">🇬🇧
+                                        English</button></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -42,8 +60,9 @@
         <!-- HERO -->
         <header class="guide-hero">
             <div class="container text-center">
-                <h1 class="display-super" style="color:#316cb3;">Guía de uso</h1>
-                <p class="lead mx-auto" style="max-width: 700px;">Aprende a sacar el máximo provecho de MenuScore</p>
+                <h1 class="display-super" style="color:#316cb3;" data-i18n="guidePage.title">Guía de uso</h1>
+                <p class="lead mx-auto" style="max-width: 700px;" data-i18n="guidePage.subtitle">Aprende a sacar el
+                    máximo provecho de MenuScore</p>
             </div>
         </header>
 
@@ -54,17 +73,24 @@
                     <!-- SIDEBAR -->
                     <div class="col-lg-3">
                         <div class="guide-sidebar">
-                            <h5>Contenido</h5>
+                            <h5 data-i18n="guidePage.sidebar.title">Contenido</h5>
                             <nav class="guide-nav">
-                                <a href="#primeros-pasos" class="guide-nav-link">Primeros pasos</a>
-                                <a href="#tu-carta" class="guide-nav-link">Tu Carta</a>
-                                <a href="#ingredientes" class="guide-nav-link">Ingredientes</a>
-                                <a href="#ventas" class="guide-nav-link">Ventas</a>
-                                <a href="#dashboard" class="guide-nav-link">Dashboard</a>
-                                <a href="#categorias" class="guide-nav-link">Categorías</a>
-                                <a href="#stock" class="guide-nav-link">Control de Stock</a>
-                                <a href="#backup" class="guide-nav-link">Backup</a>
-                                <a href="#ajustes" class="guide-nav-link">Ajustes</a>
+                                <a href="#primeros-pasos" class="guide-nav-link"
+                                    data-i18n="guidePage.sidebar.gettingStarted">Primeros pasos</a>
+                                <a href="#tu-carta" class="guide-nav-link" data-i18n="guidePage.sidebar.menu">Tu
+                                    Carta</a>
+                                <a href="#ingredientes" class="guide-nav-link"
+                                    data-i18n="guidePage.sidebar.ingredients">Ingredientes</a>
+                                <a href="#ventas" class="guide-nav-link" data-i18n="guidePage.sidebar.sales">Ventas</a>
+                                <a href="#dashboard" class="guide-nav-link"
+                                    data-i18n="guidePage.sidebar.dashboard">Dashboard</a>
+                                <a href="#categorias" class="guide-nav-link"
+                                    data-i18n="guidePage.sidebar.categories">Categorías</a>
+                                <a href="#stock" class="guide-nav-link" data-i18n="guidePage.sidebar.stock">Control de
+                                    Stock</a>
+                                <a href="#backup" class="guide-nav-link" data-i18n="guidePage.sidebar.backup">Backup</a>
+                                <a href="#ajustes" class="guide-nav-link"
+                                    data-i18n="guidePage.sidebar.settings">Ajustes</a>
                             </nav>
                         </div>
                     </div>
@@ -75,117 +101,160 @@
 
                             <!-- Primeros pasos -->
                             <div id="primeros-pasos" class="guide-section">
-                                <h2>Primeros pasos</h2>
-                                <p>Bienvenido a MenuScore. Esta guía te ayudará a empezar a optimizar tu menú de forma
+                                <h2 data-i18n="guidePage.gettingStarted.title">Primeros pasos</h2>
+                                <p data-i18n="guidePage.gettingStarted.intro">Bienvenido a MenuScore. Esta guía te
+                                    ayudará a empezar a optimizar tu menú de forma
                                     rápida y sencilla.</p>
 
                                 <div class="guide-step">
-                                    <h3>1. Descarga la app</h3>
-                                    <p>MenuScore está disponible en iOS y Android. Descárgala desde tu tienda de
+                                    <h3 data-i18n="guidePage.gettingStarted.download.title">1. Descarga la app</h3>
+                                    <p data-i18n="guidePage.gettingStarted.download.desc">MenuScore está disponible en
+                                        iOS y Android. Descárgala desde tu tienda de
                                         aplicaciones favorita.</p>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>2. Empieza a usar la app</h3>
-                                    <p>No necesitas crear cuenta ni registrarte. Abre la app y empieza a añadir tus
+                                    <h3 data-i18n="guidePage.gettingStarted.start.title">2. Empieza a usar la app</h3>
+                                    <p data-i18n="guidePage.gettingStarted.start.desc">No necesitas crear cuenta ni
+                                        registrarte. Abre la app y empieza a añadir tus
                                         platos e ingredientes directamente.</p>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>3. Las 4 secciones principales</h3>
-                                    <p>MenuScore se organiza en 4 pestañas en la parte inferior:</p>
+                                    <h3 data-i18n="guidePage.gettingStarted.sections.title">3. Las 4 secciones
+                                        principales</h3>
+                                    <p data-i18n="guidePage.gettingStarted.sections.desc">MenuScore se organiza en 4
+                                        pestañas en la parte inferior:</p>
                                     <ul>
-                                        <li><strong>Carta:</strong> Ver y gestionar todos tus platos</li>
-                                        <li><strong>Ingredientes:</strong> Gestionar precios y stock de ingredientes
+                                        <li data-i18n="guidePage.gettingStarted.sections.items.0">
+                                            <strong>Carta:</strong> Ver y gestionar todos tus platos
                                         </li>
-                                        <li><strong>Ventas:</strong> Registrar lo que vendes cada semana</li>
-                                        <li><strong>Dashboard:</strong> Ver gráficos y evolución del negocio</li>
+                                        <li data-i18n="guidePage.gettingStarted.sections.items.1">
+                                            <strong>Ingredientes:</strong> Gestionar precios y stock de ingredientes
+                                        </li>
+                                        <li data-i18n="guidePage.gettingStarted.sections.items.2">
+                                            <strong>Ventas:</strong> Registrar lo que vendes cada semana
+                                        </li>
+                                        <li data-i18n="guidePage.gettingStarted.sections.items.3">
+                                            <strong>Dashboard:</strong> Ver gráficos y evolución del negocio
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Tu Carta -->
                             <div id="tu-carta" class="guide-section">
-                                <h2>Tu Carta</h2>
-                                <p>En la sección de Carta verás todos tus platos organizados por categorías y la
+                                <h2 data-i18n="guidePage.menu.title">Tu Carta</h2>
+                                <p data-i18n="guidePage.menu.intro">En la sección de Carta verás todos tus platos
+                                    organizados por categorías y la
                                     puntuación MenuScore de tu carta.</p>
 
                                 <div class="guide-step">
-                                    <h3>La puntuación MenuScore</h3>
-                                    <p>En la parte superior de la sección Carta verás un número del 0 al 100 que
+                                    <h3 data-i18n="guidePage.menu.score.title">La puntuación MenuScore</h3>
+                                    <p data-i18n="guidePage.menu.score.desc">En la parte superior de la sección Carta
+                                        verás un número del 0 al 100 que
                                         representa <strong>la salud general de tu carta completa</strong>:</p>
                                     <ul>
-                                        <li><strong>80-100:</strong> 🟢 Excelente - Tu carta está muy bien equilibrada
+                                        <li data-i18n="guidePage.menu.score.items.0"><strong>80-100:</strong> 🟢
+                                            Excelente - Tu carta está muy bien equilibrada
                                         </li>
-                                        <li><strong>60-79:</strong> 🟡 Buena - Hay margen de mejora pero funciona bien
+                                        <li data-i18n="guidePage.menu.score.items.1"><strong>60-79:</strong> 🟡 Buena -
+                                            Hay margen de mejora pero funciona bien
                                         </li>
-                                        <li><strong>40-59:</strong> 🟠 Regular - Revisa algunos platos</li>
-                                        <li><strong>0-39:</strong> 🔴 Necesita atención - Hay problemas que resolver
+                                        <li data-i18n="guidePage.menu.score.items.2"><strong>40-59:</strong> 🟠 Regular
+                                            - Revisa algunos platos</li>
+                                        <li data-i18n="guidePage.menu.score.items.3"><strong>0-39:</strong> 🔴 Necesita
+                                            atención - Hay problemas que resolver
                                         </li>
                                     </ul>
-                                    <p>Toca la puntuación para ver qué factores la afectan y cómo mejorarla. Esta
+                                    <p data-i18n="guidePage.menu.score.note">Toca la puntuación para ver qué factores la
+                                        afectan y cómo mejorarla. Esta
                                         puntuación evalúa el conjunto de todos tus platos, no cada plato individual.</p>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Añadir un plato nuevo</h3>
-                                    <p>Pulsa el botón <strong>+</strong> y rellena:</p>
+                                    <h3 data-i18n="guidePage.menu.add.title">Añadir un plato nuevo</h3>
+                                    <p data-i18n="guidePage.menu.add.desc">Pulsa el botón <strong>+</strong> y rellena:
+                                    </p>
                                     <ul>
-                                        <li><strong>Nombre</strong> del plato</li>
-                                        <li><strong>Precio de venta</strong> (lo que cobras)</li>
-                                        <li><strong>Categoría</strong> (Entrantes, Principales, etc.)</li>
-                                        <li><strong>Trabajo estimado</strong> - Cuánto tiempo/esfuerzo requiere:
+                                        <li data-i18n="guidePage.menu.add.items.0"><strong>Nombre</strong> del plato
+                                        </li>
+                                        <li data-i18n="guidePage.menu.add.items.1"><strong>Precio de venta</strong> (lo
+                                            que cobras)</li>
+                                        <li data-i18n="guidePage.menu.add.items.2"><strong>Categoría</strong>
+                                            (Entrantes, Principales, etc.)</li>
+                                        <li><span data-i18n="guidePage.menu.add.items.3"><strong>Trabajo
+                                                    estimado</strong> - Cuánto tiempo/esfuerzo requiere:</span>
                                             <ul>
-                                                <li>Mínimo: Ensaladas, platos fríos</li>
-                                                <li>Rápido: Plancha, frituras</li>
-                                                <li>Normal: La mayoría de platos</li>
-                                                <li>Complejo: Platos elaborados con salsas</li>
+                                                <li data-i18n="guidePage.menu.add.subitems.0">Mínimo: Ensaladas, platos
+                                                    fríos</li>
+                                                <li data-i18n="guidePage.menu.add.subitems.1">Rápido: Plancha, frituras
+                                                </li>
+                                                <li data-i18n="guidePage.menu.add.subitems.2">Normal: La mayoría de
+                                                    platos</li>
+                                                <li data-i18n="guidePage.menu.add.subitems.3">Complejo: Platos
+                                                    elaborados con salsas</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Ingredientes</strong> - Selecciona del catálogo y pon las cantidades
+                                        <li data-i18n="guidePage.menu.add.items.4"><strong>Ingredientes</strong> -
+                                            Selecciona del catálogo y pon las cantidades
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Información de cada plato</h3>
-                                    <p>Al tocar un plato verás:</p>
+                                    <h3 data-i18n="guidePage.menu.info.title">Información de cada plato</h3>
+                                    <p data-i18n="guidePage.menu.info.desc">Al tocar un plato verás:</p>
                                     <ul>
-                                        <li><strong>Precio de venta</strong> - Lo que cobras al cliente</li>
-                                        <li><strong>Coste real</strong> - Lo que te cuesta prepararlo (ingredientes +
+                                        <li data-i18n="guidePage.menu.info.items.0"><strong>Precio de venta</strong> -
+                                            Lo que cobras al cliente</li>
+                                        <li data-i18n="guidePage.menu.info.items.1"><strong>Coste real</strong> - Lo que
+                                            te cuesta prepararlo (ingredientes +
                                             trabajo)</li>
-                                        <li><strong>Margen</strong> - Cuánto ganas con cada plato (en € y en %)</li>
-                                        <li><strong>Precio recomendado</strong> - Si el margen es bajo, te sugiere un
+                                        <li data-i18n="guidePage.menu.info.items.2"><strong>Margen</strong> - Cuánto
+                                            ganas con cada plato (en € y en %)</li>
+                                        <li data-i18n="guidePage.menu.info.items.3"><strong>Precio recomendado</strong>
+                                            - Si el margen es bajo, te sugiere un
                                             precio mejor</li>
-                                        <li><strong>Clasificación</strong> - Estrella ⭐, Tractor 🚜, Gancho 🧩 o Lastre
+                                        <li data-i18n="guidePage.menu.info.items.4"><strong>Clasificación</strong> -
+                                            Estrella ⭐, Tractor 🚜, Gancho 🧩 o Lastre
                                             ⚓</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Clasificación de platos</h3>
-                                    <p>Cada plato recibe una etiqueta según su rendimiento:</p>
+                                    <h3 data-i18n="guidePage.menu.classification.title">Clasificación de platos</h3>
+                                    <p data-i18n="guidePage.menu.classification.desc">Cada plato recibe una etiqueta
+                                        según su rendimiento:</p>
                                     <ul>
-                                        <li><strong>⭐ Estrella:</strong> Vende mucho Y da buen margen - ¡Perfecto!
+                                        <li data-i18n="guidePage.menu.classification.items.0"><strong>⭐
+                                                Estrella:</strong> Vende mucho Y da buen margen - ¡Perfecto!
                                             Mantenerlo destacado</li>
-                                        <li><strong>🚜 Tractor:</strong> Vende mucho PERO da poco margen - Subir precio
+                                        <li data-i18n="guidePage.menu.classification.items.1"><strong>🚜
+                                                Tractor:</strong> Vende mucho PERO da poco margen - Subir precio
                                             o reducir costes</li>
-                                        <li><strong>🧩 Gancho:</strong> Da buen margen PERO vende poco - Promocionarlo
+                                        <li data-i18n="guidePage.menu.classification.items.2"><strong>🧩
+                                                Gancho:</strong> Da buen margen PERO vende poco - Promocionarlo
                                             más</li>
-                                        <li><strong>⚓ Lastre:</strong> Vende poco Y da poco margen - Plantearse
+                                        <li data-i18n="guidePage.menu.classification.items.3"><strong>⚓ Lastre:</strong>
+                                            Vende poco Y da poco margen - Plantearse
                                             eliminarlo</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Sugerencias inteligentes</h3>
-                                    <p>MenuScore analiza tu carta y te da consejos personalizados como:</p>
+                                    <h3 data-i18n="guidePage.menu.suggestions.title">Sugerencias inteligentes</h3>
+                                    <p data-i18n="guidePage.menu.suggestions.desc">MenuScore analiza tu carta y te da
+                                        consejos personalizados como:</p>
                                     <ul>
-                                        <li>"El margen de Ensalada César es solo del 45%. Considera subir el precio a
+                                        <li data-i18n="guidePage.menu.suggestions.items.0">"El margen de Ensalada César
+                                            es solo del 45%. Considera subir el precio a
                                             12,50€"</li>
-                                        <li>"Risotto de setas tiene buen margen pero vende poco. ¿Lo destacas más en
+                                        <li data-i18n="guidePage.menu.suggestions.items.1">"Risotto de setas tiene buen
+                                            margen pero vende poco. ¿Lo destacas más en
                                             carta?"</li>
-                                        <li>"Hamburguesa no tiene ingredientes añadidos. Añádelos para calcular el coste
+                                        <li data-i18n="guidePage.menu.suggestions.items.2">"Hamburguesa no tiene
+                                            ingredientes añadidos. Añádelos para calcular el coste
                                             real"</li>
                                     </ul>
                                 </div>
@@ -193,42 +262,55 @@
 
                             <!-- Ingredientes -->
                             <div id="ingredientes" class="guide-section">
-                                <h2>Ingredientes</h2>
-                                <p>Gestiona tu catálogo de ingredientes para calcular costes precisos de cada plato.</p>
+                                <h2 data-i18n="guidePage.ingredients.title">Ingredientes</h2>
+                                <p data-i18n="guidePage.ingredients.intro">Gestiona tu catálogo de ingredientes para
+                                    calcular costes precisos de cada plato.</p>
 
                                 <div class="guide-step">
-                                    <h3>Añadir ingredientes</h3>
-                                    <p>Dos formas:</p>
+                                    <h3 data-i18n="guidePage.ingredients.add.title">Añadir ingredientes</h3>
+                                    <p data-i18n="guidePage.ingredients.add.desc">Dos formas:</p>
                                     <ul>
-                                        <li><strong>Desde el catálogo:</strong> MenuScore incluye cientos de
+                                        <li data-i18n="guidePage.ingredients.add.items.0"><strong>Desde el
+                                                catálogo:</strong> MenuScore incluye cientos de
                                             ingredientes comunes. Solo tienes que buscar, añadir y poner tu precio</li>
-                                        <li><strong>Crear nuevo:</strong> Si no está en el catálogo, créalo desde cero
+                                        <li data-i18n="guidePage.ingredients.add.items.1"><strong>Crear nuevo:</strong>
+                                            Si no está en el catálogo, créalo desde cero
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Configurar un ingrediente</h3>
-                                    <p>Para cada ingrediente defines:</p>
+                                    <h3 data-i18n="guidePage.ingredients.config.title">Configurar un ingrediente</h3>
+                                    <p data-i18n="guidePage.ingredients.config.desc">Para cada ingrediente defines:</p>
                                     <ul>
-                                        <li><strong>Precio de compra:</strong> Ej. 15€</li>
-                                        <li><strong>Cantidad que compras:</strong> Ej. 1 kg</li>
-                                        <li><strong>Unidad para cocinar:</strong> Ej. gramos</li>
+                                        <li data-i18n="guidePage.ingredients.config.items.0"><strong>Precio de
+                                                compra:</strong> Ej. 15€</li>
+                                        <li data-i18n="guidePage.ingredients.config.items.1"><strong>Cantidad que
+                                                compras:</strong> Ej. 1 kg</li>
+                                        <li data-i18n="guidePage.ingredients.config.items.2"><strong>Unidad para
+                                                cocinar:</strong> Ej. gramos</li>
                                     </ul>
-                                    <p>MenuScore calcula automáticamente que cada gramo te cuesta 0,015€.</p>
+                                    <p data-i18n="guidePage.ingredients.config.note">MenuScore calcula automáticamente
+                                        que cada gramo te cuesta 0,015€.</p>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Análisis de ingredientes (Pestaña "Insights")</h3>
-                                    <p>Información valiosa sobre tus ingredientes:</p>
+                                    <h3 data-i18n="guidePage.ingredients.analysis.title">Análisis de ingredientes
+                                        (Pestaña "Insights")</h3>
+                                    <p data-i18n="guidePage.ingredients.analysis.desc">Información valiosa sobre tus
+                                        ingredientes:</p>
                                     <ul>
-                                        <li><strong>📊 Lo más vendido:</strong> Qué ingredientes mueves más (basado en
+                                        <li data-i18n="guidePage.ingredients.analysis.items.0"><strong>📊 Lo más
+                                                vendido:</strong> Qué ingredientes mueves más (basado en
                                             ventas de los últimos 30 días)</li>
-                                        <li><strong>💎 Lo más rentable:</strong> Qué ingredientes te generan más
+                                        <li data-i18n="guidePage.ingredients.analysis.items.1"><strong>💎 Lo más
+                                                rentable:</strong> Qué ingredientes te generan más
                                             ingresos</li>
-                                        <li><strong>⚠️ Ingredientes en riesgo:</strong> Ingredientes que solo usas en un
+                                        <li data-i18n="guidePage.ingredients.analysis.items.2"><strong>⚠️ Ingredientes
+                                                en riesgo:</strong> Ingredientes que solo usas en un
                                             plato (si ese plato no vende, el ingrediente se queda parado)</li>
-                                        <li><strong>📦 Valor del inventario:</strong> El valor total de tu despensa (si
+                                        <li data-i18n="guidePage.ingredients.analysis.items.3"><strong>📦 Valor del
+                                                inventario:</strong> El valor total de tu despensa (si
                                             usas control de stock)</li>
                                     </ul>
                                 </div>
@@ -236,42 +318,55 @@
 
                             <!-- Ventas -->
                             <div id="ventas" class="guide-section">
-                                <h2>Ventas</h2>
-                                <p>Registra las ventas de tus platos para analizar su popularidad real y mejorar la
+                                <h2 data-i18n="guidePage.sales.title">Ventas</h2>
+                                <p data-i18n="guidePage.sales.intro">Registra las ventas de tus platos para analizar su
+                                    popularidad real y mejorar la
                                     clasificación.</p>
 
                                 <div class="guide-step">
-                                    <h3>¿Para qué registrar ventas?</h3>
-                                    <p>MenuScore necesita saber qué vendes realmente para:</p>
+                                    <h3 data-i18n="guidePage.sales.why.title">¿Para qué registrar ventas?</h3>
+                                    <p data-i18n="guidePage.sales.why.desc">MenuScore necesita saber qué vendes
+                                        realmente para:</p>
                                     <ul>
-                                        <li>Clasificar correctamente cada plato (Estrella, Tractor, etc.)</li>
-                                        <li>Mostrarte tendencias en el Dashboard</li>
-                                        <li>Darte consejos más precisos</li>
-                                        <li>Descontar stock automáticamente (si lo tienes activado)</li>
+                                        <li data-i18n="guidePage.sales.why.items.0">Clasificar correctamente cada plato
+                                            (Estrella, Tractor, etc.)</li>
+                                        <li data-i18n="guidePage.sales.why.items.1">Mostrarte tendencias en el Dashboard
+                                        </li>
+                                        <li data-i18n="guidePage.sales.why.items.2">Darte consejos más precisos</li>
+                                        <li data-i18n="guidePage.sales.why.items.3">Descontar stock automáticamente (si
+                                            lo tienes activado)</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Cómo registrar ventas</h3>
+                                    <h3 data-i18n="guidePage.sales.how.title">Cómo registrar ventas</h3>
                                     <ol>
-                                        <li>Ve a la pestaña <strong>Ventas</strong></li>
-                                        <li>Selecciona la <strong>semana</strong> que quieres registrar</li>
-                                        <li>Pulsa <strong>+</strong> para abrir el registro</li>
-                                        <li>Indica <strong>cuántas unidades</strong> de cada plato vendiste</li>
-                                        <li>Guarda</li>
+                                        <li data-i18n="guidePage.sales.how.items.0">Ve a la pestaña
+                                            <strong>Ventas</strong>
+                                        </li>
+                                        <li data-i18n="guidePage.sales.how.items.1">Selecciona la
+                                            <strong>semana</strong> que quieres registrar
+                                        </li>
+                                        <li data-i18n="guidePage.sales.how.items.2">Pulsa <strong>+</strong> para abrir
+                                            el registro</li>
+                                        <li data-i18n="guidePage.sales.how.items.3">Indica <strong>cuántas
+                                                unidades</strong> de cada plato vendiste</li>
+                                        <li data-i18n="guidePage.sales.how.items.4">Guarda</li>
                                     </ol>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Importar desde archivo CSV</h3>
-                                    <p>Si tienes los datos en un archivo CSV (por ejemplo, de tu TPV):</p>
+                                    <h3 data-i18n="guidePage.sales.csv.title">Importar desde archivo CSV</h3>
+                                    <p data-i18n="guidePage.sales.csv.desc">Si tienes los datos en un archivo CSV (por
+                                        ejemplo, de tu TPV):</p>
                                     <ol>
-                                        <li>Pulsa el icono de importar</li>
-                                        <li>Selecciona tu archivo CSV</li>
-                                        <li>MenuScore asocia automáticamente los nombres</li>
-                                        <li>Revisa y confirma</li>
+                                        <li data-i18n="guidePage.sales.csv.items.0">Pulsa el icono de importar</li>
+                                        <li data-i18n="guidePage.sales.csv.items.1">Selecciona tu archivo CSV</li>
+                                        <li data-i18n="guidePage.sales.csv.items.2">MenuScore asocia automáticamente los
+                                            nombres</li>
+                                        <li data-i18n="guidePage.sales.csv.items.3">Revisa y confirma</li>
                                     </ol>
-                                    <p><strong>Formato del CSV:</strong></p>
+                                    <p><strong data-i18n="guidePage.sales.csv.format">Formato del CSV:</strong></p>
                                     <pre>nombre_plato,cantidad
 Ensalada César,25
 Hamburguesa,40</pre>
@@ -280,135 +375,169 @@ Hamburguesa,40</pre>
 
                             <!-- Dashboard -->
                             <div id="dashboard" class="guide-section">
-                                <h2>Dashboard</h2>
-                                <p>Visualiza la evolución de tu negocio con gráficos interactivos.</p>
+                                <h2 data-i18n="guidePage.dashboard.title">Dashboard</h2>
+                                <p data-i18n="guidePage.dashboard.intro">Visualiza la evolución de tu negocio con
+                                    gráficos interactivos.</p>
 
                                 <div class="guide-step">
-                                    <h3>Gráficos disponibles</h3>
+                                    <h3 data-i18n="guidePage.dashboard.charts.title">Gráficos disponibles</h3>
                                     <ul>
-                                        <li><strong>💵 Ingresos por semana:</strong> ¿Estoy facturando más o menos que
+                                        <li data-i18n="guidePage.dashboard.charts.items.0"><strong>💵 Ingresos por
+                                                semana:</strong> ¿Estoy facturando más o menos que
                                             antes?</li>
-                                        <li><strong>📦 Unidades vendidas:</strong> ¿Estoy vendiendo más platos?</li>
-                                        <li><strong>📊 Margen:</strong> ¿Mi rentabilidad mejora o empeora?</li>
+                                        <li data-i18n="guidePage.dashboard.charts.items.1"><strong>📦 Unidades
+                                                vendidas:</strong> ¿Estoy vendiendo más platos?</li>
+                                        <li data-i18n="guidePage.dashboard.charts.items.2"><strong>📊 Margen:</strong>
+                                            ¿Mi rentabilidad mejora o empeora?</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Comparar platos</h3>
-                                    <p>Puedes seleccionar hasta 2 platos para comparar su evolución:</p>
+                                    <h3 data-i18n="guidePage.dashboard.compare.title">Comparar platos</h3>
+                                    <p data-i18n="guidePage.dashboard.compare.desc">Puedes seleccionar hasta 2 platos
+                                        para comparar su evolución:</p>
                                     <ul>
-                                        <li>"¿La hamburguesa vende más que el mes pasado?"</li>
-                                        <li>"¿Qué plato tiene mejor tendencia?"</li>
+                                        <li data-i18n="guidePage.dashboard.compare.items.0">"¿La hamburguesa vende más
+                                            que el mes pasado?"</li>
+                                        <li data-i18n="guidePage.dashboard.compare.items.1">"¿Qué plato tiene mejor
+                                            tendencia?"</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Períodos</h3>
-                                    <p>Elige ver las últimas 4, 8 o 12 semanas.</p>
+                                    <h3 data-i18n="guidePage.dashboard.periods.title">Períodos</h3>
+                                    <p data-i18n="guidePage.dashboard.periods.desc">Elige ver las últimas 4, 8 o 12
+                                        semanas.</p>
                                 </div>
                             </div>
 
                             <!-- Categorías -->
                             <div id="categorias" class="guide-section">
-                                <h2>Categorías</h2>
-                                <p>Organiza tu carta con categorías personalizadas.</p>
+                                <h2 data-i18n="guidePage.categories.title">Categorías</h2>
+                                <p data-i18n="guidePage.categories.intro">Organiza tu carta con categorías
+                                    personalizadas.</p>
 
                                 <div class="guide-step">
-                                    <h3>Gestionar categorías</h3>
-                                    <p>Desde el menú lateral puedes:</p>
+                                    <h3 data-i18n="guidePage.categories.manage.title">Gestionar categorías</h3>
+                                    <p data-i18n="guidePage.categories.manage.desc">Desde el menú lateral puedes:</p>
                                     <ul>
-                                        <li><strong>Crear</strong> nuevas categorías (Entrantes, Principales, Postres,
+                                        <li data-i18n="guidePage.categories.manage.items.0"><strong>Crear</strong>
+                                            nuevas categorías (Entrantes, Principales, Postres,
                                             Bebidas, etc.)</li>
-                                        <li><strong>Renombrar</strong> las existentes</li>
-                                        <li><strong>Reordenar</strong> con arrastrar y soltar</li>
-                                        <li><strong>Eliminar</strong> las que ya no uses</li>
+                                        <li data-i18n="guidePage.categories.manage.items.1"><strong>Renombrar</strong>
+                                            las existentes</li>
+                                        <li data-i18n="guidePage.categories.manage.items.2"><strong>Reordenar</strong>
+                                            con arrastrar y soltar</li>
+                                        <li data-i18n="guidePage.categories.manage.items.3"><strong>Eliminar</strong>
+                                            las que ya no uses</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Control de Stock -->
                             <div id="stock" class="guide-section">
-                                <h2>Control de Stock (Opcional)</h2>
-                                <p>Controla tu inventario de ingredientes y recibe alertas cuando algo esté bajo.</p>
+                                <h2 data-i18n="guidePage.stock.title">Control de Stock (Opcional)</h2>
+                                <p data-i18n="guidePage.stock.intro">Controla tu inventario de ingredientes y recibe
+                                    alertas cuando algo esté bajo.</p>
 
                                 <div class="guide-step">
-                                    <h3>¿Qué aporta?</h3>
-                                    <p>Si activas el control de stock:</p>
+                                    <h3 data-i18n="guidePage.stock.benefits.title">¿Qué aporta?</h3>
+                                    <p data-i18n="guidePage.stock.benefits.desc">Si activas el control de stock:</p>
                                     <ul>
-                                        <li><strong>Ves cuánto tienes</strong> de cada ingrediente</li>
-                                        <li><strong>Se descuenta automáticamente</strong> cuando registras ventas</li>
-                                        <li><strong>Alertas</strong> cuando algo está bajo mínimos</li>
-                                        <li><strong>Valor del inventario</strong> en tiempo real</li>
+                                        <li data-i18n="guidePage.stock.benefits.items.0"><strong>Ves cuánto
+                                                tienes</strong> de cada ingrediente</li>
+                                        <li data-i18n="guidePage.stock.benefits.items.1"><strong>Se descuenta
+                                                automáticamente</strong> cuando registras ventas</li>
+                                        <li data-i18n="guidePage.stock.benefits.items.2"><strong>Alertas</strong> cuando
+                                            algo está bajo mínimos</li>
+                                        <li data-i18n="guidePage.stock.benefits.items.3"><strong>Valor del
+                                                inventario</strong> en tiempo real</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Configurar stock</h3>
-                                    <p>Para cada ingrediente puedes definir:</p>
+                                    <h3 data-i18n="guidePage.stock.config.title">Configurar stock</h3>
+                                    <p data-i18n="guidePage.stock.config.desc">Para cada ingrediente puedes definir:</p>
                                     <ul>
-                                        <li><strong>Stock actual:</strong> Cuánto tienes ahora</li>
-                                        <li><strong>Stock mínimo:</strong> Cuándo te avisamos</li>
+                                        <li data-i18n="guidePage.stock.config.items.0"><strong>Stock actual:</strong>
+                                            Cuánto tienes ahora</li>
+                                        <li data-i18n="guidePage.stock.config.items.1"><strong>Stock mínimo:</strong>
+                                            Cuándo te avisamos</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Stock recurrente</h3>
-                                    <p>Para ingredientes que repones semanalmente:</p>
+                                    <h3 data-i18n="guidePage.stock.recurring.title">Stock recurrente</h3>
+                                    <p data-i18n="guidePage.stock.recurring.desc">Para ingredientes que repones
+                                        semanalmente:</p>
                                     <ul>
-                                        <li>Activa "Stock recurrente"</li>
-                                        <li>Indica la cantidad semanal</li>
-                                        <li>MenuScore lo añade automáticamente cada lunes</li>
+                                        <li data-i18n="guidePage.stock.recurring.items.0">Activa "Stock recurrente"</li>
+                                        <li data-i18n="guidePage.stock.recurring.items.1">Indica la cantidad semanal
+                                        </li>
+                                        <li data-i18n="guidePage.stock.recurring.items.2">MenuScore lo añade
+                                            automáticamente cada lunes</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Backup -->
                             <div id="backup" class="guide-section">
-                                <h2>Backup y Restauración</h2>
-                                <p>Protege tus datos exportando copias de seguridad.</p>
+                                <h2 data-i18n="guidePage.backup.title">Backup y Restauración</h2>
+                                <p data-i18n="guidePage.backup.intro">Protege tus datos exportando copias de seguridad.
+                                </p>
 
                                 <div class="guide-step">
-                                    <h3>Exportar copia de seguridad</h3>
-                                    <p>Desde el menú lateral > "Backup":</p>
+                                    <h3 data-i18n="guidePage.backup.export.title">Exportar copia de seguridad</h3>
+                                    <p data-i18n="guidePage.backup.export.desc">Desde el menú lateral > "Backup":</p>
                                     <ul>
-                                        <li>Exporta todos tus datos a un archivo</li>
-                                        <li>Guárdalo en tu móvil o en la nube</li>
-                                        <li>Útil antes de cambiar de móvil</li>
+                                        <li data-i18n="guidePage.backup.export.items.0">Exporta todos tus datos a un
+                                            archivo</li>
+                                        <li data-i18n="guidePage.backup.export.items.1">Guárdalo en tu móvil o en la
+                                            nube</li>
+                                        <li data-i18n="guidePage.backup.export.items.2">Útil antes de cambiar de móvil
+                                        </li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Restaurar datos</h3>
-                                    <p>Si cambias de móvil o pierdes datos:</p>
+                                    <h3 data-i18n="guidePage.backup.restore.title">Restaurar datos</h3>
+                                    <p data-i18n="guidePage.backup.restore.desc">Si cambias de móvil o pierdes datos:
+                                    </p>
                                     <ul>
-                                        <li>Selecciona tu archivo de backup</li>
-                                        <li>MenuScore restaura todo: platos, ingredientes, ventas, categorías</li>
+                                        <li data-i18n="guidePage.backup.restore.items.0">Selecciona tu archivo de backup
+                                        </li>
+                                        <li data-i18n="guidePage.backup.restore.items.1">MenuScore restaura todo:
+                                            platos, ingredientes, ventas, categorías</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Ajustes -->
                             <div id="ajustes" class="guide-section">
-                                <h2>Ajustes</h2>
-                                <p>Personaliza los cálculos según tu negocio.</p>
+                                <h2 data-i18n="guidePage.settings.title">Ajustes</h2>
+                                <p data-i18n="guidePage.settings.intro">Personaliza los cálculos según tu negocio.</p>
 
                                 <div class="guide-step">
-                                    <h3>Configuración de costes</h3>
-                                    <p>En Ajustes puedes configurar:</p>
+                                    <h3 data-i18n="guidePage.settings.costs.title">Configuración de costes</h3>
+                                    <p data-i18n="guidePage.settings.costs.desc">En Ajustes puedes configurar:</p>
                                     <ul>
-                                        <li><strong>Costes operativos mensuales:</strong> Afecta al coste calculado
+                                        <li data-i18n="guidePage.settings.costs.items.0"><strong>Costes operativos
+                                                mensuales:</strong> Afecta al coste calculado
                                             de cada plato</li>
-                                        <li><strong>Gastos extra (%):</strong> Un porcentaje extra sobre el coste
+                                        <li data-i18n="guidePage.settings.costs.items.1"><strong>Gastos extra
+                                                (%):</strong> Un porcentaje extra sobre el coste
                                             base</li>
-                                        <li><strong>Beneficios por bebidas (%):</strong> Un porcentaje esperado de
+                                        <li data-i18n="guidePage.settings.costs.items.2"><strong>Beneficios por bebidas
+                                                (%):</strong> Un porcentaje esperado de
                                             beneficios por la venta de bebidas</li>
-                                        <li><strong>IVA (%):</strong> Para cálculos de precios</li>
+                                        <li data-i18n="guidePage.settings.costs.items.3"><strong>IVA (%):</strong> Para
+                                            cálculos de precios</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Idioma</h3>
-                                    <p>MenuScore está disponible en:</p>
+                                    <h3 data-i18n="guidePage.settings.language.title">Idioma</h3>
+                                    <p data-i18n="guidePage.settings.language.desc">MenuScore está disponible en:</p>
                                     <ul>
                                         <li>🇪🇸 Español</li>
                                         <li>🇬🇧 English</li>
@@ -425,9 +554,10 @@ Hamburguesa,40</pre>
         <!-- CTA FINAL -->
         <section class="cta-final-section">
             <div class="container text-center">
-                <h2>¿Necesitas más ayuda?</h2>
-                <p class="lead">Contáctanos y te ayudaremos a sacar el máximo provecho de MenuScore</p>
-                <a href="contact.html" class="btn-hero-cta">Contactar</a>
+                <h2 data-i18n="guidePage.cta.title">¿Necesitas más ayuda?</h2>
+                <p class="lead" data-i18n="guidePage.cta.subtitle">Contáctanos y te ayudaremos a sacar el máximo
+                    provecho de MenuScore</p>
+                <a href="contact.html" class="btn-hero-cta" data-i18n="guidePage.cta.button">Contactar</a>
             </div>
         </section>
 
@@ -436,18 +566,33 @@ Hamburguesa,40</pre>
     <!-- FOOTER -->
     <footer class="footer-purple">
         <div class="container d-flex justify-content-between align-items-center">
-            <div>© 2025 MenuScore</div>
+            <div data-i18n="footer.copyright">© 2025 MenuScore</div>
             <div>
-                <a href="#">Privacidad</a>
+                <a href="#" data-i18n="footer.privacy">Privacidad</a>
                 <span class="mx-2">·</span>
-                <a href="#">Términos</a>
+                <a href="#" data-i18n="footer.terms">Términos</a>
                 <span class="mx-2">·</span>
-                <a href="contact.html">Contacto</a>
+                <a href="contact.html" data-i18n="footer.contact">Contacto</a>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cierra el menú hamburguesa al hacer clic fuera
+        document.addEventListener('click', function (e) {
+            var navCollapse = document.getElementById('navmenu');
+            var toggler = document.querySelector('.navbar-toggler');
+            var isOpen = navCollapse.classList.contains('show');
+            if (!isOpen) return;
+            var clickInsideMenu = navCollapse.contains(e.target) || toggler.contains(e.target);
+            if (!clickInsideMenu) {
+                var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapse);
+                bsCollapse.hide();
+            }
+        });
+    </script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

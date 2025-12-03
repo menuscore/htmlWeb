@@ -1,13 +1,14 @@
 {
   "title": "MenuScore — Optimize your menu",
   "nav": {
+    "home": "Home",
     "features": "Features",
-    "how": "How it works",
+    "guide": "Guide",
     "contact": "Contact",
     "cta": "Try free"
   },
   "hero": {
-    "title": "Understand   Act   Improve",
+    "title": "UNDERSTAND → ACT → IMPROVE",
     "subtitle": "The menu management app that helps you maximize your restaurant's profits",
     "cta": "Download free",
     "cta_sub": "100% free · Available on iOS and Android"
@@ -16,44 +17,13 @@
     "appstore": "App Store",
     "google": "Google Play"
   },
-  "features": {
-    "plateAnalytics": {
-      "title": "Plate analytics",
-      "desc": "Measure plate profitability and popularity to know what to promote."
-    },
-    "recommendations": {
-      "title": "Actionable recommendations",
-      "desc": "Practical suggestions to improve margins and turnover."
-    },
-    "integrations": {
-      "title": "Integrations",
-      "desc": "Connect to POS and platforms to sync sales and costs."
-    }
-  },
-  "menuEngineering": {
-    "title": "How it works — in 3 steps",
-    "steps": {
-      "one": {
-        "title": "1. Connect sales",
-        "desc": "Sync with your POS in seconds."
-      },
-      "two": {
-        "title": "2. Calculate margin",
-        "desc": "Automatic per-plate and per-day calculations."
-      },
-      "three": {
-        "title": "3. Apply changes",
-        "desc": "Simple recommendations with real impact."
-      }
-    }
-  },
   "benefits": {
     "sales": {
       "title": "Understand",
       "text": "Discover which dishes are truly profitable:",
       "items": [
         "Automatically classifies each dish by margin and popularity",
-        "Identify your Stars, Workhorses, Puzzles and Dogs",
+        "Identify your Stars, Plowhorses, Puzzles and Dogs",
         "Visualize sales trends and performance"
       ]
     },
@@ -80,24 +50,411 @@
     "title": "Download MenuScore",
     "subtitle": "Available on iOS and Android"
   },
-  "proof": {
-    "number": "+100",
-    "text": "Restaurants trust MenuScore"
-  },
-  "testimonials": {
-    "one": {
-      "quote": "We spotted low-margin plates and increased average ticket by 12% in two months.",
-      "attrib": "— La Esquina Restaurant"
-    },
-    "two": {
-      "quote": "Recommendations are practical and easy to implement.",
-      "attrib": "— Chef & Co."
-    }
-  },
   "footer": {
+    "copyright": "© 2025 MenuScore",
     "privacy": "Privacy",
     "terms": "Terms",
     "contact": "Contact"
+  },
+  "featuresPage": {
+    "title": "Features",
+    "subtitle": "Everything you need to manage your menu and maximize profits",
+    "menu": {
+      "title": "Your Menu",
+      "subtitle": "Manage and analyze all your dishes",
+      "items": {
+        "classification": {
+          "title": "Automatic classification",
+          "desc": "Each dish is classified as Star, Plowhorse, Puzzle or Dog based on margin and sales"
+        },
+        "costs": {
+          "title": "Cost and margin calculation",
+          "desc": "Know the real cost, margin in € and % of each dish including labor"
+        },
+        "suggestions": {
+          "title": "Personalized suggestions",
+          "desc": "Specific advice to improve price, promotion or ingredients for each dish"
+        },
+        "score": {
+          "title": "MenuScore rating",
+          "desc": "Global score from 0 to 100 that evaluates the health of your complete menu"
+        }
+      }
+    },
+    "ingredients": {
+      "title": "Ingredient Management",
+      "subtitle": "Total control over your ingredients and costs",
+      "items": {
+        "catalog": {
+          "title": "Predefined catalog",
+          "desc": "Hundreds of common ingredients ready to add with your prices"
+        },
+        "calculation": {
+          "title": "Automatic calculation",
+          "desc": "Calculates cost per unit of use automatically based on purchase price"
+        },
+        "analysis": {
+          "title": "Ingredient analysis",
+          "desc": "Insights on best-selling, most profitable and at-risk ingredients"
+        },
+        "stock": {
+          "title": "Optional stock control",
+          "desc": "Manage inventory with low stock alerts and automatic deduction"
+        }
+      }
+    },
+    "sales": {
+      "title": "Sales and Analysis",
+      "subtitle": "Record sales and visualize your business evolution",
+      "items": {
+        "weekly": {
+          "title": "Weekly sales recording",
+          "desc": "Record how many units of each dish you sold each week"
+        },
+        "csv": {
+          "title": "Import CSV",
+          "desc": "Import sales from CSV file from your POS automatically"
+        },
+        "dashboard": {
+          "title": "Dashboard with charts",
+          "desc": "Visualize revenue, units sold and margins per week"
+        },
+        "compare": {
+          "title": "Compare dishes",
+          "desc": "Compare the evolution of up to 2 dishes in the last 4, 8 or 12 weeks"
+        }
+      }
+    },
+    "additional": {
+      "title": "Additional Features",
+      "subtitle": "Tools to customize and protect your data",
+      "items": {
+        "categories": {
+          "title": "Customizable categories",
+          "desc": "Create, rename and reorder categories to organize your menu"
+        },
+        "backup": {
+          "title": "Backup and restore",
+          "desc": "Export and restore all your data: dishes, ingredients, sales and categories"
+        },
+        "settings": {
+          "title": "Customizable settings",
+          "desc": "Configure labor cost, overhead and VAT according to your business"
+        },
+        "noregister": {
+          "title": "No registration required",
+          "desc": "Start using the app immediately, without creating an account"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to optimize your menu?",
+      "subtitle": "Download MenuScore for free and start maximizing your profits today",
+      "button": "Download free",
+      "subtext": "100% free · Available on iOS and Android"
+    }
+  },
+  "guidePage": {
+    "title": "User Guide",
+    "subtitle": "Learn how to get the most out of MenuScore",
+    "sidebar": {
+      "title": "Contents",
+      "start": "Getting Started",
+      "menu": "Your Menu",
+      "ingredients": "Ingredients",
+      "sales": "Sales",
+      "dashboard": "Dashboard",
+      "categories": "Categories",
+      "stock": "Stock Control",
+      "backup": "Backup",
+      "settings": "Settings"
+    },
+    "sections": {
+      "start": {
+        "title": "Getting Started",
+        "intro": "Welcome to MenuScore. This guide will help you start optimizing your menu quickly and easily.",
+        "step1": {
+          "title": "1. Download the app",
+          "desc": "MenuScore is available on iOS and Android. Download it from your favorite app store."
+        },
+        "step2": {
+          "title": "2. Start using the app",
+          "desc": "No need to create an account or register. Open the app and start adding your dishes and ingredients directly."
+        },
+        "step3": {
+          "title": "3. The 4 main sections",
+          "desc": "MenuScore is organized into 4 tabs at the bottom:",
+          "items": [
+            "<strong>Menu:</strong> View and manage all your dishes",
+            "<strong>Ingredients:</strong> Manage ingredient prices and stock",
+            "<strong>Sales:</strong> Record what you sell each week",
+            "<strong>Dashboard:</strong> View charts and business evolution"
+          ]
+        }
+      },
+      "menu": {
+        "title": "Your Menu",
+        "intro": "In the Menu section you will see all your dishes organized by categories and your menu's MenuScore rating.",
+        "score": {
+          "title": "The MenuScore rating",
+          "desc": "At the top of the Menu section you will see a number from 0 to 100 representing <strong>the overall health of your entire menu</strong>:",
+          "items": [
+            "<strong>80-100:</strong> 🟢 Excellent - Your menu is very well balanced",
+            "<strong>60-79:</strong> 🟡 Good - There is room for improvement but it works well",
+            "<strong>40-59:</strong> 🟠 Fair - Check some dishes",
+            "<strong>0-39:</strong> 🔴 Needs attention - There are problems to solve"
+          ],
+          "note": "Tap the score to see what factors affect it and how to improve it. This score evaluates your set of dishes as a whole, not each individual dish."
+        },
+        "add": {
+          "title": "Add a new dish",
+          "desc": "Tap the <strong>+</strong> button and fill in:",
+          "items": [
+            "<strong>Name</strong> of the dish",
+            "<strong>Selling price</strong> (what you charge)",
+            "<strong>Category</strong> (Starters, Mains, etc.)",
+            "<strong>Estimated labor</strong> - How much time/effort it requires:",
+            "<strong>Ingredients</strong> - Select from the catalog and set quantities"
+          ],
+          "subitems": [
+            "Minimum: Salads, cold dishes",
+            "Quick: Grill, fried foods",
+            "Normal: Most dishes",
+            "Complex: Elaborate dishes with sauces"
+          ]
+        },
+        "info": {
+          "title": "Dish information",
+          "desc": "When you tap a dish you will see:",
+          "items": [
+            "<strong>Selling price</strong> - What you charge the customer",
+            "<strong>Real cost</strong> - What it costs you to prepare (ingredients + labor)",
+            "<strong>Margin</strong> - How much you earn with each dish (in € and %)",
+            "<strong>Recommended price</strong> - If the margin is low, it suggests a better price",
+            "<strong>Classification</strong> - Star ⭐, Plowhorse 🚜, Puzzle 🧩 or Dog ⚓"
+          ]
+        },
+        "classification": {
+          "title": "Dish classification",
+          "desc": "Each dish receives a label based on its performance:",
+          "items": [
+            "<strong>⭐ Star:</strong> High sales AND high margin - Perfect! Keep it highlighted",
+            "<strong>🚜 Plowhorse:</strong> High sales BUT low margin - Raise price or reduce costs",
+            "<strong>🧩 Puzzle:</strong> High margin BUT low sales - Promote it more",
+            "<strong>⚓ Dog:</strong> Low sales AND low margin - Consider removing it"
+          ]
+        },
+        "suggestions": {
+          "title": "Smart suggestions",
+          "desc": "MenuScore analyzes your menu and gives you personalized advice like:",
+          "items": [
+            "\"Caesar Salad margin is only 45%. Consider raising the price to 12.50€\"",
+            "\"Mushroom Risotto has good margin but low sales. Highlight it more on the menu?\"",
+            "\"Burger has no added ingredients. Add them to calculate real cost\""
+          ]
+        }
+      },
+      "ingredients": {
+        "title": "Ingredients",
+        "intro": "Manage your ingredient catalog to calculate precise costs for each dish.",
+        "add": {
+          "title": "Add ingredients",
+          "desc": "Two ways:",
+          "items": [
+            "<strong>From catalog:</strong> MenuScore includes hundreds of common ingredients. Just search, add and set your price",
+            "<strong>Create new:</strong> If not in catalog, create it from scratch"
+          ]
+        },
+        "config": {
+          "title": "Configure an ingredient",
+          "desc": "For each ingredient you define:",
+          "items": [
+            "<strong>Purchase price:</strong> Ex. 15€",
+            "<strong>Purchase quantity:</strong> Ex. 1 kg",
+            "<strong>Cooking unit:</strong> Ex. grams"
+          ],
+          "note": "MenuScore automatically calculates that each gram costs you 0.015€."
+        },
+        "analysis": {
+          "title": "Ingredient analysis (\"Insights\" tab)",
+          "desc": "Valuable information about your ingredients:",
+          "items": [
+            "<strong>📊 Best sellers:</strong> Which ingredients you move the most (based on last 30 days sales)",
+            "<strong>💎 Most profitable:</strong> Which ingredients generate the most revenue",
+            "<strong>⚠️ At-risk ingredients:</strong> Ingredients used in only one dish (if that dish doesn't sell, the ingredient sits)",
+            "<strong>📦 Inventory value:</strong> Total value of your pantry (if using stock control)"
+          ]
+        }
+      },
+      "sales": {
+        "title": "Sales",
+        "intro": "Record your dish sales to analyze real popularity and improve classification.",
+        "why": {
+          "title": "Why record sales?",
+          "desc": "MenuScore needs to know what you actually sell to:",
+          "items": [
+            "Correctly classify each dish (Star, Plowhorse, etc.)",
+            "Show you trends in the Dashboard",
+            "Give you more precise advice",
+            "Automatically deduct stock (if enabled)"
+          ]
+        },
+        "how": {
+          "title": "How to record sales",
+          "items": [
+            "Go to the <strong>Sales</strong> tab",
+            "Select the <strong>week</strong> you want to record",
+            "Tap <strong>+</strong> to open the record",
+            "Indicate <strong>how many units</strong> of each dish you sold",
+            "Save"
+          ]
+        },
+        "csv": {
+          "title": "Import from CSV file",
+          "desc": "If you have data in a CSV file (e.g., from your POS):",
+          "items": [
+            "Tap the import icon",
+            "Select your CSV file",
+            "MenuScore automatically matches names",
+            "Review and confirm"
+          ],
+          "format": "<strong>CSV Format:</strong>"
+        }
+      },
+      "dashboard": {
+        "title": "Dashboard",
+        "intro": "Visualize your business evolution with interactive charts.",
+        "charts": {
+          "title": "Available charts",
+          "items": [
+            "<strong>💵 Revenue per week:</strong> Am I billing more or less than before?",
+            "<strong>📦 Units sold:</strong> Am I selling more dishes?",
+            "<strong>📊 Margin:</strong> Is my profitability improving or worsening?"
+          ]
+        },
+        "compare": {
+          "title": "Compare dishes",
+          "desc": "You can select up to 2 dishes to compare their evolution:",
+          "items": [
+            "\"Is the burger selling more than last month?\"",
+            "\"Which dish has a better trend?\""
+          ]
+        },
+        "periods": {
+          "title": "Periods",
+          "desc": "Choose to view the last 4, 8 or 12 weeks."
+        }
+      },
+      "categories": {
+        "title": "Categories",
+        "intro": "Organize your menu with custom categories.",
+        "manage": {
+          "title": "Manage categories",
+          "desc": "From the side menu you can:",
+          "items": [
+            "<strong>Create</strong> new categories (Starters, Mains, Desserts, Drinks, etc.)",
+            "<strong>Rename</strong> existing ones",
+            "<strong>Reorder</strong> with drag and drop",
+            "<strong>Delete</strong> ones you no longer use"
+          ]
+        }
+      },
+      "stock": {
+        "title": "Stock Control (Optional)",
+        "intro": "Control your ingredient inventory and receive alerts when something is low.",
+        "benefits": {
+          "title": "What does it add?",
+          "desc": "If you enable stock control:",
+          "items": [
+            "<strong>See how much you have</strong> of each ingredient",
+            "<strong>Automatically deducted</strong> when you record sales",
+            "<strong>Alerts</strong> when something is below minimum",
+            "<strong>Inventory value</strong> in real-time"
+          ]
+        },
+        "config": {
+          "title": "Configure stock",
+          "desc": "For each ingredient you can define:",
+          "items": [
+            "<strong>Current stock:</strong> How much you have now",
+            "<strong>Minimum stock:</strong> When we alert you"
+          ]
+        },
+        "recurring": {
+          "title": "Recurring stock",
+          "desc": "For ingredients you replenish weekly:",
+          "items": [
+            "Enable \"Recurring stock\"",
+            "Indicate weekly amount",
+            "MenuScore automatically adds it every Monday"
+          ]
+        }
+      },
+      "backup": {
+        "title": "Backup and Restore",
+        "intro": "Protect your data by exporting backups.",
+        "export": {
+          "title": "Export backup",
+          "desc": "From side menu > \"Backup\":",
+          "items": [
+            "Export all your data to a file",
+            "Save it on your mobile or cloud",
+            "Useful before changing phones"
+          ]
+        },
+        "restore": {
+          "title": "Restore data",
+          "desc": "If you change phones or lose data:",
+          "items": [
+            "Select your backup file",
+            "MenuScore restores everything: dishes, ingredients, sales, categories"
+          ]
+        }
+      },
+      "settings": {
+        "title": "Settings",
+        "intro": "Customize calculations for your business.",
+        "config": {
+          "title": "Cost configuration",
+          "desc": "In Settings you can configure:",
+          "items": [
+            "<strong>Monthly operating costs:</strong> Affects the calculated cost of each dish",
+            "<strong>Extra expenses (%):</strong> An extra percentage over base cost",
+            "<strong>Beverage profit (%):</strong> Expected profit percentage from beverage sales",
+            "<strong>VAT (%):</strong> For price calculations"
+          ]
+        },
+        "lang": {
+          "title": "Language",
+          "desc": "MenuScore is available in:",
+          "items": [
+            "🇪🇸 Español",
+            "🇬🇧 English"
+          ]
+        }
+      }
+    },
+    "cta": {
+      "title": "Need more help?",
+      "subtitle": "Contact us and we'll help you get the most out of MenuScore",
+      "button": "Contact"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have any questions? We're here to help",
+    "info": {
+      "title": "Contact information",
+      "email": "Email",
+      "response": "Response time: 24-48 hours"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message"
+    }
   },
   "lang": {
     "en": "English",

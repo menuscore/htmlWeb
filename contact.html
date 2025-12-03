@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contacto — MenuScore</title>
+  <title data-i18n="contactPage.title">Contacto — MenuScore</title>
   <meta name="description"
     content="Ponte en contacto con el equipo de MenuScore. Estamos aquí para ayudarte a optimizar tu restaurante.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,10 +29,25 @@
 
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="features.html">Características</a></li>
-          <li class="nav-item"><a class="nav-link" href="guia.html">Guía</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="/" data-i18n="nav.home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="features.html" data-i18n="nav.features">Características</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="guia.html" data-i18n="nav.guide">Guía</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contacto</a></li>
+
+          <!-- Selector de idioma -->
+          <li class="nav-item nav-lang">
+            <div class="btn-group">
+              <button id="langToggle" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false" aria-label="Seleccionar idioma">
+                ES
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                <li><button class="dropdown-item lang-select" type="button" data-lang="es">🇪🇸 Español</button></li>
+                <li><button class="dropdown-item lang-select" type="button" data-lang="en">🇬🇧 English</button></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -42,8 +57,9 @@
     <!-- HERO -->
     <header class="contact-hero">
       <div class="container text-center">
-        <h1 class="display-super" style="color:#316cb3;">Contacto</h1>
-        <p class="lead mx-auto" style="max-width: 700px;">¿Tienes alguna duda o sugerencia? Escríbenos.</p>
+        <h1 class="display-super" style="color:#316cb3;" data-i18n="contactPage.title">Contacto</h1>
+        <p class="lead mx-auto" style="max-width: 700px;" data-i18n="contactPage.subtitle">¿Tienes alguna duda o
+          sugerencia? Escríbenos.</p>
       </div>
     </header>
 
@@ -55,8 +71,9 @@
           <!-- Contact Info -->
           <div class="col-lg-5">
             <div class="contact-info-card">
-              <h2>Hablemos</h2>
-              <p class="mb-4">Estamos aquí para ayudarte a sacar el máximo partido a MenuScore. Si tienes preguntas
+              <h2 data-i18n="contactPage.subtitle">Hablemos</h2>
+              <p class="mb-4" data-i18n="contactPage.info.response">Estamos aquí para ayudarte a sacar el máximo partido
+                a MenuScore. Si tienes preguntas
                 sobre la app, sugerencias de mejora o necesitas soporte técnico, no dudes en contactarnos.</p>
 
               <div class="contact-item">
@@ -68,16 +85,18 @@
                   </svg>
                 </div>
                 <div>
-                  <h3>Email</h3>
+                  <h3 data-i18n="contactPage.info.email">Email</h3>
                   <a href="mailto:info@menuscore.app">info@menuscore.app</a>
                 </div>
               </div>
 
               <div class="mt-4 p-4 bg-light rounded-3 border">
-                <h4 class="h5 text-ms-blue mb-2">¿Necesitas ayuda rápida?</h4>
-                <p class="mb-2 text-secondary text-sm">Consulta nuestra guía de uso para encontrar respuestas
+                <h4 class="h5 text-ms-blue mb-2" data-i18n="guidePage.cta.title">¿Necesitas ayuda rápida?</h4>
+                <p class="mb-2 text-secondary text-sm" data-i18n="guidePage.cta.subtitle">Consulta nuestra guía de uso
+                  para encontrar respuestas
                   inmediatas.</p>
-                <a href="guia.html" class="fw-bold text-decoration-none" style="color:var(--ms-blue);">Ver guía de uso
+                <a href="guia.html" class="fw-bold text-decoration-none" style="color:var(--ms-blue);"
+                  data-i18n="nav.guide">Ver guía de uso
                   →</a>
               </div>
             </div>
@@ -94,19 +113,22 @@
                 <input type="hidden" name="_template" value="table">
 
                 <div class="mb-4">
-                  <label for="name" class="form-label">Nombre completo</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                  <label for="name" class="form-label" data-i18n="contactPage.form.name">Nombre completo</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre"
+                    data-i18n="contactPage.form.name" required>
                 </div>
 
                 <div class="mb-4">
-                  <label for="email" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required>
+                  <label for="email" class="form-label" data-i18n="contactPage.form.email">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com"
+                    data-i18n="contactPage.form.email" required>
                 </div>
 
                 <div class="mb-4">
-                  <label for="subject" class="form-label">Asunto</label>
+                  <label for="subject" class="form-label" data-i18n="contactPage.form.message">Asunto</label>
                   <select class="form-select" id="subject" name="subject">
-                    <option value="Información general">Información general</option>
+                    <option value="Información general" data-i18n="contactPage.form.message">Información general
+                    </option>
                     <option value="Soporte técnico">Soporte técnico</option>
                     <option value="Sugerencia">Sugerencia</option>
                     <option value="Otro">Otro</option>
@@ -114,12 +136,13 @@
                 </div>
 
                 <div class="mb-4">
-                  <label for="message" class="form-label">Mensaje</label>
+                  <label for="message" class="form-label" data-i18n="contactPage.form.message">Mensaje</label>
                   <textarea class="form-control" id="message" name="message" rows="5"
-                    placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    placeholder="¿En qué podemos ayudarte?" data-i18n="contactPage.form.message" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-hero-cta w-100">Enviar mensaje</button>
+                <button type="submit" class="btn btn-hero-cta w-100" data-i18n="contactPage.form.send">Enviar
+                  mensaje</button>
               </form>
             </div>
           </div>
@@ -133,18 +156,33 @@
   <!-- FOOTER -->
   <footer class="footer-purple">
     <div class="container d-flex justify-content-between align-items-center">
-      <div>© 2025 MenuScore</div>
+      <div data-i18n="footer.copyright">© 2025 MenuScore</div>
       <div>
-        <a href="#">Privacidad</a>
+        <a href="#" data-i18n="footer.privacy">Privacidad</a>
         <span class="mx-2">·</span>
-        <a href="#">Términos</a>
+        <a href="#" data-i18n="footer.terms">Términos</a>
         <span class="mx-2">·</span>
-        <a href="contact.html">Contacto</a>
+        <a href="contact.html" data-i18n="footer.contact">Contacto</a>
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Cierra el menú hamburguesa al hacer clic fuera
+    document.addEventListener('click', function (e) {
+      var navCollapse = document.getElementById('navmenu');
+      var toggler = document.querySelector('.navbar-toggler');
+      var isOpen = navCollapse.classList.contains('show');
+      if (!isOpen) return;
+      var clickInsideMenu = navCollapse.contains(e.target) || toggler.contains(e.target);
+      if (!clickInsideMenu) {
+        var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapse);
+        bsCollapse.hide();
+      }
+    });
+  </script>
+  <script src="js/i18n.js"></script>
 
   <!-- Script para mostrar mensaje de éxito si viene de FormSubmit -->
   <script>
