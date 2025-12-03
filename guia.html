@@ -57,13 +57,14 @@
                             <h5>Contenido</h5>
                             <nav class="guide-nav">
                                 <a href="#primeros-pasos" class="guide-nav-link">Primeros pasos</a>
-                                <a href="#crear-plato" class="guide-nav-link">Crear un plato</a>
-                                <a href="#anadir-ingrediente" class="guide-nav-link">Añadir ingredientes</a>
-                                <a href="#menu-score" class="guide-nav-link">Entender el MenuScore</a>
-                                <a href="#registrar-venta" class="guide-nav-link">Registrar ventas</a>
-                                <a href="#gestion-stock" class="guide-nav-link">Gestión de stock</a>
-                                <a href="#clasificacion-platos" class="guide-nav-link">Clasificación de platos</a>
-                                <a href="#analisis-ingredientes" class="guide-nav-link">Análisis de ingredientes</a>
+                                <a href="#tu-carta" class="guide-nav-link">Tu Carta</a>
+                                <a href="#ingredientes" class="guide-nav-link">Ingredientes</a>
+                                <a href="#ventas" class="guide-nav-link">Ventas</a>
+                                <a href="#dashboard" class="guide-nav-link">Dashboard</a>
+                                <a href="#categorias" class="guide-nav-link">Categorías</a>
+                                <a href="#stock" class="guide-nav-link">Control de Stock</a>
+                                <a href="#backup" class="guide-nav-link">Backup</a>
+                                <a href="#ajustes" class="guide-nav-link">Ajustes</a>
                             </nav>
                         </div>
                     </div>
@@ -91,280 +92,327 @@
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>3. Configura tu restaurante</h3>
-                                    <p>Introduce el nombre de tu restaurante y configura las opciones básicas. Puedes
-                                        activar o desactivar funciones como la gestión de stock según tus necesidades.
-                                    </p>
+                                    <h3>3. Las 4 secciones principales</h3>
+                                    <p>MenuScore se organiza en 4 pestañas en la parte inferior:</p>
+                                    <ul>
+                                        <li><strong>Carta:</strong> Ver y gestionar todos tus platos</li>
+                                        <li><strong>Ingredientes:</strong> Gestionar precios y stock de ingredientes
+                                        </li>
+                                        <li><strong>Ventas:</strong> Registrar lo que vendes cada semana</li>
+                                        <li><strong>Dashboard:</strong> Ver gráficos y evolución del negocio</li>
+                                    </ul>
                                 </div>
                             </div>
 
-                            <!-- Crear un plato -->
-                            <div id="crear-plato" class="guide-section">
-                                <h2>Crear un plato</h2>
-                                <p>Añade platos a tu menú para empezar a analizar su rentabilidad con el MenuScore.</p>
+                            <!-- Tu Carta -->
+                            <div id="tu-carta" class="guide-section">
+                                <h2>Tu Carta</h2>
+                                <p>En la sección de Carta verás todos tus platos organizados por categorías y la
+                                    puntuación MenuScore de tu carta.</p>
 
                                 <div class="guide-step">
-                                    <h3>1. Accede a la sección de platos</h3>
-                                    <p>Desde la pantalla principal, toca en la pestaña "Platos" en la barra de
-                                        navegación inferior.</p>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>2. Pulsa el botón "+"</h3>
-                                    <p>Encontrarás el botón flotante de añadir plato en la esquina inferior derecha de
-                                        la pantalla.</p>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>3. Completa la información básica</h3>
-                                    <p>Rellena los campos necesarios:</p>
+                                    <h3>La puntuación MenuScore</h3>
+                                    <p>En la parte superior de la sección Carta verás un número del 0 al 100 que
+                                        representa <strong>la salud general de tu carta completa</strong>:</p>
                                     <ul>
-                                        <li><strong>Nombre del plato:</strong> Ej. "Ensalada César"</li>
-                                        <li><strong>Precio de venta:</strong> El precio que cobras al cliente</li>
-                                        <li><strong>Categoría:</strong> Entrantes, principales, postres, bebidas, etc.
+                                        <li><strong>80-100:</strong> 🟢 Excelente - Tu carta está muy bien equilibrada
+                                        </li>
+                                        <li><strong>60-79:</strong> 🟡 Buena - Hay margen de mejora pero funciona bien
+                                        </li>
+                                        <li><strong>40-59:</strong> 🟠 Regular - Revisa algunos platos</li>
+                                        <li><strong>0-39:</strong> 🔴 Necesita atención - Hay problemas que resolver
+                                        </li>
+                                    </ul>
+                                    <p>Toca la puntuación para ver qué factores la afectan y cómo mejorarla. Esta
+                                        puntuación evalúa el conjunto de todos tus platos, no cada plato individual.</p>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3>Añadir un plato nuevo</h3>
+                                    <p>Pulsa el botón <strong>+</strong> y rellena:</p>
+                                    <ul>
+                                        <li><strong>Nombre</strong> del plato</li>
+                                        <li><strong>Precio de venta</strong> (lo que cobras)</li>
+                                        <li><strong>Categoría</strong> (Entrantes, Principales, etc.)</li>
+                                        <li><strong>Trabajo estimado</strong> - Cuánto tiempo/esfuerzo requiere:
+                                            <ul>
+                                                <li>Mínimo: Ensaladas, platos fríos</li>
+                                                <li>Rápido: Plancha, frituras</li>
+                                                <li>Normal: La mayoría de platos</li>
+                                                <li>Complejo: Platos elaborados con salsas</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Ingredientes</strong> - Selecciona del catálogo y pon las cantidades
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>4. Añade los ingredientes</h3>
-                                    <p>Selecciona los ingredientes de tu catálogo y especifica la cantidad usada en cada
-                                        plato. MenuScore calculará automáticamente el coste del plato.</p>
+                                    <h3>Información de cada plato</h3>
+                                    <p>Al tocar un plato verás:</p>
+                                    <ul>
+                                        <li><strong>Precio de venta</strong> - Lo que cobras al cliente</li>
+                                        <li><strong>Coste real</strong> - Lo que te cuesta prepararlo (ingredientes +
+                                            trabajo)</li>
+                                        <li><strong>Margen</strong> - Cuánto ganas con cada plato (en € y en %)</li>
+                                        <li><strong>Precio recomendado</strong> - Si el margen es bajo, te sugiere un
+                                            precio mejor</li>
+                                        <li><strong>Clasificación</strong> - Estrella ⭐, Tractor 🚜, Gancho 🧩 o Lastre
+                                            ⚓</li>
+                                    </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>5. Revisa el MenuScore</h3>
-                                    <p>Una vez guardado, verás el MenuScore del plato: una puntuación del 0 al 100 que
-                                        indica su equilibrio entre rentabilidad y popularidad potencial.</p>
+                                    <h3>Clasificación de platos</h3>
+                                    <p>Cada plato recibe una etiqueta según su rendimiento:</p>
+                                    <ul>
+                                        <li><strong>⭐ Estrella:</strong> Vende mucho Y da buen margen - ¡Perfecto!
+                                            Mantenerlo destacado</li>
+                                        <li><strong>🚜 Tractor:</strong> Vende mucho PERO da poco margen - Subir precio
+                                            o reducir costes</li>
+                                        <li><strong>🧩 Gancho:</strong> Da buen margen PERO vende poco - Promocionarlo
+                                            más</li>
+                                        <li><strong>⚓ Lastre:</strong> Vende poco Y da poco margen - Plantearse
+                                            eliminarlo</li>
+                                    </ul>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3>Sugerencias inteligentes</h3>
+                                    <p>MenuScore analiza tu carta y te da consejos personalizados como:</p>
+                                    <ul>
+                                        <li>"El margen de Ensalada César es solo del 45%. Considera subir el precio a
+                                            12,50€"</li>
+                                        <li>"Risotto de setas tiene buen margen pero vende poco. ¿Lo destacas más en
+                                            carta?"</li>
+                                        <li>"Hamburguesa no tiene ingredientes añadidos. Añádelos para calcular el coste
+                                            real"</li>
+                                    </ul>
                                 </div>
                             </div>
 
-                            <!-- Añadir ingredientes -->
-                            <div id="anadir-ingrediente" class="guide-section">
-                                <h2>Añadir ingredientes</h2>
+                            <!-- Ingredientes -->
+                            <div id="ingredientes" class="guide-section">
+                                <h2>Ingredientes</h2>
                                 <p>Gestiona tu catálogo de ingredientes para calcular costes precisos de cada plato.</p>
 
                                 <div class="guide-step">
-                                    <h3>1. Ve a la sección de ingredientes</h3>
-                                    <p>Toca en la pestaña "Ingredientes" en la barra de navegación inferior.</p>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>2. Añade un nuevo ingrediente</h3>
-                                    <p>Pulsa el botón "+" y completa la información:</p>
+                                    <h3>Añadir ingredientes</h3>
+                                    <p>Dos formas:</p>
                                     <ul>
-                                        <li><strong>Nombre:</strong> Ej. "Tomate cherry"</li>
-                                        <li><strong>Precio de compra:</strong> Lo que pagas al proveedor</li>
-                                        <li><strong>Cantidad de compra:</strong> Ej. 1 kg, 6 unidades, 1 litro</li>
-                                        <li><strong>Unidad de uso:</strong> La unidad con la que usas el ingrediente en
-                                            los platos (gramos, ml, unidades)</li>
-                                    </ul>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>3. Usa el catálogo sugerido</h3>
-                                    <p>MenuScore incluye un catálogo de ingredientes comunes que puedes añadir
-                                        rápidamente y personalizar con tus precios.</p>
-                                </div>
-                            </div>
-
-                            <!-- Entender el MenuScore -->
-                            <div id="menu-score" class="guide-section">
-                                <h2>Entender el MenuScore</h2>
-                                <p>El MenuScore es la puntuación central de la app. Evalúa cada plato del 0 al 100
-                                    basándose en múltiples factores.</p>
-
-                                <div class="guide-step">
-                                    <h3>¿Qué mide el MenuScore?</h3>
-                                    <p>La puntuación combina varios indicadores clave:</p>
-                                    <ul>
-                                        <li><strong>Margen de beneficio:</strong> La diferencia entre precio de venta y
-                                            coste de ingredientes</li>
-                                        <li><strong>Porcentaje de coste:</strong> Qué parte del precio se va en
-                                            ingredientes</li>
-                                        <li><strong>Popularidad:</strong> Cuánto se vende el plato (cuando registras
-                                            ventas)</li>
-                                        <li><strong>Clasificación:</strong> Si es Estrella, Tractor, Gancho o Lastre
+                                        <li><strong>Desde el catálogo:</strong> MenuScore incluye cientos de
+                                            ingredientes comunes. Solo tienes que buscar, añadir y poner tu precio</li>
+                                        <li><strong>Crear nuevo:</strong> Si no está en el catálogo, créalo desde cero
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Interpretando la puntuación</h3>
+                                    <h3>Configurar un ingrediente</h3>
+                                    <p>Para cada ingrediente defines:</p>
                                     <ul>
-                                        <li><strong>80-100:</strong> Excelente. El plato está muy bien equilibrado.</li>
-                                        <li><strong>60-79:</strong> Bueno. Hay margen de mejora pero funciona bien.</li>
-                                        <li><strong>40-59:</strong> Regular. Revisa el precio o los ingredientes.</li>
-                                        <li><strong>0-39:</strong> Necesita atención. Considera cambios significativos.
-                                        </li>
+                                        <li><strong>Precio de compra:</strong> Ej. 15€</li>
+                                        <li><strong>Cantidad que compras:</strong> Ej. 1 kg</li>
+                                        <li><strong>Unidad para cocinar:</strong> Ej. gramos</li>
                                     </ul>
+                                    <p>MenuScore calcula automáticamente que cada gramo te cuesta 0,015€.</p>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>Cómo mejorar el MenuScore</h3>
-                                    <p>Cada plato incluye sugerencias personalizadas para mejorar su puntuación:</p>
+                                    <h3>Análisis de ingredientes (Pestaña "Insights")</h3>
+                                    <p>Información valiosa sobre tus ingredientes:</p>
                                     <ul>
-                                        <li>Ajustar el precio de venta</li>
-                                        <li>Buscar alternativas de ingredientes más económicas</li>
-                                        <li>Promocionar platos con alto margen pero poca venta</li>
-                                        <li>Rediseñar recetas de platos problemáticos</li>
+                                        <li><strong>📊 Lo más vendido:</strong> Qué ingredientes mueves más (basado en
+                                            ventas de los últimos 30 días)</li>
+                                        <li><strong>💎 Lo más rentable:</strong> Qué ingredientes te generan más
+                                            ingresos</li>
+                                        <li><strong>⚠️ Ingredientes en riesgo:</strong> Ingredientes que solo usas en un
+                                            plato (si ese plato no vende, el ingrediente se queda parado)</li>
+                                        <li><strong>📦 Valor del inventario:</strong> El valor total de tu despensa (si
+                                            usas control de stock)</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <!-- Registrar ventas -->
-                            <div id="registrar-venta" class="guide-section">
-                                <h2>Registrar ventas</h2>
-                                <p>Registra las ventas de tus platos para analizar su popularidad real, márgenes según
-                                    tu capacidad operativa y mejorar la clasificación.</p>
+                            <!-- Ventas -->
+                            <div id="ventas" class="guide-section">
+                                <h2>Ventas</h2>
+                                <p>Registra las ventas de tus platos para analizar su popularidad real y mejorar la
+                                    clasificación.</p>
 
                                 <div class="guide-step">
-                                    <h3>1. Accede al registro de ventas</h3>
-                                    <p>Toca en la pestaña "Ventas" en la barra de navegación. Aquí verás el registro
-                                        semanal y podrás añadir nuevas ventas.</p>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>2. Registro de ventas</h3>
-                                    <p>Puedes registrar ventas de dos formas:</p>
+                                    <h3>¿Para qué registrar ventas?</h3>
+                                    <p>MenuScore necesita saber qué vendes realmente para:</p>
                                     <ul>
-                                        <li><strong>Registro manual:</strong> Selecciona platos y cantidades vendidas
-                                            desde la sección de Ventas</li>
-                                        <li><strong>Importar CSV:</strong> Sube un archivo con los datos de tu TPV</li>
+                                        <li>Clasificar correctamente cada plato (Estrella, Tractor, etc.)</li>
+                                        <li>Mostrarte tendencias en el Dashboard</li>
+                                        <li>Darte consejos más precisos</li>
+                                        <li>Descontar stock automáticamente (si lo tienes activado)</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>3. Análisis automático</h3>
-                                    <p>Al registrar ventas, MenuScore actualiza automáticamente:</p>
-                                    <ul>
-                                        <li>La popularidad de cada plato</li>
-                                        <li>La clasificación (Estrella, Tractor, Gancho o Lastre)</li>
-                                        <li>El stock de ingredientes (si tienes stock activado)</li>
-                                        <li>Los márgenes reales según tu capacidad operativa</li>
-                                        <li>Las estadísticas y gráficos de ventas</li>
-                                    </ul>
+                                    <h3>Cómo registrar ventas</h3>
+                                    <ol>
+                                        <li>Ve a la pestaña <strong>Ventas</strong></li>
+                                        <li>Selecciona la <strong>semana</strong> que quieres registrar</li>
+                                        <li>Pulsa <strong>+</strong> para abrir el registro</li>
+                                        <li>Indica <strong>cuántas unidades</strong> de cada plato vendiste</li>
+                                        <li>Guarda</li>
+                                    </ol>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>4. Simulación de ventas</h3>
-                                    <p>Puedes simular escenarios de ventas para ver cómo afectarían diferentes volúmenes
-                                        a tus márgenes y clasificación de platos antes de hacer cambios reales.</p>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>5. Gráficos de ventas</h3>
-                                    <p>Visualiza la evolución de tus ventas con gráficos interactivos que muestran
-                                        tendencias, comparativas entre platos y análisis de rentabilidad a lo largo del
-                                        tiempo.</p>
+                                    <h3>Importar desde archivo CSV</h3>
+                                    <p>Si tienes los datos en un archivo CSV (por ejemplo, de tu TPV):</p>
+                                    <ol>
+                                        <li>Pulsa el icono de importar</li>
+                                        <li>Selecciona tu archivo CSV</li>
+                                        <li>MenuScore asocia automáticamente los nombres</li>
+                                        <li>Revisa y confirma</li>
+                                    </ol>
+                                    <p><strong>Formato del CSV:</strong></p>
+                                    <pre>nombre_plato,cantidad
+Ensalada César,25
+Hamburguesa,40</pre>
                                 </div>
                             </div>
 
-                            <!-- Gestión de stock -->
-                            <div id="gestion-stock" class="guide-section">
-                                <h2>Gestión de stock</h2>
+                            <!-- Dashboard -->
+                            <div id="dashboard" class="guide-section">
+                                <h2>Dashboard</h2>
+                                <p>Visualiza la evolución de tu negocio con gráficos interactivos.</p>
+
+                                <div class="guide-step">
+                                    <h3>Gráficos disponibles</h3>
+                                    <ul>
+                                        <li><strong>💵 Ingresos por semana:</strong> ¿Estoy facturando más o menos que
+                                            antes?</li>
+                                        <li><strong>📦 Unidades vendidas:</strong> ¿Estoy vendiendo más platos?</li>
+                                        <li><strong>📊 Margen:</strong> ¿Mi rentabilidad mejora o empeora?</li>
+                                    </ul>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3>Comparar platos</h3>
+                                    <p>Puedes seleccionar hasta 2 platos para comparar su evolución:</p>
+                                    <ul>
+                                        <li>"¿La hamburguesa vende más que el mes pasado?"</li>
+                                        <li>"¿Qué plato tiene mejor tendencia?"</li>
+                                    </ul>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3>Períodos</h3>
+                                    <p>Elige ver las últimas 4, 8 o 12 semanas.</p>
+                                </div>
+                            </div>
+
+                            <!-- Categorías -->
+                            <div id="categorias" class="guide-section">
+                                <h2>Categorías</h2>
+                                <p>Organiza tu carta con categorías personalizadas.</p>
+
+                                <div class="guide-step">
+                                    <h3>Gestionar categorías</h3>
+                                    <p>Desde el menú lateral puedes:</p>
+                                    <ul>
+                                        <li><strong>Crear</strong> nuevas categorías (Entrantes, Principales, Postres,
+                                            Bebidas, etc.)</li>
+                                        <li><strong>Renombrar</strong> las existentes</li>
+                                        <li><strong>Reordenar</strong> con arrastrar y soltar</li>
+                                        <li><strong>Eliminar</strong> las que ya no uses</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Control de Stock -->
+                            <div id="stock" class="guide-section">
+                                <h2>Control de Stock (Opcional)</h2>
                                 <p>Controla tu inventario de ingredientes y recibe alertas cuando algo esté bajo.</p>
 
                                 <div class="guide-step">
-                                    <h3>1. Activa la gestión de stock</h3>
-                                    <p>En Ajustes > Preferencias, activa "Gestión de stock" si quieres usar esta
-                                        función. Es opcional.</p>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>2. Configura el stock inicial</h3>
-                                    <p>En cada ingrediente puedes establecer:</p>
+                                    <h3>¿Qué aporta?</h3>
+                                    <p>Si activas el control de stock:</p>
                                     <ul>
-                                        <li><strong>Stock actual:</strong> Cantidad disponible</li>
-                                        <li><strong>Stock mínimo:</strong> Nivel de alerta (te avisamos cuando baje de
-                                            aquí)</li>
+                                        <li><strong>Ves cuánto tienes</strong> de cada ingrediente</li>
+                                        <li><strong>Se descuenta automáticamente</strong> cuando registras ventas</li>
+                                        <li><strong>Alertas</strong> cuando algo está bajo mínimos</li>
+                                        <li><strong>Valor del inventario</strong> en tiempo real</li>
                                     </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>3. Alertas de stock bajo</h3>
-                                    <p>En la pestaña de Ingredientes verás alertas visuales cuando un ingrediente esté
-                                        por debajo del mínimo configurado.</p>
+                                    <h3>Configurar stock</h3>
+                                    <p>Para cada ingrediente puedes definir:</p>
+                                    <ul>
+                                        <li><strong>Stock actual:</strong> Cuánto tienes ahora</li>
+                                        <li><strong>Stock mínimo:</strong> Cuándo te avisamos</li>
+                                    </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>4. Stock automático</h3>
-                                    <p>Cuando registras ventas, el stock se descuenta automáticamente según los
-                                        ingredientes de cada plato vendido.</p>
-                                </div>
-                            </div>
-
-                            <!-- Clasificación de platos -->
-                            <div id="clasificacion-platos" class="guide-section">
-                                <h2>Clasificación de platos</h2>
-                                <p>Entiende cómo MenuScore clasifica tus platos según el método de Ingeniería de Menús
-                                    (Menu Engineering).</p>
-
-                                <div class="guide-step">
-                                    <h3>Las 4 categorías</h3>
-                                    <p>Cada plato se clasifica según su margen de beneficio y su popularidad:</p>
-                                    <div class="classification-grid">
-                                        <div class="classification-item">
-                                            <h4>⭐ Estrellas</h4>
-                                            <p><strong>Alto margen + Alta popularidad</strong></p>
-                                            <p>Tus mejores platos. Mantenlos en el menú, destácalos y cuida la receta.
-                                            </p>
-                                        </div>
-                                        <div class="classification-item">
-                                            <h4>🚜 Tractores</h4>
-                                            <p><strong>Bajo margen + Alta popularidad</strong></p>
-                                            <p>Muy pedidos pero poco rentables. Considera subir el precio o reducir
-                                                costes de ingredientes.</p>
-                                        </div>
-                                        <div class="classification-item">
-                                            <h4>🧩 Ganchos</h4>
-                                            <p><strong>Alto margen + Baja popularidad</strong></p>
-                                            <p>Rentables pero poco vendidos. Prueba a promocionarlos, mejorar la
-                                                descripción o cambiar la ubicación en carta.</p>
-                                        </div>
-                                        <div class="classification-item">
-                                            <h4>⚓ Lastres</h4>
-                                            <p><strong>Bajo margen + Baja popularidad</strong></p>
-                                            <p>No venden ni son rentables. Considera eliminarlos o rediseñarlos
-                                                completamente.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>¿Cómo se calcula?</h3>
-                                    <p>La clasificación usa datos reales de tus ventas. Por eso es importante registrar
-                                        las ventas periódicamente para que la clasificación sea precisa.</p>
+                                    <h3>Stock recurrente</h3>
+                                    <p>Para ingredientes que repones semanalmente:</p>
+                                    <ul>
+                                        <li>Activa "Stock recurrente"</li>
+                                        <li>Indica la cantidad semanal</li>
+                                        <li>MenuScore lo añade automáticamente cada lunes</li>
+                                    </ul>
                                 </div>
                             </div>
 
-                            <!-- Análisis de ingredientes -->
-                            <div id="analisis-ingredientes" class="guide-section">
-                                <h2>Análisis de ingredientes</h2>
-                                <p>Descubre insights sobre tus ingredientes para optimizar costes y compras.</p>
+                            <!-- Backup -->
+                            <div id="backup" class="guide-section">
+                                <h2>Backup y Restauración</h2>
+                                <p>Protege tus datos exportando copias de seguridad.</p>
 
                                 <div class="guide-step">
-                                    <h3>1. Ingredientes más usados</h3>
-                                    <p>En la pestaña de Ingredientes > Insights, verás cuáles son los ingredientes que
-                                        más usas y su impacto en los costes.</p>
+                                    <h3>Exportar copia de seguridad</h3>
+                                    <p>Desde el menú lateral > "Backup":</p>
+                                    <ul>
+                                        <li>Exporta todos tus datos a un archivo</li>
+                                        <li>Guárdalo en tu móvil o en la nube</li>
+                                        <li>Útil antes de cambiar de móvil</li>
+                                    </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>2. Valor del inventario</h3>
-                                    <p>Con la gestión de stock activada, verás el valor total de tu inventario y qué
-                                        ingredientes representan mayor inversión.</p>
+                                    <h3>Restaurar datos</h3>
+                                    <p>Si cambias de móvil o pierdes datos:</p>
+                                    <ul>
+                                        <li>Selecciona tu archivo de backup</li>
+                                        <li>MenuScore restaura todo: platos, ingredientes, ventas, categorías</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Ajustes -->
+                            <div id="ajustes" class="guide-section">
+                                <h2>Ajustes</h2>
+                                <p>Personaliza los cálculos según tu negocio.</p>
+
+                                <div class="guide-step">
+                                    <h3>Configuración de costes</h3>
+                                    <p>En Ajustes puedes configurar:</p>
+                                    <ul>
+                                        <li><strong>Costes operativos mensuales:</strong> Afecta al coste calculado
+                                            de cada plato</li>
+                                        <li><strong>Gastos extra (%):</strong> Un porcentaje extra sobre el coste
+                                            base</li>
+                                        <li><strong>Beneficios por bebidas (%):</strong> Un porcentaje esperado de
+                                            beneficios por la venta de bebidas</li>
+                                        <li><strong>IVA (%):</strong> Para cálculos de precios</li>
+                                    </ul>
                                 </div>
 
                                 <div class="guide-step">
-                                    <h3>3. Rotación de stock</h3>
-                                    <p>Identifica ingredientes con rotación lenta que podrían caducar o que ocupan
-                                        espacio innecesariamente.</p>
-                                </div>
-
-                                <div class="guide-step">
-                                    <h3>4. Ingredientes en riesgo</h3>
-                                    <p>Recibe alertas sobre ingredientes que solo se usan en un plato poco vendido
-                                        (dependencia peligrosa).</p>
+                                    <h3>Idioma</h3>
+                                    <p>MenuScore está disponible en:</p>
+                                    <ul>
+                                        <li>🇪🇸 Español</li>
+                                        <li>🇬🇧 English</li>
+                                    </ul>
                                 </div>
                             </div>
 
