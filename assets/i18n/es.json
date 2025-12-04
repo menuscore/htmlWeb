@@ -167,7 +167,9 @@
       "categories": "Categorías",
       "stock": "Control de Stock",
       "backup": "Backup",
-      "settings": "Ajustes"
+      "settings": "Ajustes",
+      "faq": "Preguntas frecuentes",
+      "tips": "Consejos finales"
     },
     "sections": {
       "start": {
@@ -210,18 +212,25 @@
           "title": "Añadir un plato nuevo",
           "desc": "Pulsa el botón <strong>+</strong> y rellena:",
           "items": [
-            "<strong>Nombre</strong> del plato",
-            "<strong>Precio de venta</strong> (lo que cobras)",
+            "<strong>Nombre</strong> del plato (como aparece en la carta)",
+            "<strong>Precio de venta</strong> (con IVA incluido)",
             "<strong>Categoría</strong> (Entrantes, Principales, etc.)",
-            "<strong>Trabajo estimado</strong> - Cuánto tiempo/esfuerzo requiere:",
-            "<strong>Ingredientes</strong> - Selecciona del catálogo y pon las cantidades"
-          ],
-          "subitems": [
-            "Mínimo: Ensaladas, platos fríos",
-            "Rápido: Plancha, frituras",
-            "Normal: La mayoría de platos",
-            "Complejo: Platos elaborados con salsas"
+            "<strong>Trabajo estimado</strong> (MUY IMPORTANTE - afecta al coste)",
+            "<strong>Ingredientes</strong> - Selecciona del catálogo y pon las cantidades exactas"
           ]
+        },
+        "effort": {
+          "title": "El trabajo estimado (muy importante)",
+          "desc": "Este campo indica cuánto esfuerzo de cocina requiere el plato. <strong>Afecta directamente al coste calculado</strong> porque multiplica el coste operativo por minuto.",
+          "levels": "<strong>Niveles de esfuerzo:</strong>",
+          "items": [
+            "<strong>Mínimo:</strong> Ensalada verde, tabla de quesos, gazpacho ya preparado",
+            "<strong>Rápido:</strong> Huevos fritos, plancha simple, sandwich",
+            "<strong>Normal:</strong> Pasta, carnes con guarnición, arroces simples",
+            "<strong>Complejo:</strong> Salsas al momento, cocción lenta, técnicas múltiples"
+          ],
+          "example": "<strong>Ejemplo con coste operativo 6.600€/mes y 200h:</strong> Mínimo añade 0,55€, Rápido 1,10€, Normal 2,20€, Complejo 4,40€. ¡La diferencia es enorme!",
+          "tip": "<strong>Consejo:</strong> Sé honesto. Si un plato requiere trabajo, márcalo. Mejor saber que un plato elaborado tiene menos margen del que pensabas."
         },
         "info": {
           "title": "Información de cada plato",
@@ -277,12 +286,12 @@
       },
       "ingredients": {
         "title": "Ingredientes",
-        "intro": "Gestiona tu catálogo de ingredientes para calcular costes precisos de cada plato.",
+        "intro": "Gestiona tu catálogo de ingredientes para calcular costes precisos de cada plato. <strong>Solo verás los ingredientes que estás usando</strong> en algún plato.",
         "add": {
           "title": "Añadir ingredientes",
           "desc": "Dos formas:",
           "items": [
-            "<strong>Desde el catálogo:</strong> MenuScore incluye cientos de ingredientes comunes. Solo tienes que buscar, añadir y poner tu precio",
+            "<strong>Desde el catálogo:</strong> MenuScore incluye cientos de ingredientes comunes. Busca, añade y pon tu precio",
             "<strong>Crear nuevo:</strong> Si no está en el catálogo, créalo desde cero"
           ]
         },
@@ -290,20 +299,26 @@
           "title": "Configurar un ingrediente",
           "desc": "Para cada ingrediente defines:",
           "items": [
-            "<strong>Precio de compra:</strong> Ej. 15€",
-            "<strong>Cantidad que compras:</strong> Ej. 1 kg",
-            "<strong>Unidad para cocinar:</strong> Ej. gramos"
+            "<strong>Precio de compra:</strong> Lo que pagas al proveedor",
+            "<strong>Cantidad que compras:</strong> En qué cantidad lo compras (1 kg, 5 litros, 6 unidades...)",
+            "<strong>Unidad para cocinar:</strong> Cómo lo mides en recetas (gramos, ml, unidades...)"
           ],
-          "note": "MenuScore calcula automáticamente que cada gramo te cuesta 0,015€."
+          "example": "<strong>Ejemplo con aceite:</strong> Compras 5L por 25€, usas ml en recetas. MenuScore calcula: 25€ ÷ 5000ml = 0,005€/ml. Si usas 20ml en un plato = 0,10€."
+        },
+        "prices": {
+          "title": "Por qué actualizar los precios",
+          "desc": "El coste de tus platos depende directamente del precio de los ingredientes.",
+          "example": "<strong>Ejemplo:</strong> Si el salmón sube de 15€/kg a 20€/kg y no lo actualizas, MenuScore sigue calculando el coste antiguo. Tu margen real ha bajado pero no lo sabes.",
+          "tip": "<strong>Recomendación:</strong> Revisa precios al menos una vez al mes. Los que fluctúan mucho (pescado, verduras de temporada), más a menudo."
         },
         "analysis": {
           "title": "Análisis de ingredientes (Pestaña \"Insights\")",
           "desc": "Información valiosa sobre tus ingredientes:",
           "items": [
-            "<strong>Lo más vendido:</strong> Qué ingredientes mueves más (basado en ventas de los últimos 30 días)",
-            "<strong>Lo más rentable:</strong> Qué ingredientes te generan más ingresos",
-            "<strong>Ingredientes en riesgo:</strong> Ingredientes que solo usas en un plato (si ese plato no vende, el ingrediente se queda parado)",
-            "<strong>Valor del inventario:</strong> El valor total de tu despensa (si usas control de stock)"
+            "<strong>Lo más vendido:</strong> Qué ingredientes mueves más - útil para negociar con proveedores",
+            "<strong>Lo más rentable:</strong> Qué ingredientes contribuyen más a tus ingresos",
+            "<strong>Ingredientes en riesgo:</strong> Solo usados en un plato - si no vende, el ingrediente se queda parado",
+            "<strong>Valor del inventario:</strong> Cuánto dinero tienes \"parado\" en ingredientes (con stock activado)"
           ]
         }
       },
@@ -320,15 +335,20 @@
             "Descontar stock automáticamente (si lo tienes activado)"
           ]
         },
+        "rule": {
+          "title": "La regla de oro",
+          "desc": "<strong>Registra las ventas una vez por semana.</strong> El sistema funciona con totales semanales acumulados, no diarios."
+        },
         "how": {
           "title": "Cómo registrar ventas",
           "items": [
             "Ve a la pestaña <strong>Ventas</strong>",
-            "Selecciona la <strong>semana</strong> que quieres registrar",
+            "Selecciona la <strong>semana</strong> que quieres registrar (normalmente la anterior)",
             "Pulsa <strong>+</strong> para abrir el registro",
-            "Indica <strong>cuántas unidades</strong> de cada plato vendiste",
+            "Indica el <strong>total de unidades vendidas</strong> esa semana para cada plato",
             "Guarda"
-          ]
+          ],
+          "tip": "<strong>Consejo:</strong> No hace falta que sea exacto al 100%. Si no tienes datos del TPV, una estimación razonable (\"unas 30 hamburguesas\") es mejor que nada."
         },
         "csv": {
           "title": "Importar desde archivo CSV",
@@ -408,7 +428,8 @@
             "Activa \"Stock recurrente\"",
             "Indica la cantidad semanal",
             "MenuScore lo añade automáticamente cada lunes"
-          ]
+          ],
+          "example": "<strong>Ejemplo:</strong> Si cada lunes te traen 3 barriles de cerveza, configúralo aquí y olvídate de añadirlo manualmente."
         }
       },
       "backup": {
@@ -434,54 +455,31 @@
       },
       "settings": {
         "title": "Ajustes",
-        "intro": "Personaliza los cálculos según tu negocio. Configurarlos correctamente te dará márgenes más precisos.",
-        "operating": {
-          "title": "Costes operativos mensuales",
-          "desc": "Son los gastos fijos que tiene tu restaurante cada mes, independientemente de cuánto vendas. MenuScore reparte este coste entre todos los platos para darte un margen más realista.",
-          "what": "<strong>¿Qué incluir?</strong>",
-          "items": [
-            "Alquiler del local",
-            "Sueldos del personal de cocina y sala",
-            "Electricidad, agua y gas",
-            "Seguros e impuestos fijos",
-            "Limpieza y mantenimiento"
-          ],
-          "example": "<strong>Ejemplo:</strong> Si tus costes mensuales son 8.000€ y vendes 2.000 platos al mes, MenuScore añade 4€ al coste de cada plato.",
-          "tip": "<strong>Consejo:</strong> Si no conoces el dato exacto, empieza con una estimación. Puedes ajustarlo después."
+        "intro": "Configura estos parámetros antes de empezar. Afectan directamente a cómo MenuScore calcula los costes de tus platos.",
+        "operating_cost": {
+          "title": "Coste operativo mensual (€)",
+          "desc": "El total de todos tus gastos fijos mensuales (alquiler, nóminas, luz, agua, seguros...).",
+          "example": "<strong>Ejemplo:</strong> Alquiler 1.500€ + Nóminas 4.000€ + Suministros 800€ + Otros 300€ = <strong>6.600€/mes</strong>"
         },
-        "extra": {
-          "title": "Gastos extra (%)",
-          "desc": "Un porcentaje adicional sobre el coste de ingredientes para cubrir gastos difíciles de calcular individualmente.",
-          "what": "<strong>¿Qué cubre?</strong>",
-          "items": [
-            "Mermas y desperdicios (ingredientes que se estropean o sobran)",
-            "Variaciones de precios de proveedores",
-            "Aceite, sal, especias y condimentos básicos",
-            "Servilletas, envases para llevar, pequeño material"
-          ],
-          "example": "<strong>Ejemplo:</strong> Con un 10% de gastos extra, un plato con 3€ de ingredientes pasará a tener un coste de 3,30€.",
-          "tip": "<strong>Valor recomendado:</strong> Entre 5% y 15% dependiendo de tu tipo de cocina."
+        "opening_hours": {
+          "title": "Horas de apertura mensuales",
+          "desc": "Cuántas horas está abierto el local al mes. MenuScore usa esto para calcular el coste por minuto.",
+          "example": "<strong>Ejemplo:</strong> 10 horas/día × 25 días = <strong>250 horas/mes</strong>"
+        },
+        "overhead": {
+          "title": "Gastos generales / Overhead (%)",
+          "desc": "Un porcentaje extra para cubrir gastos variables o imprevistos (mermas, roturas, limpieza extra) no incluidos en el coste mensual.",
+          "how": "<strong>Valores típicos:</strong>",
+          "example": "Entre <strong>5% y 15%</strong> dependiendo del control que tengas sobre las mermas."
         },
         "beverages": {
           "title": "Beneficios por bebidas (%)",
-          "desc": "Las bebidas suelen tener márgenes más altos que la comida. Este porcentaje estima cuánto beneficio extra aportan las bebidas a cada servicio.",
-          "why": "<strong>¿Para qué sirve?</strong>",
-          "items": [
-            "Ayuda a calcular un margen global más realista",
-            "Compensa platos con margen bajo si las bebidas lo equilibran",
-            "Útil si vendes vino, cócteles o cafés con buen margen"
-          ],
-          "example": "<strong>Ejemplo:</strong> Si pones 20%, MenuScore entiende que por cada euro de comida vendida, esperas 0,20€ extra de beneficio por bebidas.",
-          "tip": "<strong>Valor recomendado:</strong> 15-25% para restaurantes con carta de vinos. 5-10% si principalmente vendes refrescos o agua."
+          "desc": "El porcentaje de tus ingresos totales que viene de las bebidas (refrescos, vino, café...).",
+          "tip": "<strong>Recomendado:</strong> 25-30% para la mayoría de restaurantes."
         },
         "vat": {
           "title": "IVA (%)",
-          "desc": "El porcentaje de IVA que aplicas a tus precios. Se usa para calcular precios netos y márgenes reales.",
-          "items": [
-            "En España el IVA de restauración es del <strong>10%</strong>",
-            "Configúralo según la legislación de tu país"
-          ],
-          "tip": "<strong>Importante:</strong> Indica el IVA que usas en tu carta. MenuScore lo tendrá en cuenta para mostrarte márgenes antes de impuestos."
+          "desc": "El porcentaje de IVA incluido en tus precios de venta (normalmente 10% en España)."
         },
         "lang": {
           "title": "Idioma",
@@ -490,6 +488,47 @@
             "Español",
             "English"
           ]
+        }
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "q1": {
+          "q": "¿Por qué mi margen parece muy bajo?",
+          "a": "Revisa: 1. ¿Coste operativo mensual correcto? 2. ¿Horas de apertura correctas? 3. ¿Overhead realista? 4. ¿Cantidades de ingredientes correctas?"
+        },
+        "q2": {
+          "q": "¿Por qué mis platos dicen 'Sin datos'?",
+          "a": "Porque no has registrado ventas. La clasificación (Estrella, Tractor...) necesita saber qué vendes para funcionar."
+        },
+        "q3": {
+          "q": "¿Puedo usar la app sin registrar ventas?",
+          "a": "Sí, pero pierdes la clasificación de platos, el Dashboard y las sugerencias son menos precisas."
+        },
+        "q4": {
+          "q": "¿Qué pasa si no pongo ingredientes?",
+          "a": "El coste será solo trabajo + overhead. El margen parecerá altísimo pero será falso."
+        }
+      },
+      "tips": {
+        "title": "Consejos finales",
+        "checklist": {
+          "title": "Lista de verificación inicial",
+          "items": [
+            "Configurar coste operativo mensual (€)",
+            "Configurar horas de apertura mensuales",
+            "Configurar overhead (%)",
+            "Configurar IVA (%)",
+            "Crear todas las categorías",
+            "Añadir todos los platos",
+            "Poner ingredientes con cantidades reales",
+            "Actualizar precios de ingredientes"
+          ]
+        },
+        "routine": {
+          "title": "Rutina recomendada",
+          "weekly": "<strong>Semanal (5 min):</strong> Registrar ventas, revisar stock, mirar Dashboard.",
+          "monthly": "<strong>Mensual (15 min):</strong> Revisar precios ingredientes, leer sugerencias, hacer backup.",
+          "quarterly": "<strong>Trimestral (30 min):</strong> Análisis profundo, eliminar Lastres, ajustar precios."
         }
       }
     },

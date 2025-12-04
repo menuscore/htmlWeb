@@ -167,7 +167,9 @@
       "categories": "Categories",
       "stock": "Stock Control",
       "backup": "Backup",
-      "settings": "Settings"
+      "settings": "Settings",
+      "faq": "FAQ",
+      "tips": "Final Tips"
     },
     "sections": {
       "start": {
@@ -210,18 +212,25 @@
           "title": "Add a new dish",
           "desc": "Tap the <strong>+</strong> button and fill in:",
           "items": [
-            "<strong>Name</strong> of the dish",
-            "<strong>Selling price</strong> (what you charge)",
+            "<strong>Name</strong> of the dish (as it appears on the menu)",
+            "<strong>Selling price</strong> (including VAT)",
             "<strong>Category</strong> (Starters, Mains, etc.)",
-            "<strong>Estimated labor</strong> - How much time/effort it requires:",
-            "<strong>Ingredients</strong> - Select from the catalog and set quantities"
-          ],
-          "subitems": [
-            "Minimum: Salads, cold dishes",
-            "Quick: Grill, fried foods",
-            "Normal: Most dishes",
-            "Complex: Elaborate dishes with sauces"
+            "<strong>Estimated effort</strong> (VERY IMPORTANT - affects cost)",
+            "<strong>Ingredients</strong> - Select from catalog and set exact quantities"
           ]
+        },
+        "effort": {
+          "title": "Estimated Effort (very important)",
+          "desc": "This field indicates how much kitchen effort the dish requires. <strong>It directly affects the calculated cost</strong> because it multiplies the operating cost per minute.",
+          "levels": "<strong>Effort levels:</strong>",
+          "items": [
+            "<strong>Minimal:</strong> Green salad, cheese board, pre-made gazpacho",
+            "<strong>Quick:</strong> Fried eggs, simple grill, sandwich",
+            "<strong>Normal:</strong> Pasta, grilled meats with garnish, simple rice dishes",
+            "<strong>Complex:</strong> Sauces made to order, slow cooking, multiple techniques"
+          ],
+          "example": "<strong>Example with €6,600/month operating cost and 200h:</strong> Minimal adds €0.55, Quick €1.10, Normal €2.20, Complex €4.40. The difference is huge!",
+          "tip": "<strong>Tip:</strong> Be honest. If a dish requires work, mark it. Better to know that an elaborate dish has less margin than you thought."
         },
         "info": {
           "title": "Dish information",
@@ -277,12 +286,12 @@
       },
       "ingredients": {
         "title": "Ingredients",
-        "intro": "Manage your ingredient catalog to calculate precise costs for each dish.",
+        "intro": "Manage your ingredient catalog to calculate precise costs for each dish. <strong>You'll only see ingredients you're using</strong> in some dish.",
         "add": {
           "title": "Add ingredients",
           "desc": "Two ways:",
           "items": [
-            "<strong>From catalog:</strong> MenuScore includes hundreds of common ingredients. Just search, add and set your price",
+            "<strong>From catalog:</strong> MenuScore includes hundreds of common ingredients. Search, add and set your price",
             "<strong>Create new:</strong> If not in catalog, create it from scratch"
           ]
         },
@@ -290,20 +299,26 @@
           "title": "Configure an ingredient",
           "desc": "For each ingredient you define:",
           "items": [
-            "<strong>Purchase price:</strong> Ex. 15€",
-            "<strong>Purchase quantity:</strong> Ex. 1 kg",
-            "<strong>Cooking unit:</strong> Ex. grams"
+            "<strong>Purchase price:</strong> What you pay the supplier",
+            "<strong>Purchase quantity:</strong> In what quantity you buy it (1 kg, 5 liters, 6 units...)",
+            "<strong>Cooking unit:</strong> How you measure it in recipes (grams, ml, units...)"
           ],
-          "note": "MenuScore automatically calculates that each gram costs you 0.015€."
+          "example": "<strong>Example with oil:</strong> You buy 5L for €25, use ml in recipes. MenuScore calculates: €25 ÷ 5000ml = €0.005/ml. If you use 20ml in a dish = €0.10."
+        },
+        "prices": {
+          "title": "Why update prices",
+          "desc": "Your dish costs depend directly on ingredient prices.",
+          "example": "<strong>Example:</strong> If salmon goes from €15/kg to €20/kg and you don't update it, MenuScore still calculates the old cost. Your real margin has dropped but you don't know it.",
+          "tip": "<strong>Recommendation:</strong> Review prices at least once a month. Those that fluctuate a lot (fish, seasonal vegetables), more often."
         },
         "analysis": {
           "title": "Ingredient analysis (\"Insights\" tab)",
           "desc": "Valuable information about your ingredients:",
           "items": [
-            "<strong>Best sellers:</strong> Which ingredients you move the most (based on last 30 days sales)",
-            "<strong>Most profitable:</strong> Which ingredients generate the most revenue",
-            "<strong>At-risk ingredients:</strong> Ingredients used in only one dish (if that dish doesn't sell, the ingredient sits)",
-            "<strong>Inventory value:</strong> Total value of your pantry (if using stock control)"
+            "<strong>Best sellers:</strong> Which ingredients you move most - useful for negotiating with suppliers",
+            "<strong>Most profitable:</strong> Which ingredients contribute most to your revenue",
+            "<strong>At-risk:</strong> Only used in one dish - if it doesn't sell, the ingredient sits idle",
+            "<strong>Inventory value:</strong> How much money you have \"tied up\" in ingredients (with stock enabled)"
           ]
         }
       },
@@ -320,15 +335,20 @@
             "Automatically deduct stock (if enabled)"
           ]
         },
+        "rule": {
+          "title": "The Golden Rule",
+          "desc": "<strong>Record sales once a week.</strong> The system works with weekly accumulated totals, not daily."
+        },
         "how": {
           "title": "How to record sales",
           "items": [
             "Go to the <strong>Sales</strong> tab",
-            "Select the <strong>week</strong> you want to record",
+            "Select the <strong>week</strong> you want to record (usually the previous one)",
             "Tap <strong>+</strong> to open the record",
-            "Indicate <strong>how many units</strong> of each dish you sold",
+            "Indicate the <strong>total units sold</strong> that week for each dish",
             "Save"
-          ]
+          ],
+          "tip": "<strong>Tip:</strong> It doesn't have to be 100% exact. If you don't have POS data, a reasonable estimate (\"about 30 burgers\") is better than nothing."
         },
         "csv": {
           "title": "Import from CSV file",
@@ -408,7 +428,8 @@
             "Enable \"Recurring stock\"",
             "Indicate weekly amount",
             "MenuScore automatically adds it every Monday"
-          ]
+          ],
+          "example": "<strong>Example:</strong> If you get 3 kegs of beer every Monday, configure it here and forget about adding it manually."
         }
       },
       "backup": {
@@ -434,54 +455,31 @@
       },
       "settings": {
         "title": "Settings",
-        "intro": "Customize calculations for your business. Configuring them correctly will give you more accurate margins.",
-        "operating": {
-          "title": "Monthly operating costs",
-          "desc": "These are the fixed expenses your restaurant has each month, regardless of how much you sell. MenuScore distributes this cost across all dishes to give you a more realistic margin.",
-          "what": "<strong>What to include?</strong>",
-          "items": [
-            "Rent",
-            "Kitchen and front-of-house staff salaries",
-            "Electricity, water and gas",
-            "Insurance and fixed taxes",
-            "Cleaning and maintenance"
-          ],
-          "example": "<strong>Example:</strong> If your monthly costs are €8,000 and you sell 2,000 dishes per month, MenuScore adds €4 to each dish's cost.",
-          "tip": "<strong>Tip:</strong> If you don't know the exact figure, start with an estimate. You can adjust it later."
+        "intro": "Configure these parameters before starting. They directly affect how MenuScore calculates your dish costs.",
+        "operating_cost": {
+          "title": "Monthly Operating Cost (€)",
+          "desc": "The total of all your monthly fixed expenses (rent, payroll, utilities, insurance...).",
+          "example": "<strong>Example:</strong> Rent €1,500 + Payroll €4,000 + Utilities €800 + Others €300 = <strong>€6,600/month</strong>"
         },
-        "extra": {
-          "title": "Extra expenses (%)",
-          "desc": "An additional percentage on ingredient costs to cover expenses that are difficult to calculate individually.",
-          "what": "<strong>What does it cover?</strong>",
-          "items": [
-            "Waste and spoilage (ingredients that go bad or are left over)",
-            "Supplier price variations",
-            "Oil, salt, spices and basic seasonings",
-            "Napkins, takeaway containers, small supplies"
-          ],
-          "example": "<strong>Example:</strong> With 10% extra expenses, a dish with €3 of ingredients will have a cost of €3.30.",
-          "tip": "<strong>Recommended value:</strong> Between 5% and 15% depending on your type of cuisine."
+        "opening_hours": {
+          "title": "Monthly Opening Hours",
+          "desc": "How many hours the venue is open per month. MenuScore uses this to calculate cost per minute.",
+          "example": "<strong>Example:</strong> 10 hours/day × 25 days = <strong>250 hours/month</strong>"
+        },
+        "overhead": {
+          "title": "Overhead / General Expenses (%)",
+          "desc": "An extra percentage to cover variable or unforeseen expenses (waste, breakage, extra cleaning) not included in the monthly cost.",
+          "how": "<strong>Typical values:</strong>",
+          "example": "Between <strong>5% and 15%</strong> depending on your waste control."
         },
         "beverages": {
-          "title": "Beverage profit (%)",
-          "desc": "Beverages usually have higher margins than food. This percentage estimates how much extra profit beverages add to each service.",
-          "why": "<strong>What is it for?</strong>",
-          "items": [
-            "Helps calculate a more realistic overall margin",
-            "Compensates for low-margin dishes if beverages balance it out",
-            "Useful if you sell wine, cocktails or coffees with good margins"
-          ],
-          "example": "<strong>Example:</strong> If you set 20%, MenuScore understands that for every euro of food sold, you expect €0.20 extra profit from beverages.",
-          "tip": "<strong>Recommended value:</strong> 15-25% for restaurants with wine menus. 5-10% if you mainly sell soft drinks or water."
+          "title": "Beverage Profit (%)",
+          "desc": "The percentage of your total revenue that comes from drinks (sodas, wine, coffee...).",
+          "tip": "<strong>Recommended:</strong> 25-30% for most restaurants."
         },
         "vat": {
           "title": "VAT (%)",
-          "desc": "The VAT percentage you apply to your prices. Used to calculate net prices and real margins.",
-          "items": [
-            "In Spain, restaurant VAT is <strong>10%</strong>",
-            "Configure according to your country's legislation"
-          ],
-          "tip": "<strong>Important:</strong> Enter the VAT you use on your menu. MenuScore will take it into account to show you margins before taxes."
+          "desc": "The VAT percentage included in your sales prices (usually 10% in Spain)."
         },
         "lang": {
           "title": "Language",
@@ -490,6 +488,47 @@
             "Español",
             "English"
           ]
+        }
+      },
+      "faq": {
+        "title": "Frequent Questions",
+        "q1": {
+          "q": "Why does my margin seem very low?",
+          "a": "Check: 1. Correct monthly operating cost? 2. Correct opening hours? 3. Realistic overhead? 4. Correct ingredient quantities?"
+        },
+        "q2": {
+          "q": "Why do my dishes say 'No data'?",
+          "a": "Because you haven't recorded sales. Classification (Star, Plowhorse...) needs sales data to work."
+        },
+        "q3": {
+          "q": "Can I use the app without recording sales?",
+          "a": "Yes, but you lose dish classification, Dashboard, and suggestions are less precise."
+        },
+        "q4": {
+          "q": "What happens if I don't add ingredients?",
+          "a": "Cost will be only labor + overhead. Margin will look huge but it will be fake."
+        }
+      },
+      "tips": {
+        "title": "Final Tips",
+        "checklist": {
+          "title": "Initial Checklist",
+          "items": [
+            "Configure monthly operating cost (€)",
+            "Configure monthly opening hours",
+            "Configure overhead (%)",
+            "Configure VAT (%)",
+            "Create all categories",
+            "Add all dishes",
+            "Add ingredients with real quantities",
+            "Update ingredient prices"
+          ]
+        },
+        "routine": {
+          "title": "Recommended Routine",
+          "weekly": "<strong>Weekly (5 min):</strong> Record sales, check stock, check Dashboard.",
+          "monthly": "<strong>Monthly (15 min):</strong> Check ingredient prices, read suggestions, backup.",
+          "quarterly": "<strong>Quarterly (30 min):</strong> Deep analysis, remove Plowhorses, adjust prices."
         }
       }
     },
