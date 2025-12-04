@@ -199,10 +199,10 @@
           "title": "The MenuScore rating",
           "desc": "At the top of the Menu section you will see a number from 0 to 100 representing <strong>the overall health of your entire menu</strong>:",
           "items": [
-            "<strong>80-100:</strong> 🟢 Excellent - Your menu is very well balanced",
-            "<strong>60-79:</strong> 🟡 Good - There is room for improvement but it works well",
-            "<strong>40-59:</strong> 🟠 Fair - Check some dishes",
-            "<strong>0-39:</strong> 🔴 Needs attention - There are problems to solve"
+            "<strong>80-100:</strong> Excellent - Your menu is very well balanced",
+            "<strong>60-79:</strong> Good - There is room for improvement but it works well",
+            "<strong>40-59:</strong> Fair - Check some dishes",
+            "<strong>0-39:</strong> Needs attention - There are problems to solve"
           ],
           "note": "Tap the score to see what factors affect it and how to improve it. This score evaluates your set of dishes as a whole, not each individual dish."
         },
@@ -231,17 +231,17 @@
             "<strong>Real cost</strong> - What it costs you to prepare (ingredients + labor)",
             "<strong>Margin</strong> - How much you earn with each dish (in € and %)",
             "<strong>Recommended price</strong> - If the margin is low, it suggests a better price",
-            "<strong>Classification</strong> - Star ⭐, Plowhorse 🚜, Puzzle 🧩 or Dog ⚓"
+            "<strong>Classification</strong> - Star, Plowhorse, Puzzle or Dog"
           ]
         },
         "classification": {
           "title": "Dish classification",
           "desc": "Each dish receives a label based on its performance:",
           "items": [
-            "<strong>⭐ Star:</strong> High sales AND high margin - Perfect! Keep it highlighted",
-            "<strong>🚜 Plowhorse:</strong> High sales BUT low margin - Raise price or reduce costs",
-            "<strong>🧩 Puzzle:</strong> High margin BUT low sales - Promote it more",
-            "<strong>⚓ Dog:</strong> Low sales AND low margin - Consider removing it"
+            "<strong>Star:</strong> High sales AND high margin - Perfect! Keep it highlighted",
+            "<strong>Plowhorse:</strong> High sales BUT low margin - Raise price or reduce costs",
+            "<strong>Puzzle:</strong> High margin BUT low sales - Promote it more",
+            "<strong>Dog:</strong> Low sales AND low margin - Consider removing it"
           ]
         },
         "suggestions": {
@@ -251,6 +251,27 @@
             "\"Caesar Salad margin is only 45%. Consider raising the price to 12.50€\"",
             "\"Mushroom Risotto has good margin but low sales. Highlight it more on the menu?\"",
             "\"Burger has no added ingredients. Add them to calculate real cost\""
+          ]
+        },
+        "edit": {
+          "title": "Edit or delete dishes",
+          "desc": "To modify an existing dish:",
+          "items": [
+            "Tap the dish you want to edit",
+            "Tap the <strong>edit</strong> icon (pencil)",
+            "Modify name, price, ingredients or category",
+            "Save changes"
+          ],
+          "delete": "To <strong>delete</strong> a dish, swipe left or use the options menu."
+        },
+        "simulation": {
+          "title": "Sales simulation",
+          "desc": "Analyze how different scenarios would affect your margins:",
+          "items": [
+            "From a dish's detail, access <strong>Simulate sales</strong>",
+            "Adjust the number of units sold per week",
+            "Visualize how your total margin would change",
+            "Useful for deciding which dishes to promote"
           ]
         }
       },
@@ -279,10 +300,10 @@
           "title": "Ingredient analysis (\"Insights\" tab)",
           "desc": "Valuable information about your ingredients:",
           "items": [
-            "<strong>📊 Best sellers:</strong> Which ingredients you move the most (based on last 30 days sales)",
-            "<strong>💎 Most profitable:</strong> Which ingredients generate the most revenue",
-            "<strong>⚠️ At-risk ingredients:</strong> Ingredients used in only one dish (if that dish doesn't sell, the ingredient sits)",
-            "<strong>📦 Inventory value:</strong> Total value of your pantry (if using stock control)"
+            "<strong>Best sellers:</strong> Which ingredients you move the most (based on last 30 days sales)",
+            "<strong>Most profitable:</strong> Which ingredients generate the most revenue",
+            "<strong>At-risk ingredients:</strong> Ingredients used in only one dish (if that dish doesn't sell, the ingredient sits)",
+            "<strong>Inventory value:</strong> Total value of your pantry (if using stock control)"
           ]
         }
       },
@@ -327,9 +348,9 @@
         "charts": {
           "title": "Available charts",
           "items": [
-            "<strong>💵 Revenue per week:</strong> Am I billing more or less than before?",
-            "<strong>📦 Units sold:</strong> Am I selling more dishes?",
-            "<strong>📊 Margin:</strong> Is my profitability improving or worsening?"
+            "<strong>Revenue per week:</strong> Am I billing more or less than before?",
+            "<strong>Units sold:</strong> Am I selling more dishes?",
+            "<strong>Margin:</strong> Is my profitability improving or worsening?"
           ]
         },
         "compare": {
@@ -413,23 +434,61 @@
       },
       "settings": {
         "title": "Settings",
-        "intro": "Customize calculations for your business.",
-        "config": {
-          "title": "Cost configuration",
-          "desc": "In Settings you can configure:",
+        "intro": "Customize calculations for your business. Configuring them correctly will give you more accurate margins.",
+        "operating": {
+          "title": "Monthly operating costs",
+          "desc": "These are the fixed expenses your restaurant has each month, regardless of how much you sell. MenuScore distributes this cost across all dishes to give you a more realistic margin.",
+          "what": "<strong>What to include?</strong>",
           "items": [
-            "<strong>Monthly operating costs:</strong> Affects the calculated cost of each dish",
-            "<strong>Extra expenses (%):</strong> An extra percentage over base cost",
-            "<strong>Beverage profit (%):</strong> Expected profit percentage from beverage sales",
-            "<strong>VAT (%):</strong> For price calculations"
-          ]
+            "Rent",
+            "Kitchen and front-of-house staff salaries",
+            "Electricity, water and gas",
+            "Insurance and fixed taxes",
+            "Cleaning and maintenance"
+          ],
+          "example": "<strong>Example:</strong> If your monthly costs are €8,000 and you sell 2,000 dishes per month, MenuScore adds €4 to each dish's cost.",
+          "tip": "<strong>Tip:</strong> If you don't know the exact figure, start with an estimate. You can adjust it later."
+        },
+        "extra": {
+          "title": "Extra expenses (%)",
+          "desc": "An additional percentage on ingredient costs to cover expenses that are difficult to calculate individually.",
+          "what": "<strong>What does it cover?</strong>",
+          "items": [
+            "Waste and spoilage (ingredients that go bad or are left over)",
+            "Supplier price variations",
+            "Oil, salt, spices and basic seasonings",
+            "Napkins, takeaway containers, small supplies"
+          ],
+          "example": "<strong>Example:</strong> With 10% extra expenses, a dish with €3 of ingredients will have a cost of €3.30.",
+          "tip": "<strong>Recommended value:</strong> Between 5% and 15% depending on your type of cuisine."
+        },
+        "beverages": {
+          "title": "Beverage profit (%)",
+          "desc": "Beverages usually have higher margins than food. This percentage estimates how much extra profit beverages add to each service.",
+          "why": "<strong>What is it for?</strong>",
+          "items": [
+            "Helps calculate a more realistic overall margin",
+            "Compensates for low-margin dishes if beverages balance it out",
+            "Useful if you sell wine, cocktails or coffees with good margins"
+          ],
+          "example": "<strong>Example:</strong> If you set 20%, MenuScore understands that for every euro of food sold, you expect €0.20 extra profit from beverages.",
+          "tip": "<strong>Recommended value:</strong> 15-25% for restaurants with wine menus. 5-10% if you mainly sell soft drinks or water."
+        },
+        "vat": {
+          "title": "VAT (%)",
+          "desc": "The VAT percentage you apply to your prices. Used to calculate net prices and real margins.",
+          "items": [
+            "In Spain, restaurant VAT is <strong>10%</strong>",
+            "Configure according to your country's legislation"
+          ],
+          "tip": "<strong>Important:</strong> Enter the VAT you use on your menu. MenuScore will take it into account to show you margins before taxes."
         },
         "lang": {
           "title": "Language",
           "desc": "MenuScore is available in:",
           "items": [
-            "🇪🇸 Español",
-            "🇬🇧 English"
+            "Español",
+            "English"
           ]
         }
       }
@@ -454,6 +513,171 @@
       "email": "Email",
       "message": "Message",
       "send": "Send message"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: December 2025",
+    "intro": {
+      "title": "Summary",
+      "text": "MenuScore is an application designed to help you manage your restaurant menu. <strong>Your privacy is important to us.</strong> This policy explains what data we process and how we do it.",
+      "highlight": "<strong>Most importantly:</strong> MenuScore does NOT collect personal data. All your dish, ingredient and sales information is stored only on your device."
+    },
+    "responsible": {
+      "title": "1. Data controller",
+      "name": "Controller:",
+      "email": "Contact email:"
+    },
+    "data": {
+      "title": "2. Data we process",
+      "local": {
+        "title": "Data stored on your device (we do NOT collect it)",
+        "text": "All information you enter in MenuScore is stored exclusively on your device:",
+        "items": [
+          "Dishes, prices and categories",
+          "Ingredients and their costs",
+          "Sales records",
+          "Settings and preferences"
+        ],
+        "note": "<strong>This data never leaves your device.</strong> We have no access to it and do not store it on any server."
+      },
+      "analytics": {
+        "title": "Anonymous analytics data (Firebase Analytics)",
+        "text": "We use Google's Firebase Analytics to understand how the app is used and improve it. This information is completely anonymous and may include:",
+        "items": [
+          "Device model and operating system version",
+          "Country/region (approximate)",
+          "Usage events (which features are used, not what data you enter)",
+          "Error information to fix bugs"
+        ],
+        "note": "This information does NOT allow us to identify you personally."
+      }
+    },
+    "nodatacollection": {
+      "title": "3. Data we do NOT collect",
+      "text": "MenuScore does NOT collect:",
+      "items": [
+        "Name, email or contact details",
+        "Payment or banking information",
+        "Precise location",
+        "Photos, contacts or files from your device",
+        "Information about your dishes, ingredients or sales"
+      ]
+    },
+    "thirdparty": {
+      "title": "4. Third-party services",
+      "text": "We use the following third-party services:",
+      "firebase": "For anonymous usage analytics."
+    },
+    "rights": {
+      "title": "5. Your rights",
+      "text": "Under GDPR, you have the right to:",
+      "items": [
+        "Access your data",
+        "Rectify incorrect data",
+        "Request deletion of your data",
+        "Object to processing",
+        "Data portability"
+      ],
+      "note": "Since we don't store personal data on our servers, you can exercise these rights directly from your device by deleting the app or its data.",
+      "contact": "For any queries:"
+    },
+    "children": {
+      "title": "6. Minors",
+      "text": "MenuScore is designed for professional use in restaurants. It is not aimed at people under 16 years of age and we do not knowingly collect information from minors."
+    },
+    "changes": {
+      "title": "7. Changes to this policy",
+      "text": "We may update this policy occasionally. We will notify you of significant changes through the app or by posting the new policy on this page."
+    },
+    "contact": {
+      "title": "8. Contact",
+      "text": "If you have questions about this privacy policy, contact us:"
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "updated": "Last updated: December 2024",
+    "intro": {
+      "title": "Introduction",
+      "text": "These terms and conditions govern the use of the MenuScore application. By downloading, installing or using the app, you accept these terms."
+    },
+    "service": {
+      "title": "1. Service description",
+      "text": "MenuScore is a mobile application that helps you:",
+      "items": [
+        "Manage your menu dishes",
+        "Calculate costs and margins for each dish",
+        "Record and analyze sales",
+        "Get suggestions to improve your menu"
+      ],
+      "note": "The app is currently free and works entirely on your device without internet connection or registration."
+    },
+    "license": {
+      "title": "2. License of use",
+      "text": "We grant you a limited, non-exclusive, non-transferable and revocable license to use MenuScore on your personal or business devices, subject to these terms.",
+      "restrictions": "<strong>Not permitted:</strong>",
+      "items": [
+        "Copy, modify or distribute the application",
+        "Reverse engineer or attempt to extract source code",
+        "Use the application for illegal purposes",
+        "Resell or sublicense the application"
+      ]
+    },
+    "data": {
+      "title": "3. Your data",
+      "text": "All information you enter in MenuScore (dishes, ingredients, sales, etc.) is stored only on your device. You are solely responsible for:",
+      "items": [
+        "Backing up your data",
+        "The accuracy of information entered",
+        "Maintaining the security of your device"
+      ],
+      "warning": "<strong>Important:</strong> If you uninstall the app or change devices without backing up, you will lose all data."
+    },
+    "disclaimer": {
+      "title": "4. Disclaimer",
+      "text": "MenuScore is a management support tool. Calculations, suggestions and classifications are indicative:",
+      "items": [
+        "They do not replace professional accounting or financial advice",
+        "Business decisions are your sole responsibility",
+        "We do not guarantee specific economic results"
+      ],
+      "note": "The application is provided \"as is\", without warranties of any kind."
+    },
+    "liability": {
+      "title": "5. Limitation of liability",
+      "text": "To the maximum extent permitted by law, we will not be liable for:",
+      "items": [
+        "Direct, indirect, incidental or consequential damages arising from use of the application",
+        "Loss of data, profits or business interruption",
+        "Errors or inaccuracies in calculations",
+        "Decisions made based on information from the application"
+      ]
+    },
+    "ip": {
+      "title": "6. Intellectual property",
+      "text": "MenuScore, including its design, code, logos, icons and content, is protected by intellectual property rights. All rights not expressly granted are reserved."
+    },
+    "changes": {
+      "title": "7. Changes to the service",
+      "text": "We reserve the right to:",
+      "items": [
+        "Modify, suspend or discontinue the application at any time",
+        "Update these terms (we will notify you of significant changes)",
+        "Add paid features in the future"
+      ]
+    },
+    "termination": {
+      "title": "8. Termination",
+      "text": "You can stop using MenuScore at any time by uninstalling the app. We reserve the right to revoke your access if you breach these terms."
+    },
+    "law": {
+      "title": "9. Governing law",
+      "text": "These terms are governed by Spanish law. Any dispute will be submitted to the competent courts of Spain."
+    },
+    "contact": {
+      "title": "10. Contact",
+      "text": "If you have questions about these terms, contact us:"
     }
   },
   "lang": {

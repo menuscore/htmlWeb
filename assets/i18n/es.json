@@ -199,10 +199,10 @@
           "title": "La puntuación MenuScore",
           "desc": "En la parte superior de la sección Carta verás un número del 0 al 100 que representa <strong>la salud general de tu carta completa</strong>:",
           "items": [
-            "<strong>80-100:</strong> 🟢 Excelente - Tu carta está muy bien equilibrada",
-            "<strong>60-79:</strong> 🟡 Buena - Hay margen de mejora pero funciona bien",
-            "<strong>40-59:</strong> 🟠 Regular - Revisa algunos platos",
-            "<strong>0-39:</strong> 🔴 Necesita atención - Hay problemas que resolver"
+            "<strong>80-100:</strong> Excelente - Tu carta está muy bien equilibrada",
+            "<strong>60-79:</strong> Buena - Hay margen de mejora pero funciona bien",
+            "<strong>40-59:</strong> Regular - Revisa algunos platos",
+            "<strong>0-39:</strong> Necesita atención - Hay problemas que resolver"
           ],
           "note": "Toca la puntuación para ver qué factores la afectan y cómo mejorarla. Esta puntuación evalúa el conjunto de todos tus platos, no cada plato individual."
         },
@@ -231,17 +231,17 @@
             "<strong>Coste real</strong> - Lo que te cuesta prepararlo (ingredientes + trabajo)",
             "<strong>Margen</strong> - Cuánto ganas con cada plato (en € y en %)",
             "<strong>Precio recomendado</strong> - Si el margen es bajo, te sugiere un precio mejor",
-            "<strong>Clasificación</strong> - Estrella ⭐, Tractor 🚜, Gancho 🧩 o Lastre ⚓"
+            "<strong>Clasificación</strong> - Estrella, Tractor, Gancho o Lastre"
           ]
         },
         "classification": {
           "title": "Clasificación de platos",
           "desc": "Cada plato recibe una etiqueta según su rendimiento:",
           "items": [
-            "<strong>⭐ Estrella:</strong> Vende mucho Y da buen margen - ¡Perfecto! Mantenerlo destacado",
-            "<strong>🚜 Tractor:</strong> Vende mucho PERO da poco margen - Subir precio o reducir costes",
-            "<strong>🧩 Gancho:</strong> Da buen margen PERO vende poco - Promocionarlo más",
-            "<strong>⚓ Lastre:</strong> Vende poco Y da poco margen - Plantearse eliminarlo"
+            "<strong>Estrella:</strong> Vende mucho Y da buen margen - ¡Perfecto! Mantenerlo destacado",
+            "<strong>Tractor:</strong> Vende mucho PERO da poco margen - Subir precio o reducir costes",
+            "<strong>Gancho:</strong> Da buen margen PERO vende poco - Promocionarlo más",
+            "<strong>Lastre:</strong> Vende poco Y da poco margen - Plantearse eliminarlo"
           ]
         },
         "suggestions": {
@@ -251,6 +251,27 @@
             "\"El margen de Ensalada César es solo del 45%. Considera subir el precio a 12,50€\"",
             "\"Risotto de setas tiene buen margen pero vende poco. ¿Lo destacas más en carta?\"",
             "\"Hamburguesa no tiene ingredientes añadidos. Añádelos para calcular el coste real\""
+          ]
+        },
+        "edit": {
+          "title": "Editar o eliminar platos",
+          "desc": "Para modificar un plato existente:",
+          "items": [
+            "Toca el plato que quieres editar",
+            "Pulsa el icono de <strong>editar</strong> (lápiz)",
+            "Modifica nombre, precio, ingredientes o categoría",
+            "Guarda los cambios"
+          ],
+          "delete": "Para <strong>eliminar</strong> un plato, desliza hacia la izquierda o usa el menú de opciones."
+        },
+        "simulation": {
+          "title": "Simulación de ventas",
+          "desc": "Analiza cómo afectarían diferentes escenarios a tus márgenes:",
+          "items": [
+            "Desde la ficha de un plato, accede a <strong>Simular ventas</strong>",
+            "Ajusta el número de unidades vendidas por semana",
+            "Visualiza cómo cambiaría tu margen total",
+            "Útil para decidir qué platos promocionar"
           ]
         }
       },
@@ -279,10 +300,10 @@
           "title": "Análisis de ingredientes (Pestaña \"Insights\")",
           "desc": "Información valiosa sobre tus ingredientes:",
           "items": [
-            "<strong>📊 Lo más vendido:</strong> Qué ingredientes mueves más (basado en ventas de los últimos 30 días)",
-            "<strong>💎 Lo más rentable:</strong> Qué ingredientes te generan más ingresos",
-            "<strong>⚠️ Ingredientes en riesgo:</strong> Ingredientes que solo usas en un plato (si ese plato no vende, el ingrediente se queda parado)",
-            "<strong>📦 Valor del inventario:</strong> El valor total de tu despensa (si usas control de stock)"
+            "<strong>Lo más vendido:</strong> Qué ingredientes mueves más (basado en ventas de los últimos 30 días)",
+            "<strong>Lo más rentable:</strong> Qué ingredientes te generan más ingresos",
+            "<strong>Ingredientes en riesgo:</strong> Ingredientes que solo usas en un plato (si ese plato no vende, el ingrediente se queda parado)",
+            "<strong>Valor del inventario:</strong> El valor total de tu despensa (si usas control de stock)"
           ]
         }
       },
@@ -327,9 +348,9 @@
         "charts": {
           "title": "Gráficos disponibles",
           "items": [
-            "<strong>💵 Ingresos por semana:</strong> ¿Estoy facturando más o menos que antes?",
-            "<strong>📦 Unidades vendidas:</strong> ¿Estoy vendiendo más platos?",
-            "<strong>📊 Margen:</strong> ¿Mi rentabilidad mejora o empeora?"
+            "<strong>Ingresos por semana:</strong> ¿Estoy facturando más o menos que antes?",
+            "<strong>Unidades vendidas:</strong> ¿Estoy vendiendo más platos?",
+            "<strong>Margen:</strong> ¿Mi rentabilidad mejora o empeora?"
           ]
         },
         "compare": {
@@ -413,23 +434,61 @@
       },
       "settings": {
         "title": "Ajustes",
-        "intro": "Personaliza los cálculos según tu negocio.",
-        "config": {
-          "title": "Configuración de costes",
-          "desc": "En Ajustes puedes configurar:",
+        "intro": "Personaliza los cálculos según tu negocio. Configurarlos correctamente te dará márgenes más precisos.",
+        "operating": {
+          "title": "Costes operativos mensuales",
+          "desc": "Son los gastos fijos que tiene tu restaurante cada mes, independientemente de cuánto vendas. MenuScore reparte este coste entre todos los platos para darte un margen más realista.",
+          "what": "<strong>¿Qué incluir?</strong>",
           "items": [
-            "<strong>Costes operativos mensuales:</strong> Afecta al coste calculado de cada plato",
-            "<strong>Gastos extra (%):</strong> Un porcentaje extra sobre el coste base",
-            "<strong>Beneficios por bebidas (%):</strong> Un porcentaje esperado de beneficios por la venta de bebidas",
-            "<strong>IVA (%):</strong> Para cálculos de precios"
-          ]
+            "Alquiler del local",
+            "Sueldos del personal de cocina y sala",
+            "Electricidad, agua y gas",
+            "Seguros e impuestos fijos",
+            "Limpieza y mantenimiento"
+          ],
+          "example": "<strong>Ejemplo:</strong> Si tus costes mensuales son 8.000€ y vendes 2.000 platos al mes, MenuScore añade 4€ al coste de cada plato.",
+          "tip": "<strong>Consejo:</strong> Si no conoces el dato exacto, empieza con una estimación. Puedes ajustarlo después."
+        },
+        "extra": {
+          "title": "Gastos extra (%)",
+          "desc": "Un porcentaje adicional sobre el coste de ingredientes para cubrir gastos difíciles de calcular individualmente.",
+          "what": "<strong>¿Qué cubre?</strong>",
+          "items": [
+            "Mermas y desperdicios (ingredientes que se estropean o sobran)",
+            "Variaciones de precios de proveedores",
+            "Aceite, sal, especias y condimentos básicos",
+            "Servilletas, envases para llevar, pequeño material"
+          ],
+          "example": "<strong>Ejemplo:</strong> Con un 10% de gastos extra, un plato con 3€ de ingredientes pasará a tener un coste de 3,30€.",
+          "tip": "<strong>Valor recomendado:</strong> Entre 5% y 15% dependiendo de tu tipo de cocina."
+        },
+        "beverages": {
+          "title": "Beneficios por bebidas (%)",
+          "desc": "Las bebidas suelen tener márgenes más altos que la comida. Este porcentaje estima cuánto beneficio extra aportan las bebidas a cada servicio.",
+          "why": "<strong>¿Para qué sirve?</strong>",
+          "items": [
+            "Ayuda a calcular un margen global más realista",
+            "Compensa platos con margen bajo si las bebidas lo equilibran",
+            "Útil si vendes vino, cócteles o cafés con buen margen"
+          ],
+          "example": "<strong>Ejemplo:</strong> Si pones 20%, MenuScore entiende que por cada euro de comida vendida, esperas 0,20€ extra de beneficio por bebidas.",
+          "tip": "<strong>Valor recomendado:</strong> 15-25% para restaurantes con carta de vinos. 5-10% si principalmente vendes refrescos o agua."
+        },
+        "vat": {
+          "title": "IVA (%)",
+          "desc": "El porcentaje de IVA que aplicas a tus precios. Se usa para calcular precios netos y márgenes reales.",
+          "items": [
+            "En España el IVA de restauración es del <strong>10%</strong>",
+            "Configúralo según la legislación de tu país"
+          ],
+          "tip": "<strong>Importante:</strong> Indica el IVA que usas en tu carta. MenuScore lo tendrá en cuenta para mostrarte márgenes antes de impuestos."
         },
         "lang": {
           "title": "Idioma",
           "desc": "MenuScore está disponible en:",
           "items": [
-            "🇪🇸 Español",
-            "🇬🇧 English"
+            "Español",
+            "English"
           ]
         }
       }
@@ -454,6 +513,171 @@
       "email": "Email",
       "message": "Mensaje",
       "send": "Enviar mensaje"
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "updated": "Última actualización: Diciembre 2025",
+    "intro": {
+      "title": "Resumen",
+      "text": "MenuScore es una aplicación diseñada para ayudarte a gestionar tu carta de restaurante. <strong>Tu privacidad es importante para nosotros.</strong> Esta política explica qué datos tratamos y cómo lo hacemos.",
+      "highlight": "<strong>Lo más importante:</strong> MenuScore NO recopila datos personales. Toda la información de tus platos, ingredientes y ventas se almacena únicamente en tu dispositivo."
+    },
+    "responsible": {
+      "title": "1. Responsable del tratamiento",
+      "name": "Responsable:",
+      "email": "Email de contacto:"
+    },
+    "data": {
+      "title": "2. Datos que tratamos",
+      "local": {
+        "title": "Datos almacenados en tu dispositivo (NO los recopilamos)",
+        "text": "Toda la información que introduces en MenuScore se guarda exclusivamente en tu dispositivo:",
+        "items": [
+          "Platos, precios y categorías",
+          "Ingredientes y sus costes",
+          "Registros de ventas",
+          "Configuración y preferencias"
+        ],
+        "note": "<strong>Estos datos nunca salen de tu dispositivo.</strong> No tenemos acceso a ellos ni los almacenamos en ningún servidor."
+      },
+      "analytics": {
+        "title": "Datos de análisis anónimos (Firebase Analytics)",
+        "text": "Utilizamos Firebase Analytics de Google para entender cómo se usa la aplicación y mejorarla. Esta información es completamente anónima y puede incluir:",
+        "items": [
+          "Modelo de dispositivo y versión del sistema operativo",
+          "País/región (aproximado)",
+          "Eventos de uso (qué funciones se utilizan, no qué datos introduces)",
+          "Información de errores para corregir fallos"
+        ],
+        "note": "Esta información NO permite identificarte personalmente."
+      }
+    },
+    "nodatacollection": {
+      "title": "3. Datos que NO recopilamos",
+      "text": "MenuScore NO recopila:",
+      "items": [
+        "Nombre, email ni datos de contacto",
+        "Información de pago o bancaria",
+        "Ubicación precisa",
+        "Fotos, contactos ni archivos de tu dispositivo",
+        "Información de tus platos, ingredientes o ventas"
+      ]
+    },
+    "thirdparty": {
+      "title": "4. Servicios de terceros",
+      "text": "Utilizamos los siguientes servicios de terceros:",
+      "firebase": "Para análisis anónimos de uso."
+    },
+    "rights": {
+      "title": "5. Tus derechos",
+      "text": "Según el RGPD, tienes derecho a:",
+      "items": [
+        "Acceder a tus datos",
+        "Rectificar datos incorrectos",
+        "Solicitar la eliminación de tus datos",
+        "Oponerte al tratamiento",
+        "Portabilidad de los datos"
+      ],
+      "note": "Como no almacenamos datos personales en nuestros servidores, puedes ejercer estos derechos directamente desde tu dispositivo eliminando la aplicación o sus datos.",
+      "contact": "Para cualquier consulta:"
+    },
+    "children": {
+      "title": "6. Menores de edad",
+      "text": "MenuScore está diseñada para uso profesional en restaurantes. No está dirigida a menores de 16 años ni recopilamos conscientemente información de menores."
+    },
+    "changes": {
+      "title": "7. Cambios en esta política",
+      "text": "Podemos actualizar esta política ocasionalmente. Te notificaremos de cambios significativos a través de la aplicación o publicando la nueva política en esta página."
+    },
+    "contact": {
+      "title": "8. Contacto",
+      "text": "Si tienes preguntas sobre esta política de privacidad, contacta con nosotros:"
+    }
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "updated": "Última actualización: Diciembre 2024",
+    "intro": {
+      "title": "Introducción",
+      "text": "Estos términos y condiciones regulan el uso de la aplicación MenuScore. Al descargar, instalar o usar la aplicación, aceptas estos términos."
+    },
+    "service": {
+      "title": "1. Descripción del servicio",
+      "text": "MenuScore es una aplicación móvil que te ayuda a:",
+      "items": [
+        "Gestionar los platos de tu carta",
+        "Calcular costes y márgenes de cada plato",
+        "Registrar y analizar ventas",
+        "Obtener sugerencias para mejorar tu menú"
+      ],
+      "note": "La aplicación es actualmente gratuita y funciona completamente en tu dispositivo sin necesidad de conexión a internet ni registro."
+    },
+    "license": {
+      "title": "2. Licencia de uso",
+      "text": "Te concedemos una licencia limitada, no exclusiva, intransferible y revocable para usar MenuScore en tus dispositivos personales o de tu negocio, sujeta a estos términos.",
+      "restrictions": "<strong>No está permitido:</strong>",
+      "items": [
+        "Copiar, modificar o distribuir la aplicación",
+        "Realizar ingeniería inversa o intentar extraer el código fuente",
+        "Usar la aplicación para fines ilegales",
+        "Revender o sublicenciar la aplicación"
+      ]
+    },
+    "data": {
+      "title": "3. Tus datos",
+      "text": "Toda la información que introduces en MenuScore (platos, ingredientes, ventas, etc.) se almacena únicamente en tu dispositivo. Eres el único responsable de:",
+      "items": [
+        "Realizar copias de seguridad de tus datos",
+        "La veracidad de la información introducida",
+        "Mantener la seguridad de tu dispositivo"
+      ],
+      "warning": "<strong>Importante:</strong> Si desinstalas la aplicación o cambias de dispositivo sin hacer backup, perderás todos los datos."
+    },
+    "disclaimer": {
+      "title": "4. Exención de responsabilidad",
+      "text": "MenuScore es una herramienta de ayuda a la gestión. Los cálculos, sugerencias y clasificaciones son orientativos:",
+      "items": [
+        "No sustituyen el asesoramiento profesional contable o financiero",
+        "Las decisiones de negocio son tu responsabilidad exclusiva",
+        "No garantizamos resultados económicos específicos"
+      ],
+      "note": "La aplicación se proporciona \"tal cual\", sin garantías de ningún tipo."
+    },
+    "liability": {
+      "title": "5. Limitación de responsabilidad",
+      "text": "En la máxima medida permitida por la ley, no seremos responsables de:",
+      "items": [
+        "Daños directos, indirectos, incidentales o consecuentes derivados del uso de la aplicación",
+        "Pérdida de datos, beneficios o interrupción del negocio",
+        "Errores o inexactitudes en los cálculos",
+        "Decisiones tomadas basándose en la información de la aplicación"
+      ]
+    },
+    "ip": {
+      "title": "6. Propiedad intelectual",
+      "text": "MenuScore, incluyendo su diseño, código, logos, iconos y contenido, está protegido por derechos de propiedad intelectual. Todos los derechos que no se conceden expresamente están reservados."
+    },
+    "changes": {
+      "title": "7. Cambios en el servicio",
+      "text": "Nos reservamos el derecho de:",
+      "items": [
+        "Modificar, suspender o discontinuar la aplicación en cualquier momento",
+        "Actualizar estos términos (te notificaremos de cambios significativos)",
+        "Añadir funcionalidades de pago en el futuro"
+      ]
+    },
+    "termination": {
+      "title": "8. Terminación",
+      "text": "Puedes dejar de usar MenuScore en cualquier momento desinstalando la aplicación. Nos reservamos el derecho de revocar tu acceso si incumples estos términos."
+    },
+    "law": {
+      "title": "9. Ley aplicable",
+      "text": "Estos términos se rigen por la legislación española. Cualquier disputa se someterá a los tribunales competentes de España."
+    },
+    "contact": {
+      "title": "10. Contacto",
+      "text": "Si tienes preguntas sobre estos términos, contacta con nosotros:"
     }
   },
   "lang": {
