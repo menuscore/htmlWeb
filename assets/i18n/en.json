@@ -10,7 +10,8 @@
   "hero": {
     "title": "UNDERSTAND → ACT → IMPROVE",
     "subtitle": "The menu management app that helps you maximize your restaurant's profits",
-    "cta": "Download free",
+    "cta": "Coming Soon",
+    "cta_subtext": "Available soon on iOS and Android",
     "cta_sub": "100% free · Available on iOS and Android"
   },
   "stores": {
@@ -48,7 +49,8 @@
   },
   "download": {
     "title": "Download MenuScore",
-    "subtitle": "Available on iOS and Android"
+    "subtitle": "Coming soon to iOS and Android",
+    "coming_soon": "🚀 Coming Soon"
   },
   "footer": {
     "copyright": "© 2025 MenuScore",
@@ -248,26 +250,28 @@
           "desc": "Each dish receives a label based on its performance:",
           "items": [
             "<strong>Star:</strong> High sales AND high margin - Perfect! Keep it highlighted",
-            "<strong>Plowhorse:</strong> High sales BUT low margin - Raise price or reduce costs",
+            "<strong>Plowhorse:</strong> High sales BUT low margin - Reduce costs if possible",
             "<strong>Puzzle:</strong> High margin BUT low sales - Promote it more",
-            "<strong>Dog:</strong> Low sales AND low margin - Consider removing it"
-          ]
+            "<strong>Dog:</strong> Low sales AND low margin - Consider removing it",
+            "<strong>Review:</strong> A dish that was popular has stopped being so - Analyze what happened"
+          ],
+          "review_tip": "When a dish changes role (e.g., goes from Star to Review), the app notifies you to investigate."
         },
         "suggestions": {
           "title": "Smart suggestions",
           "desc": "MenuScore analyzes your menu and gives you personalized advice like:",
           "items": [
-            "\"Caesar Salad margin is only 45%. Consider raising the price to 12.50€\"",
             "\"Mushroom Risotto has good margin but low sales. Highlight it more on the menu?\"",
-            "\"Burger has no added ingredients. Add them to calculate real cost\""
+            "\"Burger has no added ingredients. Add them to calculate real cost\"",
+            "\"Caesar Salad sales dropped this week. What happened?\""
           ]
         },
         "edit": {
           "title": "Edit or delete dishes",
           "desc": "To modify an existing dish:",
           "items": [
-            "Tap the dish you want to edit",
-            "Tap the <strong>edit</strong> icon (pencil)",
+            "<strong>Tap the dish</strong> you want to edit",
+            "Its info card will open with all the details",
             "Modify name, price, ingredients or category",
             "Save changes"
           ],

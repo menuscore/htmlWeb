@@ -10,7 +10,8 @@
   "hero": {
     "title": "ENTIENDE → ACTÚA → MEJORA",
     "subtitle": "La app de gestión de menús que te ayuda a maximizar los beneficios de tu restaurante",
-    "cta": "Descarga gratis",
+    "cta": "Próximamente",
+    "cta_subtext": "Disponible pronto en iOS y Android",
     "cta_sub": "100% gratuita · Disponible en iOS y Android"
   },
   "stores": {
@@ -48,7 +49,8 @@
   },
   "download": {
     "title": "Descarga MenuScore",
-    "subtitle": "Disponible en iOS y Android"
+    "subtitle": "Disponible próximamente en iOS y Android",
+    "coming_soon": "🚀 Próximamente"
   },
   "footer": {
     "copyright": "© 2025 MenuScore",
@@ -248,26 +250,28 @@
           "desc": "Cada plato recibe una etiqueta según su rendimiento:",
           "items": [
             "<strong>Estrella:</strong> Vende mucho Y da buen margen - ¡Perfecto! Mantenerlo destacado",
-            "<strong>Tractor:</strong> Vende mucho PERO da poco margen - Subir precio o reducir costes",
+            "<strong>Tractor:</strong> Vende mucho PERO da poco margen - Reducir costes si es posible",
             "<strong>Gancho:</strong> Da buen margen PERO vende poco - Promocionarlo más",
-            "<strong>Lastre:</strong> Vende poco Y da poco margen - Plantearse eliminarlo"
-          ]
+            "<strong>Lastre:</strong> Vende poco Y da poco margen - Plantearse eliminarlo",
+            "<strong>Revisar:</strong> Un plato que antes era popular ha dejado de serlo - Analiza qué ha pasado"
+          ],
+          "review_tip": "Cuando un plato cambia de rol (por ejemplo, pasa de Estrella a Revisar), la app te avisa para que investigues."
         },
         "suggestions": {
           "title": "Sugerencias inteligentes",
           "desc": "MenuScore analiza tu carta y te da consejos personalizados como:",
           "items": [
-            "\"El margen de Ensalada César es solo del 45%. Considera subir el precio a 12,50€\"",
             "\"Risotto de setas tiene buen margen pero vende poco. ¿Lo destacas más en carta?\"",
-            "\"Hamburguesa no tiene ingredientes añadidos. Añádelos para calcular el coste real\""
+            "\"Hamburguesa no tiene ingredientes añadidos. Añádelos para calcular el coste real\"",
+            "\"La Ensalada César ha bajado de ventas esta semana. ¿Ha pasado algo?\""
           ]
         },
         "edit": {
           "title": "Editar o eliminar platos",
           "desc": "Para modificar un plato existente:",
           "items": [
-            "Toca el plato que quieres editar",
-            "Pulsa el icono de <strong>editar</strong> (lápiz)",
+            "<strong>Toca el plato</strong> que quieres editar",
+            "Se abrirá su ficha con toda la información",
             "Modifica nombre, precio, ingredientes o categoría",
             "Guarda los cambios"
           ],
