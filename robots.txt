@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://menuscore.app/sitemap.xml
