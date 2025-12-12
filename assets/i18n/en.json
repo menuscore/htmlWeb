@@ -10,9 +10,9 @@
   "hero": {
     "title": "UNDERSTAND → ACT → IMPROVE",
     "subtitle": "The menu management app that helps you maximize your restaurant's profits",
-    "cta": "Coming Soon",
-    "cta_subtext": "Available soon on iOS and Android",
-    "cta_sub": "100% free · Available on iOS and Android"
+    "cta": "Download on iOS",
+    "cta_subtext": "Available now on iOS · Coming soon to Android",
+    "cta_sub": "100% free · Available on iOS · Coming soon to Android"
   },
   "stores": {
     "appstore": "App Store",
@@ -49,8 +49,8 @@
   },
   "download": {
     "title": "Download MenuScore",
-    "subtitle": "Coming soon to iOS and Android",
-    "coming_soon": "🚀 Coming Soon"
+    "subtitle": "Available now on iOS · Coming soon to Android",
+    "coming_soon": "🎉 Now available on iOS!"
   },
   "footer": {
     "copyright": "© 2025 MenuScore",

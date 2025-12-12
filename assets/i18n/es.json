@@ -10,9 +10,9 @@
   "hero": {
     "title": "ENTIENDE → ACTÚA → MEJORA",
     "subtitle": "La app de gestión de menús que te ayuda a maximizar los beneficios de tu restaurante",
-    "cta": "Próximamente",
-    "cta_subtext": "Disponible pronto en iOS y Android",
-    "cta_sub": "100% gratuita · Disponible en iOS y Android"
+    "cta": "Descargar en iOS",
+    "cta_subtext": "Disponible ahora en iOS · Próximamente en Android",
+    "cta_sub": "100% gratuita · Disponible en iOS · Próximamente en Android"
   },
   "stores": {
     "appstore": "App Store",
@@ -49,8 +49,8 @@
   },
   "download": {
     "title": "Descarga MenuScore",
-    "subtitle": "Disponible próximamente en iOS y Android",
-    "coming_soon": "🚀 Próximamente"
+    "subtitle": "Disponible ahora en iOS · Próximamente en Android",
+    "coming_soon": "🎉 ¡Ya disponible en iOS!"
   },
   "footer": {
     "copyright": "© 2025 MenuScore",
