@@ -1061,34 +1061,43 @@ blockquote footer {
 
 /* === HOW TO START SECTION === */
 .how-to-start-section {
-  background: var(--ms-yellow);
-  padding: var(--spacing-lg) 0;
+  background: var(--ms-yellow) !important;
+  padding: var(--spacing-xl) 0 !important;
   text-align: center;
 }
 
 .how-to-start-section h2 {
-  color: var(--ms-blue);
+  color: var(--ms-blue) !important;
   margin-bottom: var(--spacing-sm);
 }
 
+.how-to-start-section p,
 .how-to-start-section .lead {
-  color: var(--ms-blue-dark);
+  color: var(--ms-blue-dark) !important;
   opacity: 0.9;
+  margin-bottom: var(--spacing-md) !important;
 }
 
-.how-to-start-section .btn-outline-primary {
-  background: transparent;
-  color: var(--ms-blue);
-  border: 2px solid var(--ms-blue);
-  padding: 0.85rem 2rem;
+.how-to-start-section .btn,
+.how-to-start-section .btn-outline-primary,
+.how-to-start-section .btn-lg {
+  background: transparent !important;
+  color: var(--ms-blue) !important;
+  border: 2px solid var(--ms-blue) !important;
+  padding: 0.85rem 2.5rem !important;
   font-weight: 700;
+  font-size: 1.1rem;
   border-radius: var(--radius-md);
   transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.how-to-start-section .btn-outline-primary:hover {
-  background: var(--ms-blue);
-  color: var(--ms-yellow);
+.how-to-start-section .btn:hover,
+.how-to-start-section .btn-outline-primary:hover,
+.how-to-start-section .btn-lg:hover {
+  background: var(--ms-blue) !important;
+  color: var(--ms-yellow) !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(49, 108, 179, 0.3);
 }
