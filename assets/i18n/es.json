@@ -52,6 +52,11 @@
     "subtitle": "Disponible ahora en iOS · Próximamente en Android",
     "coming_soon": "🎉 ¡Ya disponible en iOS!"
   },
+  "howToStart": {
+    "title": "¿Cómo empezar?",
+    "subtitle": "Consulta nuestra guía paso a paso para sacar el máximo provecho de MenuScore",
+    "button": "Ver guía de uso →"
+  },
   "footer": {
     "copyright": "© 2025 MenuScore",
     "privacy": "Privacidad",

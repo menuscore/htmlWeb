@@ -1059,6 +1059,40 @@ blockquote footer {
   font-size: 1.1rem;
 }
 
+/* === HOW TO START SECTION === */
+.how-to-start-section {
+  background: var(--ms-yellow);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.how-to-start-section h2 {
+  color: var(--ms-blue);
+  margin-bottom: var(--spacing-sm);
+}
+
+.how-to-start-section .lead {
+  color: var(--ms-blue-dark);
+  opacity: 0.9;
+}
+
+.how-to-start-section .btn-outline-primary {
+  background: transparent;
+  color: var(--ms-blue);
+  border: 2px solid var(--ms-blue);
+  padding: 0.85rem 2rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+.how-to-start-section .btn-outline-primary:hover {
+  background: var(--ms-blue);
+  color: var(--ms-yellow);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(49, 108, 179, 0.3);
+}
+
 /* === APP DOWNLOAD SECTION === */
 .app-download-section {
   background: var(--color-surface);
