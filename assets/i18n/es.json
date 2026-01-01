@@ -4,6 +4,7 @@
     "home": "Inicio",
     "features": "Características",
     "guide": "Guía",
+    "tutorial": "Tutorial",
     "contact": "Contacto",
     "cta": "Prueba gratis"
   },
@@ -726,6 +727,212 @@
     "contact": {
       "title": "10. Contacto",
       "text": "Si tienes preguntas sobre estos términos, contacta con nosotros:"
+    }
+  },
+  "tutorialPage": {
+    "title": "Tutorial Paso a Paso",
+    "subtitle": "Aprende a usar MenuScore con un ejemplo práctico desde cero",
+    "sidebar": {
+      "title": "Contenido",
+      "intro": "Introducción",
+      "step1": "Paso 1: Crear platos",
+      "step2": "Paso 2: Capacidad operativa",
+      "step3": "Paso 3: Gestión de ventas",
+      "step4": "Paso 4: Análisis y mejora"
+    },
+    "intro": {
+      "title": "Gestionar un restaurante no debería ser cuestión de intuición.",
+      "text1": "En este tutorial aprenderás a usar MenuScore para entender tu menú, detectar oportunidades de mejora y tomar decisiones basadas en datos reales.",
+      "text2": "👉 Sigue leyendo y descubre todo lo que tu menú puede hacer por tu negocio."
+    },
+    "primerosPasos": {
+      "title": "Primeros pasos con MenuScore",
+      "subtitle": "Crea tu menú sin complicaciones, paso a paso",
+      "mariaStory": "En este tutorial vamos a acompañar a María, dueña de un pequeño restaurante. María quiere mejorar la gestión de su negocio y un conocido le recomienda MenuScore.",
+      "startingNote": "👉 Si estás empezando, sigue este ejemplo. Puedes volver a esta guía siempre que lo necesites.",
+      "downloadTitle": "Descarga MenuScore ahora:",
+      "downloadText": "MenuScore está disponible de forma gratuita en iOS y Android. Descarga la app desde tu tienda de aplicaciones favorita:"
+    },
+    "step1": {
+      "title": "Paso 1: Crear un plato",
+      "text": "Una vez instalada MenuScore en el móvil, María abre la app y empieza por añadir los platos de su menú. Veamos cómo crea uno de ellos: la Ensalada de la casa.",
+      "btnPlus": "En la pantalla de inicio, pulsa el botón ➕.",
+      "btnPlusNote": "💡 Es el botón para añadir cualquier cosa nueva en la app.",
+      "formTitle": "Se abre la ventana “Añadir nuevo plato”.",
+      "formName": "Pulsa en Nombre del plato y escribe el nombre.",
+      "formNameVal": "👉 Ensalada de la casa",
+      "formPrice": "Pulsa en Precio e introduce el importe.",
+      "formPriceVal": "👉 En su restaurante cuesta 12 €.",
+      "formPriceNote": "💡 Puedes cambiar el precio más adelante si lo necesitas."
+    },
+    "step1Complejidad": {
+      "title": "Paso 2: Indicar la complejidad de preparación",
+      "text": "MenuScore te pide que indiques cómo de complejo es preparar el plato.",
+      "note": "💡 No es un examen: solo sirve para entender mejor tu menú.",
+      "optionsTitle": "Opciones disponibles:",
+      "optionMin": "Mínimo: solo emplatar o servir",
+      "optionQuick": "Rápido: preparaciones sencillas con pocos pasos",
+      "optionMod": "Moderado: platos con cocción estándar",
+      "optionComp": "Complejo: recetas más elaboradas",
+      "mariaChoice": "👉 La ensalada es sencilla, así que María selecciona Rápido."
+    },
+    "step1Categoria": {
+      "title": "Paso 3: Elegir la categoría",
+      "text": "Ahora toca clasificar el plato.",
+      "existingTitle": "Puedes usar una categoría existente:",
+      "categories": "Entrantes, Principales, Postres, Vegetarianos, Especiales",
+      "mariaChoice": "👉 María elige Entrantes.",
+      "newCategoryTitle": "¿No ves la categoría que necesitas? No pasa nada:",
+      "step1": "Pulsa Nueva categoría.",
+      "step2": "Escribe el nombre (máx. 30 caracteres).",
+      "step3": "Pulsa Crear.",
+      "note": "💡 La categoría quedará guardada para futuros platos.",
+      "imagesAlt4": "Crear plato guía parte 4"
+    },
+    "step1Ingredientes": {
+      "title": "Paso 4: Añadir ingredientes",
+      "text": "Ahora llega la parte más importante: los ingredientes.",
+      "note": "💡 Aquí es donde MenuScore empieza a ayudarte de verdad.",
+      "mariaText": "La ensalada de María lleva tomate, cebolla, albahaca, aceite, vinagre…",
+      "step1": "Pulsa el botón azul ➕ Añadir ingrediente.",
+      "step2": "Escribe el nombre del ingrediente en el buscador (ej: Tomate).",
+      "step3": "Selecciona el ingrediente de la lista.",
+      "step4": "Indica la cantidad que lleva el plato (María añade 70 g).",
+      "step5": "Pulsa el botón azul para añadirlo.",
+      "mariaRepeat": "👉 Repite estos pasos con todos los ingredientes del plato.",
+      "baseDataNote": "💡 MenuScore incluye una base de datos con precios por defecto, pero todo se puede adaptar a tu realidad.",
+      "imagesAlt5": "Crear plato guía parte 5",
+      "imagesAlt6": "Crear plato guía parte 6"
+    },
+    "step1IngredientesNew": {
+      "title": "¿Y si un ingrediente no aparece?",
+      "mariaText": "Ahora María quiere añadir leche de coco.",
+      "step1": "Pulsa ➕ Añadir ingrediente.",
+      "step2": "Escribe Leche de coco en el buscador.",
+      "notFoundMsg": "Aparece el mensaje: “No se encontraron ingredientes”.",
+      "createNote": "👉 Tranquilo, es totalmente normal. Justo debajo aparece el botón Crear ingrediente.",
+      "imagesAlt7": "Crear plato guía parte 7"
+    },
+    "step1IngredientesNewForm": {
+      "title": "Crear un ingrediente nuevo",
+      "step1": "Pulsa ➕ Crear ingrediente.",
+      "step2": "Se abre la ventana Nuevo ingrediente.",
+      "step3": "Escribe Leche de coco en Nombre del ingrediente.",
+      "step4": "Selecciona la unidad (ej: Litro).",
+      "step5": "Introduce el precio de compra.",
+      "step6": "Pulsa Crear ingrediente.",
+      "saveNote": "💡 Este ingrediente quedará guardado para futuros platos.",
+      "addTitle": "Añadir el ingrediente al plato",
+      "addStep1": "El ingrediente ya está creado. Indica la cantidad que lleva el plato.",
+      "addStep2": "Pulsa el botón azul para añadirlo.",
+      "imagesAlt8": "Crear plato guía parte 8",
+      "imagesAlt9": "Crear plato guía parte 9"
+    },
+    "step1Guardar": {
+      "title": "Guardar el plato",
+      "step1": "Cuando todo está listo, pulsa Crear.",
+      "step2": "¡Listo! El plato queda guardado en MenuScore.",
+      "editNote": "💡 Puedes editarlo más adelante cuando quieras."
+    },
+    "step1OtrosPlatos": {
+      "title": "Añadir otros platos (ejemplo: un postre)",
+      "text": "María continúa añadiendo el resto del menú, por ejemplo las natillas. Los pasos son los mismos, con una pequeña diferencia:",
+      "dessertStep1": "Activa el botón “Marcar como postre” deslizando hacia la derecha.",
+      "dessertStep2": "El botón se vuelve rojo cuando está activo.",
+      "dessertNote": "💡 Esto ayuda a MenuScore a analizar correctamente las ventas de postres.",
+      "conclusion": "María va añadiendo todos los platos de su menú paso a paso, sin complicaciones y con la tranquilidad de saber que todo se puede ajustar más adelante.",
+      "imagesAlt1": "Crear plato guía parte 1",
+      "imagesAlt2": "Crear plato guía parte 2",
+      "imagesAlt10": "Crear plato guía parte 10"
+    },
+    "step2": {
+      "title": "Capacidad operativa",
+      "text": "Para poder calcular los beneficios reales de cada plato, María configura primero cuánto le cuesta mantener abierto su restaurante cada mes. A esto lo llamamos Coste operativo mensual.",
+      "accessNote": "Puedes encontrar esta opción desde la pantalla de inicio, tocando el botón de la esquina superior derecha y accediendo a Configuración operativa.",
+      "imagesAlt12": "Capacidad operativa guía parte 12"
+    },
+    "step2Costes": {
+      "title": "Definir los costes mensuales",
+      "text": "María calcula sus costes fijos mensuales:",
+      "items": "Alquiler, Personal, Electricidad, Seguros, Gestoría, Otros gastos fijos",
+      "mariaTotal": "Tras hacer números, el total asciende a 12.000 € al mes.",
+      "inputNote": "👉 Introduce aquí tu Coste mensual."
+    },
+    "step2Horas": {
+      "title": "Indicar las horas de apertura",
+      "text": "Ahora toca indicar cuántas horas está abierto el restaurante al mes.",
+      "mariaVal": "María abre 185 horas mensuales, así que introduce ese valor en el campo Horas/mes.",
+      "calcNote": "💡 Este dato ayuda a MenuScore a entender cuánto cuesta cada hora de funcionamiento del negocio."
+    },
+    "step2Ajustes": {
+      "title": "Ajustes clave",
+      "benefitBebidas": "Porcentaje de beneficio de bebidas: Incluye lo que aportan las ventas de vino, agua, refrescos, etc.",
+      "iva": "IVA: En España es del 10 %, y es el que aparece en los tickets y facturas.",
+      "overhead": "Overhead: Es un margen de seguridad para imprevistos. Por defecto es 10 %. María lo deja tal cual.",
+      "imagesAlt11": "Capacidad operativa guía parte 11"
+    },
+    "step2Conclusion": {
+      "title": "¿Qué hace MenuScore con esta información?",
+      "description": "Con todos estos datos, MenuScore calcula la capacidad operativa del restaurante. Puedes pensar en ella como el metabolismo basal del negocio: la cantidad mínima de “energía” (dinero) que necesita cada mes.",
+      "metabolism": "Pero… ¿cómo entran esas “calorías”? 👉 A través de platos vendidos y clientes satisfechos.",
+      "nextStepAction": "Por eso, el siguiente paso es ir a la pantalla Registro semanal, donde verás todos tus platos y podrás registrar las ventas."
+    },
+    "step3": {
+      "title": "Gestión de ventas",
+      "text": "Una vez que ya has añadido los platos de tu menú, llega la parte más importante: registrar las ventas.",
+      "accessStep": "Desde la pantalla principal, pulsa el botón del ticket (esquina inferior derecha) para abrir el Registro semanal."
+    },
+    "step3Registro": {
+      "title": "Registrar ventas por semana",
+      "step1": "Pulsa el botón Editar en la semana que quieras actualizar.",
+      "step2": "Aparecerá tu menú completo.",
+      "filterNote": "Puedes usar los filtros para ver los platos agrupados por categorías o mostrar todos a la vez pulsando Todas.",
+      "imagesAlt13": "Gestión de ventas guía parte 13",
+      "imagesAlt14": "Gestión de ventas guía parte 14"
+    },
+    "step3IntroVentas": {
+      "title": "Introducir las ventas",
+      "step1": "Desliza el dedo hacia la izquierda para moverte por el carrusel de platos.",
+      "step2": "En cada uno, introduce el número de ventas correspondiente.",
+      "mariaNote": "👉 María ha empezado registrando todas las ventas del último mes."
+    },
+    "step3Guardar": {
+      "title": "Guardar los cambios",
+      "step1": "Cuando todos los platos de la semana tengan sus ventas registradas, pulsa Guardar.",
+      "mariaFrequency": "María ha decidido actualizar las ventas una vez a la semana, los domingos, para ahorrar tiempo.",
+      "dailyNote": "💡 También puedes modificar las ventas día a día: los campos son editables y puedes actualizarlos siempre."
+    },
+    "step3SemanasAnteriores": {
+      "title": "Consultar semanas anteriores",
+      "text": "En la pantalla Registro semanal verás un listado con las últimas 8 semanas.",
+      "navStep1": "Usa la flecha izquierda para consultar semanas anteriores.",
+      "navStep2": "Usa la flecha derecha para volver o acceder a semanas futuras.",
+      "utilityNote": "💡 Útil para registrar ventas anteriores al inicio o incluso platos ya pactados para el mes que viene."
+    },
+    "step4": {
+      "title": "El momento clave: entender y mejorar tu menú",
+      "text": "Una vez que María ha añadido toda la información, llega el momento más esperado: MenuScore analiza su menú y le muestra cómo mejorarlo.",
+      "mariaScore": "En la pantalla de inicio aparece su puntuación MenuScore (sobre 100).",
+      "mariaResult": "María obtiene un 74 (etiqueta “Bueno”). Su restaurante funciona bien, pero todavía tiene margen de mejora."
+    },
+    "step4Sugerencias": {
+      "title": "Sugerencias claras, accionables y basadas en datos",
+      "step1": "Pulsa el icono de menú en la franja azul para ver sugerencias generales.",
+      "carruselDes": "Aparece un carrusel con lo que funciona bien y lo que no. Recomendaciones fáciles para ver el conjunto.",
+      "imagesAlt15": "Análisis de menú guía parte 15"
+    },
+    "step4Platos": {
+      "title": "Recomendaciones plato a plato",
+      "step1": "Pulsando el icono del tenedor y el cuchillo, María accede al análisis detallado por plato.",
+      "mariaExamples": "Para la Ensalada, Gazpacho, etc., MenuScore propone opciones según el caso:",
+      "options": "Subir el precio o reducir costes, Mejorar visibilidad, Promocionarla más, Valorar si mantenerla",
+      "note": "👉 No son órdenes, sino oportunidades."
+    },
+    "step4Conclusion": {
+      "title": "Decisiones mejores, con menos dudas",
+      "text": "Estas sugerencias se adaptan a los datos reales. MenuScore analiza siguiendo los principios de ingeniería de menú.",
+      "principles": "María deja de intuir y empieza a entender: qué platos funcionan, cuáles necesitan ajustes y dónde mejorar rentabilidad.",
+      "finalNote": "MenuScore no decide por ti. Te da la información para entender, actuar y mejorar basándote en datos reales."
     }
   },
   "lang": {

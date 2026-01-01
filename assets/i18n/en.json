@@ -4,6 +4,7 @@
     "home": "Home",
     "features": "Features",
     "guide": "Guide",
+    "tutorial": "Tutorial",
     "contact": "Contact",
     "cta": "Try free"
   },
@@ -726,6 +727,212 @@
     "contact": {
       "title": "10. Contact",
       "text": "If you have questions about these terms, contact us:"
+    }
+  },
+  "tutorialPage": {
+    "title": "Step-by-Step Tutorial",
+    "subtitle": "Learn how to use MenuScore with a practical example from scratch",
+    "sidebar": {
+      "title": "Contents",
+      "intro": "Introduction",
+      "step1": "Step 1: Create Dishes",
+      "step2": "Step 2: Operating Capacity",
+      "step3": "Step 3: Sales Management",
+      "step4": "Step 4: Analysis and Improvement"
+    },
+    "intro": {
+      "title": "Managing a restaurant shouldn't be about intuition.",
+      "text1": "In this tutorial you'll learn how to use MenuScore to understand your menu, detect improvement opportunities and make decisions based on real data.",
+      "text2": "👉 Read on and discover everything your menu can do for your business."
+    },
+    "primerosPasos": {
+      "title": "Getting started with MenuScore",
+      "subtitle": "Create your menu without complications, step by step",
+      "mariaStory": "In this tutorial we'll accompany Maria, owner of a small restaurant. Maria wants to improve her business management and an acquaintance recommended MenuScore.",
+      "startingNote": "👉 If you're just starting out, follow this example. You can return to this guide whenever you need it.",
+      "downloadTitle": "Download MenuScore now:",
+      "downloadText": "MenuScore is available for free on iOS and Android. Download the app from your favorite app store:"
+    },
+    "step1": {
+      "title": "Step 1: Create a dish",
+      "text": "Once MenuScore is installed on her mobile, Maria opens the app and starts by adding the dishes from her menu. Let's see how she creates one of them: the House Salad.",
+      "btnPlus": "On the home screen, tap the ➕ button.",
+      "btnPlusNote": "💡 It's the button to add anything new in the app.",
+      "formTitle": "The 'Add new dish' window opens.",
+      "formName": "Tap on Dish Name and type the name.",
+      "formNameVal": "👉 House Salad",
+      "formPrice": "Tap on Price and enter the amount.",
+      "formPriceVal": "👉 At her restaurant it costs 12 €.",
+      "formPriceNote": "💡 You can change the price later if you need to."
+    },
+    "step1Complejidad": {
+      "title": "Step 2: Indicate preparation complexity",
+      "text": "MenuScore asks you to indicate how complex it is to prepare the dish.",
+      "note": "💡 It's not an exam: it only serves to better understand your menu.",
+      "optionsTitle": "Available options:",
+      "optionMin": "Minimal: just plating or serving",
+      "optionQuick": "Quick: simple preparations with few steps",
+      "optionMod": "Moderate: dishes with standard cooking",
+      "optionComp": "Complex: more elaborate recipes",
+      "mariaChoice": "👉 The salad is simple, so Maria selects Quick."
+    },
+    "step1Categoria": {
+      "title": "Step 3: Choose the category",
+      "text": "Now it's time to classify the dish.",
+      "existingTitle": "You can use an existing category:",
+      "categories": "Starters, Mains, Desserts, Vegetarian, Specials",
+      "mariaChoice": "👉 Maria chooses Starters.",
+      "newCategoryTitle": "Don't see the category you need? No problem:",
+      "step1": "Tap New category.",
+      "step2": "Type the name (max 30 characters).",
+      "step3": "Tap Create.",
+      "note": "💡 The category will be saved for future dishes.",
+      "imagesAlt4": "Create dish guide part 4"
+    },
+    "step1Ingredientes": {
+      "title": "Step 4: Add ingredients",
+      "text": "Now comes the most important part: ingredients.",
+      "note": "💡 This is where MenuScore really starts helping you.",
+      "mariaText": "Maria's salad has tomato, onion, basil, oil, vinegar...",
+      "step1": "Tap the blue ➕ Add ingredient button.",
+      "step2": "Type the ingredient name in the search bar (e.g., Tomato).",
+      "step3": "Select the ingredient from the list.",
+      "step4": "Indicate the quantity for the dish (Maria adds 70 g).",
+      "step5": "Tap the blue button to add it.",
+      "mariaRepeat": "👉 Repeat these steps with all ingredients of the dish.",
+      "baseDataNote": "💡 MenuScore includes a database with default prices, but everything can be adapted to your reality.",
+      "imagesAlt5": "Create dish guide part 5",
+      "imagesAlt6": "Create dish guide part 6"
+    },
+    "step1IngredientesNew": {
+      "title": "What if an ingredient doesn't appear?",
+      "mariaText": "Now Maria wants to add coconut milk.",
+      "step1": "Tap ➕ Add ingredient.",
+      "step2": "Type Coconut milk in the search bar.",
+      "notFoundMsg": "The message appears: 'No ingredients found'.",
+      "createNote": "👉 Don't worry, it's totally normal. Right below, the Create ingredient button appears.",
+      "imagesAlt7": "Create dish guide part 7"
+    },
+    "step1IngredientesNewForm": {
+      "title": "Create a new ingredient",
+      "step1": "Tap ➕ Create ingredient.",
+      "step2": "The New Ingredient window opens.",
+      "step3": "Type Coconut milk in Ingredient Name.",
+      "step4": "Select the unit (e.g., Liter).",
+      "step5": "Enter the purchase price.",
+      "step6": "Tap Create ingredient.",
+      "saveNote": "💡 This ingredient will be saved for future dishes.",
+      "addTitle": "Add the ingredient to the dish",
+      "addStep1": "The ingredient is now created. Indicate the quantity for the dish.",
+      "addStep2": "Tap the blue button to add it.",
+      "imagesAlt8": "Create dish guide part 8",
+      "imagesAlt9": "Create dish guide part 9"
+    },
+    "step1Guardar": {
+      "title": "Save the dish",
+      "step1": "When everything is ready, tap Create.",
+      "step2": "Done! The dish is saved in MenuScore.",
+      "editNote": "💡 You can edit it later whenever you want."
+    },
+    "step1OtrosPlatos": {
+      "title": "Add other dishes (example: a dessert)",
+      "text": "Maria continues adding the rest of the menu, for example, the custard. The steps are the same, with a small difference:",
+      "dessertStep1": "Activate the 'Mark as dessert' button by sliding to the right.",
+      "dessertStep2": "The button turns red when active.",
+      "dessertNote": "💡 This helps MenuScore correctly analyze dessert sales.",
+      "conclusion": "Maria keeps adding all her menu dishes step by step, without complications and with the peace of mind knowing everything can be adjusted later.",
+      "imagesAlt1": "Create dish guide part 1",
+      "imagesAlt2": "Create dish guide part 2",
+      "imagesAlt10": "Create dish guide part 10"
+    },
+    "step2": {
+      "title": "Operating capacity",
+      "text": "To calculate real profits for each dish, Maria first configures how much it costs her to keep her restaurant open each month. We call this Monthly operating cost.",
+      "accessNote": "You can find this option from the home screen, tapping the button in the upper right corner and accessing Operating Configuration.",
+      "imagesAlt12": "Operating capacity guide part 12"
+    },
+    "step2Costes": {
+      "title": "Define monthly costs",
+      "text": "Maria calculates her fixed monthly costs:",
+      "items": "Rent, Personnel, Electricity, Insurance, Accounting, Other fixed costs",
+      "mariaTotal": "After doing the numbers, the total amounts to 12,000 € per month.",
+      "inputNote": "👉 Enter your Monthly cost here."
+    },
+    "step2Horas": {
+      "title": "Indicate opening hours",
+      "text": "Now it's time to indicate how many hours the restaurant is open per month.",
+      "mariaVal": "Maria opens 185 hours monthly, so she enters that value in the Hours/month field.",
+      "calcNote": "💡 This data helps MenuScore understand how much each hour of business operation costs."
+    },
+    "step2Ajustes": {
+      "title": "Key settings",
+      "benefitBebidas": "Beverage profit percentage: Includes what sales of wine, water, sodas, etc., contribute.",
+      "iva": "VAT: In Spain it's 10%, and it's what appears on tickets and invoices.",
+      "overhead": "Overhead: It's a safety margin for contingencies. By default it's 10%. Maria leaves it as is.",
+      "imagesAlt11": "Operating capacity guide part 11"
+    },
+    "step2Conclusion": {
+      "title": "What does MenuScore do with this information?",
+      "description": "With all this data, MenuScore calculates the restaurant's operating capacity. You can think of it as the business's basal metabolism: the minimum amount of 'energy' (money) it needs each month.",
+      "metabolism": "But... how do those 'calories' enter? 👉 Through dishes sold and satisfied customers.",
+      "nextStepAction": "Therefore, the next step is to go to the Weekly Record screen, where you'll see all your dishes and can record sales."
+    },
+    "step3": {
+      "title": "Sales management",
+      "text": "Once you've added your menu dishes, the most important part comes: recording sales.",
+      "accessStep": "From the main screen, tap the ticket button (bottom right corner) to open the Weekly Record."
+    },
+    "step3Registro": {
+      "title": "Record sales per week",
+      "step1": "Tap the Edit button for the week you want to update.",
+      "step2": "Your complete menu will appear.",
+      "filterNote": "You can use the filters to see dishes grouped by categories or show everyone at once by pressing All.",
+      "imagesAlt13": "Sales management guide part 13",
+      "imagesAlt14": "Sales management guide part 14"
+    },
+    "step3IntroVentas": {
+      "title": "Entering sales",
+      "step1": "Slide your finger to the left to move through the dishes carousel.",
+      "step2": "In each one, enter the corresponding number of sales.",
+      "mariaNote": "👉 Maria has started by recording all sales from the last month."
+    },
+    "step3Guardar": {
+      "title": "Save changes",
+      "step1": "When all dishes of the week have their sales recorded, tap Save.",
+      "mariaFrequency": "Maria decided to update sales once a week, on Sundays, to save time.",
+      "dailyNote": "💡 You can also modify sales day by day: fields are editable and you can update them anytime."
+    },
+    "step3SemanasAnteriores": {
+      "title": "Consult previous weeks",
+      "text": "In the Weekly Record screen, you'll see a list of the last 8 weeks.",
+      "navStep1": "Use the left arrow to consult previous weeks.",
+      "navStep2": "Use the right arrow to return or access future weeks.",
+      "utilityNote": "💡 Useful for recording sales prior to starting or even dishes already agreed for next month."
+    },
+    "step4": {
+      "title": "The key moment: understand and improve your menu",
+      "text": "Once Maria has added all information, the most awaited moment arrives: MenuScore analyzes her menu and shows her how to improve it.",
+      "mariaScore": "On the home screen her MenuScore (out of 100) appears.",
+      "mariaResult": "Maria gets a 74 ('Good' label). Her restaurant works well, but there's still room for improvement."
+    },
+    "step4Sugerencias": {
+      "title": "Clear, actionable and data-driven suggestions",
+      "step1": "Tap the menu icon in the blue strip to see general suggestions.",
+      "carruselDes": "A carousel appears with what's working well and what's not. Easy recommendations to see the whole set.",
+      "imagesAlt15": "Menu analysis guide part 15"
+    },
+    "step4Platos": {
+      "title": "Dish-by-dish recommendations",
+      "step1": "Tapping the fork and knife icon, Maria accesses detailed analysis by dish.",
+      "mariaExamples": "For the Salad, Gazpacho, etc., MenuScore proposes options depending on the case:",
+      "options": "Raise price or reduce costs, Improve visibility, Promote it more, Evaluate if keeping it",
+      "note": "👉 These aren't orders, but opportunities."
+    },
+    "step4Conclusion": {
+      "title": "Better decisions, with fewer doubts",
+      "text": "These suggestions adapt to real data. MenuScore analyzes following menu engineering principles.",
+      "principles": "Maria stops guessing and starts understanding: which dishes work, which need adjustments and where to improve profitability.",
+      "finalNote": "MenuScore doesn't decide for you. It gives you the information to understand, act and improve based on real data."
     }
   },
   "lang": {

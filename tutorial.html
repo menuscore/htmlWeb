@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="tutorialPage.title">Tutorial Paso a Paso — MenuScore</title>
+    <meta name="description"
+        content="Aprende a usar MenuScore con un ejemplo práctico paso a paso. Tutorial completo desde cero para optimizar tu menú de restaurante.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Favicon for browsers and Google Search -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/PNG/icono fondo amarillo 1080px.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/PNG/icono fondo amarillo 1080px.png">
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg sticky-top bg-ms-blue" role="navigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+                <img src="assets/SVG/icono.svg" alt="MenuScore icono" style="height:2.1rem;width:auto;">
+                <span style="color:#fecf15;font-weight:800;font-size:2.1rem;line-height:1;">MenuScore</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/" data-i18n="nav.home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html" data-i18n="nav.features">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guia.html" data-i18n="nav.guide">Guía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorial.html" data-i18n="nav.tutorial">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contacto</a></li>
+
+                    <!-- Selector de idioma -->
+                    <li class="nav-item nav-lang">
+                        <div class="btn-group">
+                            <button id="langToggle" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false" aria-label="Seleccionar idioma">
+                                ES
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                                <li><button class="dropdown-item lang-select" type="button" data-lang="es">🇪🇸
+                                        Español</button></li>
+                                <li><button class="dropdown-item lang-select" type="button" data-lang="en">🇬🇧
+                                        English</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- HERO -->
+        <header class="guide-hero">
+            <div class="container text-center">
+                <h1 class="display-super" style="color:#316cb3;" data-i18n="tutorialPage.title">Tutorial Paso a Paso</h1>
+                <p class="lead mx-auto" style="max-width: 700px;" data-i18n="tutorialPage.subtitle">Aprende a usar MenuScore con un ejemplo práctico desde cero</p>
+            </div>
+        </header>
+
+        <!-- TUTORIAL CONTENT -->
+        <section class="guide-content-section">
+            <div class="container">
+                <div class="row">
+                    <!-- SIDEBAR -->
+                    <div class="col-lg-3">
+                        <div class="guide-sidebar">
+                            <h5 data-i18n="tutorialPage.sidebar.title">Contenido</h5>
+                            <nav class="guide-nav">
+                                <a href="#introduccion" class="guide-nav-link" data-i18n="tutorialPage.sidebar.intro">Introducción</a>
+                                <a href="#paso-1" class="guide-nav-link" data-i18n="tutorialPage.sidebar.step1">Paso 1: Crear platos</a>
+                                <a href="#paso-2" class="guide-nav-link" data-i18n="tutorialPage.sidebar.step2">Paso 2: Capacidad operativa</a>
+                                <a href="#paso-3" class="guide-nav-link" data-i18n="tutorialPage.sidebar.step3">Paso 3: Gestión de ventas</a>
+                                <a href="#paso-4" class="guide-nav-link" data-i18n="tutorialPage.sidebar.step4">Paso 4: Análisis y mejora</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- MAIN CONTENT -->
+                    <div class="col-lg-9">
+                        <div class="guide-main">
+
+                            <!-- Introducción -->
+                            <div id="introduccion" class="guide-section">
+                                <h2 data-i18n="tutorialPage.intro.title">Gestionar un restaurante no debería ser cuestión de intuición.</h2>
+                                <p data-i18n="tutorialPage.intro.text1">En este tutorial aprenderás a usar MenuScore para entender tu menú, detectar oportunidades de mejora y tomar decisiones basadas en datos reales.</p>
+                                <p data-i18n="tutorialPage.intro.text2">👉 Sigue leyendo y descubre todo lo que tu menú puede hacer por tu negocio.</p>
+                            </div>
+
+                            <!-- Primeros pasos -->
+                            <div class="guide-section">
+                                <h2 data-i18n="tutorialPage.primerosPasos.title">Primeros pasos con MenuScore</h2>
+                                <h3 data-i18n="tutorialPage.primerosPasos.subtitle">Crea tu menú sin complicaciones, paso a paso</h3>
+                                <p data-i18n="tutorialPage.primerosPasos.mariaStory">En este tutorial vamos a acompañar a María, dueña de un pequeño restaurante. María quiere mejorar la gestión de su negocio y un conocido le recomienda MenuScore.</p>
+                                
+                                <div class="guide-step">
+                                    <p data-i18n="tutorialPage.primerosPasos.downloadText">MenuScore está disponible de forma gratuita en iOS y Android. Descarga la app desde tu tienda de aplicaciones favorita:</p>
+                                    
+                                    <!-- Botones de descarga -->
+                                    <div style="margin: 30px 0;">
+                                        <p style="font-weight: 600; margin-bottom: 15px;" data-i18n="tutorialPage.primerosPasos.downloadTitle">Descarga MenuScore ahora:</p>
+                                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                            <!-- App Store -->
+                                            <a href="#" style="display: inline-block; text-decoration: none;">
+                                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                                                     alt="Descargar en App Store" 
+                                                     style="height: 50px; width: auto;">
+                                            </a>
+                                            <!-- Google Play -->
+                                            <a href="#" style="display: inline-block; text-decoration: none;">
+                                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" 
+                                                     alt="Disponible en Google Play" 
+                                                     style="height: 50px; width: auto;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="guide-tip" data-i18n="tutorialPage.primerosPasos.startingNote">👉 Si estás empezando, sigue este ejemplo. Puedes volver a esta guía siempre que lo necesites.</p>
+                            </div>
+
+                            <!-- Paso 1 -->
+                            <div id="paso-1" class="guide-section">
+                                <h2 data-i18n="tutorialPage.step1.title">Paso 1: Crear un plato</h2>
+                                <p data-i18n="tutorialPage.step1.text">Una vez instalada MenuScore en el móvil, María abre la app y empieza por añadir los platos de su menú. Veamos cómo crea uno de ellos: la Ensalada de la casa.</p>
+                                
+                                <div class="guide-step">
+                                    <p data-i18n="tutorialPage.step1.btnPlus">En la pantalla de inicio, pulsa el botón ➕.</p>
+                                    <p><em><small data-i18n="tutorialPage.step1.btnPlusNote">💡 Es el botón para añadir cualquier cosa nueva en la app.</small></em></p>
+                                    
+                                    
+
+                                    <p data-i18n="tutorialPage.step1.formTitle">Se abre la ventana “Añadir nuevo plato”.</p>
+                                    
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step1.formName">Pulsa en Nombre del plato y escribe el nombre.</li>
+                                        <li style="list-style: none;"><strong><span data-i18n="tutorialPage.step1.formNameVal">👉 Ensalada de la casa</span></strong></li>
+                                        <li data-i18n="tutorialPage.step1.formPrice">Pulsa en Precio e introduce el importe.</li>
+                                        <li style="list-style: none;"><strong><span data-i18n="tutorialPage.step1.formPriceVal">👉 En su restaurante cuesta 12 €.</span></strong></li>
+                                    </ul>
+                                    <p><em><small data-i18n="tutorialPage.step1.formPriceNote">💡 Puedes cambiar el precio más adelante si lo necesitas.</small></em></p>
+                                </div>
+
+                                <div class="row g-4 mb-5">
+                                    <div class="col-md-6">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="assets/images/guia1.JPG" class="card-img-top rounded img-fluid" alt="Guía 1" data-i18n="[alt]tutorialPage.step1OtrosPlatos.imagesAlt1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="assets/images/guia2.JPG" class="card-img-top rounded img-fluid" alt="Guía 2" data-i18n="[alt]tutorialPage.step1OtrosPlatos.imagesAlt2">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Paso 1.2 Complejidad -->
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step1Complejidad.title">Paso 2: Indicar la complejidad de preparación</h3>
+                                    <p data-i18n="tutorialPage.step1Complejidad.text">MenuScore te pide que indiques cómo de complejo es preparar el plato.</p>
+                                    <p><em><small data-i18n="tutorialPage.step1Complejidad.note">💡 No es un examen: solo sirve para entender mejor tu menú.</small></em></p>
+                                    
+                                    <p><strong data-i18n="tutorialPage.step1Complejidad.optionsTitle">Opciones disponibles:</strong></p>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step1Complejidad.optionMin">Mínimo: solo emplatar o servir</li>
+                                        <li data-i18n="tutorialPage.step1Complejidad.optionQuick">Rápido: preparaciones sencillas con pocos pasos</li>
+                                        <li data-i18n="tutorialPage.step1Complejidad.optionMod">Moderado: platos con cocción estándar</li>
+                                        <li data-i18n="tutorialPage.step1Complejidad.optionComp">Complejo: recetas más elaboradas</li>
+                                    </ul>
+                                    <p data-i18n="tutorialPage.step1Complejidad.mariaChoice">👉 La ensalada es sencilla, así que María selecciona Rápido.</p>
+                                </div>
+
+                                <!-- Paso 1.3 Categoria -->
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step1Categoria.title">Paso 3: Elegir la categoría</h3>
+                                    <p data-i18n="tutorialPage.step1Categoria.text">Ahora toca clasificar el plato.</p>
+                                    <p><strong data-i18n="tutorialPage.step1Categoria.existingTitle">Puedes usar una categoría existente:</strong></p>
+                                    <p data-i18n="tutorialPage.step1Categoria.categories">Entrantes, Principales, Postres, Vegetarianos, Especiales</p>
+                                    <p data-i18n="tutorialPage.step1Categoria.mariaChoice">👉 María elige Entrantes.</p>
+                                    
+                                    <div class="alert alert-info">
+                                        <p><strong data-i18n="tutorialPage.step1Categoria.newCategoryTitle">¿No ves la categoría que necesitas? No pasa nada:</strong></p>
+                                        <ol>
+                                            <li data-i18n="tutorialPage.step1Categoria.step1">Pulsa Nueva categoría.</li>
+                                            <li data-i18n="tutorialPage.step1Categoria.step2">Escribe el nombre (máx. 30 caracteres).</li>
+                                            <li data-i18n="tutorialPage.step1Categoria.step3">Pulsa Crear.</li>
+                                        </ol>
+                                        <p><em><small data-i18n="tutorialPage.step1Categoria.note">💡 La categoría quedará guardada para futuros platos.</small></em></p>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-5">
+                                    <div class="col-md-8 mx-auto">
+                                        <div class="card shadow-sm border-0">
+                                            <img src="assets/images/guia4.JPG" class="card-img-top rounded img-fluid" alt="Guía 4" data-i18n="[alt]tutorialPage.step1Categoria.imagesAlt4">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Paso 1.4 Ingredientes -->
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step1Ingredientes.title">Paso 4: Añadir ingredientes</h3>
+                                    <p data-i18n="tutorialPage.step1Ingredientes.text">Ahora llega la parte más importante: los ingredientes.</p>
+                                    <p><em><small data-i18n="tutorialPage.step1Ingredientes.note">💡 Aquí es donde MenuScore empieza a ayudarte de verdad.</small></em></p>
+                                    <p data-i18n="tutorialPage.step1Ingredientes.mariaText">La ensalada de María lleva tomate, cebolla, albahaca, aceite, vinagre…</p>
+                                    
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step1Ingredientes.step1">Pulsa el botón azul ➕ Añadir ingrediente.</li>
+                                        <li data-i18n="tutorialPage.step1Ingredientes.step2">Escribe el nombre del ingrediente en el buscador (ej: Tomate).</li>
+                                        <li data-i18n="tutorialPage.step1Ingredientes.step3">Selecciona el ingrediente de la lista.</li>
+                                        <li data-i18n="tutorialPage.step1Ingredientes.step4">Indica la cantidad que lleva el plato (María añade 70 g).</li>
+                                        <li data-i18n="tutorialPage.step1Ingredientes.step5">Pulsa el botón azul para añadirlo.</li>
+                                    </ul>
+
+                                    <div class="row g-4 mt-2 mb-4">
+                                        <div class="col-md-6">
+                                            <div class="card h-100 shadow-sm border-0">
+                                                <img src="assets/images/guia5.JPG" class="card-img-top rounded img-fluid" alt="Guía 5" data-i18n="[alt]tutorialPage.step1Ingredientes.imagesAlt5">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card h-100 shadow-sm border-0">
+                                                <img src="assets/images/guia6.JPG" class="card-img-top rounded img-fluid" alt="Guía 6" data-i18n="[alt]tutorialPage.step1Ingredientes.imagesAlt6">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p data-i18n="tutorialPage.step1Ingredientes.mariaRepeat">👉 Repite estos pasos con todos los ingredientes del plato.</p>
+                                    <p><em><small data-i18n="tutorialPage.step1Ingredientes.baseDataNote">💡 MenuScore incluye una base de datos con precios por defecto, pero todo se puede adaptar a tu realidad.</small></em></p>
+                                </div>
+
+                                <!-- Paso 1.5 Ingrediente Nuevo -->
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step1IngredientesNew.title">¿Qué pasa si un ingrediente no aparece?</h3>
+                                    <p data-i18n="tutorialPage.step1IngredientesNew.mariaText">Ahora María quiere añadir leche de coco.</p>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step1IngredientesNew.step1">Pulsa ➕ Añadir ingrediente.</li>
+                                        <li data-i18n="tutorialPage.step1IngredientesNew.step2">Escribe Leche de coco en el buscador.</li>
+                                    </ul>
+                                    <p data-i18n="tutorialPage.step1IngredientesNew.notFoundMsg">Aparece el mensaje: “No se encontraron ingredientes”.</p>
+
+                                    <div class="row mb-4">
+                                        <div class="col-md-8 mx-auto">
+                                            <div class="card shadow-sm border-0">
+                                                <img src="assets/images/guia7.JPG" class="card-img-top rounded img-fluid" alt="Guía 7" data-i18n="[alt]tutorialPage.step1IngredientesNew.imagesAlt7">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p data-i18n="tutorialPage.step1IngredientesNew.createNote">👉 Tranquilo, es totalmente normal. Justo debajo aparece el botón Crear ingrediente.</p>
+
+                                    <div class="alert alert-secondary">
+                                        <h4 data-i18n="tutorialPage.step1IngredientesNewForm.title">Crear un ingrediente nuevo</h4>
+                                        <ol>
+                                            <li data-i18n="tutorialPage.step1IngredientesNewForm.step1">Pulsa ➕ Crear ingrediente.</li>
+                                            <li data-i18n="tutorialPage.step1IngredientesNewForm.step2">Se abre la ventana Nuevo ingrediente.</li>
+                                            <li data-i18n="tutorialPage.step1IngredientesNewForm.step3">Escribe Leche de coco en Nombre del ingrediente.</li>
+                                            <li data-i18n="tutorialPage.step1IngredientesNewForm.step4">Selecciona la unidad (ej: Litro).</li>
+                                            <li data-i18n="tutorialPage.step1IngredientesNewForm.step5">Introduce el precio de compra.</li>
+                                            <li data-i18n="tutorialPage.step1IngredientesNewForm.step6">Pulsa Crear ingrediente.</li>
+                                        </ol>
+                                        <p><em><small data-i18n="tutorialPage.step1IngredientesNewForm.saveNote">💡 Este ingrediente quedará guardado para futuros platos.</small></em></p>
+
+                                        <div class="row g-4 mt-3 mb-4">
+                                            <div class="col-md-6">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    <img src="assets/images/guia8.JPG" class="card-img-top rounded img-fluid" alt="Guía 8" data-i18n="[alt]tutorialPage.step1IngredientesNewForm.imagesAlt8">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    <img src="assets/images/guia9.JPG" class="card-img-top rounded img-fluid" alt="Guía 9" data-i18n="[alt]tutorialPage.step1IngredientesNewForm.imagesAlt9">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h5 data-i18n="tutorialPage.step1IngredientesNewForm.addTitle">Añadir el ingrediente al plato</h5>
+                                        <p data-i18n="tutorialPage.step1IngredientesNewForm.addStep1">El ingrediente ya está creado. Indica la cantidad que lleva el plato.</p>
+                                        <p data-i18n="tutorialPage.step1IngredientesNewForm.addStep2">Pulsa el botón azul para añadirlo.</p>
+
+                                        <div class="row g-4 mt-3">
+                                            <div class="col-md-6">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Guardar -->
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step1Guardar.title">Guardar el plato</h3>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step1Guardar.step1">Cuando todo está listo, pulsa Crear.</li>
+                                        <li data-i18n="tutorialPage.step1Guardar.step2">¡Listo! El plato queda guardado en MenuScore.</li>
+                                    </ul>
+                                    <p><em><small data-i18n="tutorialPage.step1Guardar.editNote">💡 Puedes editarlo más adelante cuando quieras.</small></em></p>
+                                </div>
+
+                                <!-- Otros Platos -->
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step1OtrosPlatos.title">Añadir otros platos (ejemplo: un postre)</h3>
+                                    <p data-i18n="tutorialPage.step1OtrosPlatos.text">María continúa añadiendo el resto del menú, por ejemplo las natillas. Los pasos son los mismos, con una pequeña diferencia:</p>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step1OtrosPlatos.dessertStep1">Activa el botón “Marcar como postre” deslizando hacia la derecha.</li>
+                                        <li data-i18n="tutorialPage.step1OtrosPlatos.dessertStep2">El botón se vuelve rojo cuando está activo.</li>
+                                    </ul>
+                                    <p><em><small data-i18n="tutorialPage.step1OtrosPlatos.dessertNote">💡 Esto ayuda a MenuScore a analizar correctamente las ventas de postres.</small></em></p>
+
+                                    <div class="row mb-4 pt-2">
+                                        <div class="col-md-8 mx-auto">
+                                            <div class="card shadow-sm border-0">
+                                                <img src="assets/images/guia10.JPG" class="card-img-top rounded img-fluid" alt="Guía 10" data-i18n="[alt]tutorialPage.step1OtrosPlatos.imagesAlt10">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p data-i18n="tutorialPage.step1OtrosPlatos.conclusion">María va añadiendo todos los platos de su menú paso a paso, sin complicaciones y con la tranquilidad de saber que todo se puede ajustar más adelante.</p>
+                                </div>
+                            </div>
+
+                            <!-- Paso 2: Capacidad operativa -->
+                            <div id="paso-2" class="guide-section">
+                                <h2 data-i18n="tutorialPage.step2.title">Capacidad operativa</h2>
+                                <p data-i18n="tutorialPage.step2.text">Para poder calcular los beneficios reales de cada plato, María configura primero cuánto le cuesta mantener abierto su restaurante cada mes. A esto lo llamamos Coste operativo mensual.</p>
+                                <p><em><small data-i18n="tutorialPage.step2.accessNote">Puedes encontrar esta opción desde la pantalla de inicio, tocando el botón de la esquina superior derecha y accediendo a Configuración operativa.</small></em></p>
+
+                                <div class="row mb-5">
+                                    <div class="col-md-8 mx-auto">
+                                        <div class="card shadow-sm border-0">
+                                            <img src="assets/images/guia12.JPG" class="card-img-top rounded img-fluid" alt="Guía 12" data-i18n="[alt]tutorialPage.step2.imagesAlt12">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step2Costes.title">Definir los costes mensuales</h3>
+                                    <p data-i18n="tutorialPage.step2Costes.text">María calcula sus costes fijos mensuales:</p>
+                                    <p data-i18n="tutorialPage.step2Costes.items">Alquiler, Personal, Electricidad, Seguros, Gestoría, Otros gastos fijos</p>
+                                    <p data-i18n="tutorialPage.step2Costes.mariaTotal">Tras hacer números, el total asciende a 12.000 € al mes.</p>
+                                    <p data-i18n="tutorialPage.step2Costes.inputNote">👉 Introduce aquí tu Coste mensual.</p>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step2Horas.title">Indicar las horas de apertura</h3>
+                                    <p data-i18n="tutorialPage.step2Horas.text">Ahora toca indicar cuántas horas está abierto el restaurante al mes.</p>
+                                    <p data-i18n="tutorialPage.step2Horas.mariaVal">María abre 185 horas mensuales, así que introduce ese valor en el campo Horas/mes.</p>
+                                    <p><em><small data-i18n="tutorialPage.step2Horas.calcNote">💡 Este dato ayuda a MenuScore a entender cuánto cuesta cada hora de funcionamiento del negocio.</small></em></p>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step2Ajustes.title">Ajustes clave</h3>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step2Ajustes.benefitBebidas">Porcentaje de beneficio de bebidas: Incluye lo que aportan las ventas de vino, agua, refrescos, etc.</li>
+                                        <li data-i18n="tutorialPage.step2Ajustes.iva">IVA: En España es del 10 %, y es el que aparece en los tickets y facturas.</li>
+                                        <li data-i18n="tutorialPage.step2Ajustes.overhead">Overhead: Es un margen de seguridad para imprevistos. Por defecto es 10 %. María lo deja tal cual.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="row mb-5">
+                                    <div class="col-md-8 mx-auto">
+                                        <div class="card shadow-sm border-0">
+                                            <img src="assets/images/guia11.jpeg" class="card-img-top rounded img-fluid" alt="Guía 11" data-i18n="[alt]tutorialPage.step2Ajustes.imagesAlt11">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step2Conclusion.title">¿Qué hace MenuScore con esta información?</h3>
+                                    <p data-i18n="tutorialPage.step2Conclusion.description">Con todos estos datos, MenuScore calcula la capacidad operativa del restaurante. Puedes pensar en ella como el metabolismo basal del negocio: la cantidad mínima de “energía” (dinero) que necesita cada mes para mantenerse en funcionamiento.</p>
+                                    <p data-i18n="tutorialPage.step2Conclusion.metabolism">Pero… ¿cómo entran esas “calorías”? 👉 A través de platos vendidos y clientes satisfechos.</p>
+                                    <p data-i18n="tutorialPage.step2Conclusion.nextStepAction">Por eso, el siguiente paso es ir a la pantalla Registro semanal, donde verás todos tus platos y podrás registrar las ventas de cada uno semana a semana.</p>
+                                </div>
+                            </div>
+
+                            <!-- Paso 3: Gestión de ventas -->
+                            <div id="paso-3" class="guide-section">
+                                <h2 data-i18n="tutorialPage.step3.title">Gestión de ventas</h2>
+                                <p data-i18n="tutorialPage.step3.text">Una vez que ya has añadido los platos de tu menú, llega la parte más importante: registrar las ventas.</p>
+                                <p data-i18n="tutorialPage.step3.accessStep">Desde la pantalla principal, pulsa el botón del ticket (esquina inferior derecha) para abrir el Registro semanal.</p>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step3Registro.title">Registrar ventas por semana</h3>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step3Registro.step1">Pulsa el botón Editar en la semana que quieras actualizar.</li>
+                                        <li data-i18n="tutorialPage.step3Registro.step2">Aparecerá tu menú completo.</li>
+                                    </ul>
+                                    <p><em><small data-i18n="tutorialPage.step3Registro.filterNote">Puedes usar los filtros para ver los platos agrupados por categorías o mostrar todos a la vez pulsando Todas.</small></em></p>
+
+                                    <div class="row g-4 mt-3 mb-4">
+                                        <div class="col-md-6">
+                                            <div class="card h-100 shadow-sm border-0">
+                                                <img src="assets/images/guia13.JPG" class="card-img-top rounded img-fluid" alt="Guía 13" data-i18n="[alt]tutorialPage.step3Registro.imagesAlt13">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card h-100 shadow-sm border-0">
+                                                <img src="assets/images/guia14.JPG" class="card-img-top rounded img-fluid" alt="Guía 14" data-i18n="[alt]tutorialPage.step3Registro.imagesAlt14">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step3IntroVentas.title">Introducir las ventas</h3>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step3IntroVentas.step1">Desliza el dedo hacia la izquierda para moverte por el carrusel de platos.</li>
+                                        <li data-i18n="tutorialPage.step3IntroVentas.step2">En cada uno, introduce el número de ventas correspondiente.</li>
+                                    </ul>
+                                    <p data-i18n="tutorialPage.step3IntroVentas.mariaNote">👉 María ha empezado registrando todas las ventas del último mes.</p>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step3Guardar.title">Guardar los cambios</h3>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step3Guardar.step1">Cuando todos los platos de la semana tengan sus ventas registradas, pulsa Guardar.</li>
+                                    </ul>
+                                    <p data-i18n="tutorialPage.step3Guardar.mariaFrequency">María ha decidido actualizar las ventas una vez a la semana, los domingos, para ahorrar tiempo.</p>
+                                    <p><em><small data-i18n="tutorialPage.step3Guardar.dailyNote">💡 También puedes modificar las ventas día a día: los campos son editables y puedes actualizarlos siempre.</small></em></p>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step3SemanasAnteriores.title">Consultar semanas anteriores</h3>
+                                    <p data-i18n="tutorialPage.step3SemanasAnteriores.text">En la pantalla Registro semanal verás un listado con las últimas 8 semanas.</p>
+                                    <ul>
+                                        <li data-i18n="tutorialPage.step3SemanasAnteriores.navStep1">Usa la flecha izquierda para consultar semanas anteriores.</li>
+                                        <li data-i18n="tutorialPage.step3SemanasAnteriores.navStep2">Usa la flecha derecha para volver o acceder a semanas futuras.</li>
+                                    </ul>
+                                    <p><em><small data-i18n="tutorialPage.step3SemanasAnteriores.utilityNote">💡 Útil para registrar ventas anteriores al inicio o incluso platos ya pactados para el mes que viene.</small></em></p>
+                                </div>
+                            </div>
+
+                            <!-- Paso 4: Análisis y mejora -->
+                            <div id="paso-4" class="guide-section">
+                                <h2 data-i18n="tutorialPage.step4.title">El momento clave: entender y mejorar tu menú</h2>
+                                <p data-i18n="tutorialPage.step4.text">Una vez que María ha añadido toda la información, llega el momento más esperado: MenuScore analiza su menú y le muestra cómo mejorarlo.</p>
+                                <p data-i18n="tutorialPage.step4.mariaScore">En la pantalla de inicio aparece su puntuación MenuScore (sobre 100).</p>
+                                <p data-i18n="tutorialPage.step4.mariaResult">María obtiene un 74 (etiqueta “Bueno”). Su restaurante funciona bien, pero todavía tiene margen de mejora.</p>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step4Sugerencias.title">Sugerencias claras, accionables y basadas en datos</h3>
+                                    <p data-i18n="tutorialPage.step4Sugerencias.step1">Pulsa el icono de menú en la franja azul para ver sugerencias generales.</p>
+                                    <p data-i18n="tutorialPage.step4Sugerencias.carruselDes">Aparece un carrusel con lo que funciona bien y lo que no. Recomendaciones fáciles para ver el conjunto.</p>
+
+                                    <div class="row mb-5 mt-4">
+                                        <div class="col-md-8 mx-auto">
+                                            <div class="card shadow-sm border-0">
+                                                <img src="assets/images/guia15.JPG" class="card-img-top rounded img-fluid" alt="Guía 15" data-i18n="[alt]tutorialPage.step4Sugerencias.imagesAlt15">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step4Platos.title">Recomendaciones plato a plato</h3>
+                                    <p data-i18n="tutorialPage.step4Platos.step1">Pulsando el icono del tenedor y el cuchillo, María accede al análisis detallado por plato.</p>
+                                    <p data-i18n="tutorialPage.step4Platos.mariaExamples">Para la Ensalada, Gazpacho, etc., MenuScore propone opciones según el caso:</p>
+                                    <p data-i18n="tutorialPage.step4Platos.options">Subir el precio o reducir costes, Mejorar visibilidad, Promocionarla más, Valorar si mantenerla</p>
+                                    <p data-i18n="tutorialPage.step4Platos.note">👉 No son órdenes, sino oportunidades.</p>
+                                </div>
+
+                                <div class="guide-step">
+                                    <h3 data-i18n="tutorialPage.step4Conclusion.title">Decisiones mejores, con menos dudas</h3>
+                                    <p data-i18n="tutorialPage.step4Conclusion.text">Estas sugerencias se adaptan a los datos reales. MenuScore analiza siguiendo los principios de ingeniería de menú.</p>
+                                    <p data-i18n="tutorialPage.step4Conclusion.principles">María deja de intuir y empieza a entender: qué platos funcionan, cuáles necesitan ajustes y dónde mejorar rentabilidad.</p>
+                                    <p class="guide-tip" data-i18n="tutorialPage.step4Conclusion.finalNote">MenuScore no decide por ti. Te da la información para entender, actuar y mejorar basándote en datos reales.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-purple">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div data-i18n="footer.copyright">© 2025 MenuScore</div>
+            <div class="d-flex gap-3">
+                <a href="privacy.html" data-i18n="footer.privacy">Privacidad</a>
+                <a href="terms.html" data-i18n="footer.terms">Términos</a>
+                <a href="contact.html" data-i18n="footer.contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cierra el menú hamburguesa al hacer clic fuera
+        document.addEventListener('click', function (e) {
+            var navCollapse = document.getElementById('navmenu');
+            var toggler = document.querySelector('.navbar-toggler');
+            var isOpen = navCollapse.classList.contains('show');
+            if (!isOpen) return;
+            var clickInsideMenu = navCollapse.contains(e.target) || toggler.contains(e.target);
+            if (!clickInsideMenu) {
+                var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapse);
+                bsCollapse.hide();
+            }
+        });
+    </script>
+    <script>
+        // navbar: make solid when scrolling
+        (function () {
+            var nav = document.getElementById('mainNav');
+            function update() {
+                if (window.scrollY > 40) nav.classList.add('navbar-solid'); else nav.classList.remove('navbar-solid');
+            }
+            update();
+            window.addEventListener('scroll', update);
+        })();
+    </script>
+    <script src="js/i18n.js"></script>
+</body>
+
+</html>

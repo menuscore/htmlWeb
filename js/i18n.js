@@ -6,7 +6,7 @@
 
     const load = async (lang) => {
         try {
-            const res = await fetch('/assets/i18n/' + lang + '.json');
+            const res = await fetch('/assets/i18n/' + lang + '.json?v=' + new Date().getTime());
             if (!res.ok) throw new Error('i18n not found');
             const data = await res.json();
             apply(data);
@@ -32,12 +32,52 @@
     };
 
     const apply = (data) => {
+        console.log('[i18n] applying translations to', document.querySelectorAll('[data-i18n]').length, 'elements');
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            const value = key.split('.').reduce((o, k) => o && o[k], data);
+            const attrKey = el.getAttribute('data-i18n');
+            if (!attrKey) return;
+
+            // Support multiple attributes like [alt]key1[title]key2
+            const parts = attrKey.split(/(?=\[)/);
+            let processedAttr = false;
+
+            parts.forEach(part => {
+                const match = part.match(/^\[(.*)\](.*)/);
+                if (match) {
+                    const attrName = match[1];
+                    const key = match[2];
+                    const value = key.split('.').reduce((o, k) => (o || {})[k], data);
+                    if (value !== undefined && value !== null) {
+                        if (attrName === 'html') {
+                            el.innerHTML = String(value).replace(/\\n/g, '<br>');
+                        } else {
+                            el.setAttribute(attrName, value);
+                            if (attrName === 'placeholder') el.placeholder = value;
+                            if (attrName === 'alt') el.alt = value;
+                            if (attrName === 'value') el.value = value;
+                        }
+                    } else {
+                        console.warn('[i18n] missing key for attribute', attrName, ':', key);
+                    }
+                    processedAttr = true;
+                }
+            });
+
+            if (processedAttr) return;
+
+            // Default behavior (no [attr] prefix)
+            const value = attrKey.split('.').reduce((o, k) => (o || {})[k], data);
             if (value !== undefined && value !== null) {
-                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = value;
-                else el.innerHTML = value;
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = value;
+                } else if (el.tagName === 'IMG') {
+                    el.alt = value;
+                } else {
+                    const htmlValue = String(value).replace(/\\n/g, '<br>');
+                    el.innerHTML = htmlValue;
+                }
+            } else {
+                console.warn('[i18n] missing key:', attrKey);
             }
         });
     };
