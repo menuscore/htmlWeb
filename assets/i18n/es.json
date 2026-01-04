@@ -56,7 +56,8 @@
   "howToStart": {
     "title": "¿Cómo empezar?",
     "subtitle": "Consulta nuestra guía paso a paso para sacar el máximo provecho de MenuScore",
-    "button": "Ver guía de uso →"
+    "button": "Ver guía de uso →",
+    "tutorialButton": "Ver tutorial paso a paso →"
   },
   "footer": {
     "copyright": "© 2025 MenuScore",
