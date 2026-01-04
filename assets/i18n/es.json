@@ -735,10 +735,14 @@
     "sidebar": {
       "title": "Contenido",
       "intro": "Introducción",
-      "step1": "Paso 1: Crear platos",
-      "step2": "Paso 2: Capacidad operativa",
-      "step3": "Paso 3: Gestión de ventas",
-      "step4": "Paso 4: Análisis y mejora"
+      "step1": "Paso 1: Crear un plato",
+      "step1_2": "Paso 2: Indicar la complejidad de preparación",
+      "step1_3": "Paso 3: Elegir categoría",
+      "step1_4": "Paso 4: Añadir ingredientes",
+      "guardar": "Guardar el plato",
+      "step2": "Capacidad operativa",
+      "step3": "Gestión de ventas",
+      "step4": "El momento clave: entender y mejorar tu menú"
     },
     "intro": {
       "title": "Gestionar un restaurante no debería ser cuestión de intuición.",
@@ -913,19 +917,19 @@
       "title": "El momento clave: entender y mejorar tu menú",
       "text": "Una vez que María ha añadido toda la información, llega el momento más esperado: MenuScore analiza su menú y le muestra cómo mejorarlo.",
       "mariaScore": "En la pantalla de inicio aparece su puntuación MenuScore (sobre 100).",
-      "mariaResult": "María obtiene un 74 (etiqueta “Bueno”). Su restaurante funciona bien, pero todavía tiene margen de mejora."
+      "mariaResult": "María obtiene un 74 (etiqueta “Bueno”). Su restaurante funciona bien, pero todavía tiene margen de mejora.",
+      "imagesAlt16": "Análisis de menú guía parte 16"
     },
     "step4Sugerencias": {
       "title": "Sugerencias claras, accionables y basadas en datos",
       "step1": "Pulsa el icono de menú en la franja azul para ver sugerencias generales.",
       "carruselDes": "Aparece un carrusel con lo que funciona bien y lo que no. Recomendaciones fáciles para ver el conjunto.",
-      "imagesAlt15": "Análisis de menú guía parte 15"
+      "imagesAlt17": "Análisis de menú guía parte 17"
     },
     "step4Platos": {
       "title": "Recomendaciones plato a plato",
       "step1": "Pulsando el icono del tenedor y el cuchillo, María accede al análisis detallado por plato.",
-      "mariaExamples": "Para la Ensalada, Gazpacho, etc., MenuScore propone opciones según el caso:",
-      "options": "Subir el precio o reducir costes, Mejorar visibilidad, Promocionarla más, Valorar si mantenerla",
+      "examplesCombined": "Para los platos con sugerencias, MenuScore propone opciones según el caso: subir el precio o reducir costes, mejorar visibilidad, promocionarla más, valorar si mantenerlos, etc.",
       "note": "👉 No son órdenes, sino oportunidades."
     },
     "step4Conclusion": {

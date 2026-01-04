@@ -735,10 +735,14 @@
     "sidebar": {
       "title": "Contents",
       "intro": "Introduction",
-      "step1": "Step 1: Create Dishes",
-      "step2": "Step 2: Operating Capacity",
-      "step3": "Step 3: Sales Management",
-      "step4": "Step 4: Analysis and Improvement"
+      "step1": "Step 1: Create a dish",
+      "step1_2": "Step 2: Indicate preparation complexity",
+      "step1_3": "Step 3: Choose category",
+      "step1_4": "Step 4: Add ingredients",
+      "guardar": "Save the dish",
+      "step2": "Operating capacity",
+      "step3": "Sales management",
+      "step4": "The key moment: understand and improve your menu"
     },
     "intro": {
       "title": "Managing a restaurant shouldn't be about intuition.",
@@ -913,19 +917,19 @@
       "title": "The key moment: understand and improve your menu",
       "text": "Once Maria has added all information, the most awaited moment arrives: MenuScore analyzes her menu and shows her how to improve it.",
       "mariaScore": "On the home screen her MenuScore (out of 100) appears.",
-      "mariaResult": "Maria gets a 74 ('Good' label). Her restaurant works well, but there's still room for improvement."
+      "mariaResult": "Maria gets a 74 ('Good' label). Her restaurant works well, but there's still room for improvement.",
+      "imagesAlt16": "Menu analysis guide part 16"
     },
     "step4Sugerencias": {
       "title": "Clear, actionable and data-driven suggestions",
       "step1": "Tap the menu icon in the blue strip to see general suggestions.",
       "carruselDes": "A carousel appears with what's working well and what's not. Easy recommendations to see the whole set.",
-      "imagesAlt15": "Menu analysis guide part 15"
+      "imagesAlt17": "Menu analysis guide part 17"
     },
     "step4Platos": {
       "title": "Dish-by-dish recommendations",
       "step1": "Tapping the fork and knife icon, Maria accesses detailed analysis by dish.",
-      "mariaExamples": "For the Salad, Gazpacho, etc., MenuScore proposes options depending on the case:",
-      "options": "Raise price or reduce costs, Improve visibility, Promote it more, Evaluate if keeping it",
+      "examplesCombined": "For dishes with suggestions, MenuScore proposes options depending on the case: raise price or reduce costs, improve visibility, promote it more, evaluate whether to keep them, etc.",
       "note": "👉 These aren't orders, but opportunities."
     },
     "step4Conclusion": {
