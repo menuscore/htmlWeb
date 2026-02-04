@@ -65,6 +65,9 @@
     "terms": "Términos",
     "contact": "Contacto"
   },
+  "support": {
+    "text": "Con el apoyo de:"
+  },
   "featuresPage": {
     "title": "Características",
     "subtitle": "Todo lo que necesitas para gestionar tu menú y maximizar beneficios",

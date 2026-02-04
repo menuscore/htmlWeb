@@ -1949,3 +1949,30 @@ blockquote footer {
     padding: 2rem 0;
   }
 }
+/* SUPPORT SECTION */
+.support-section {
+  padding: 40px 0;
+  background-color: #f8f9fa; /* Gris muy claro para separar visualmente */
+  border-top: 1px solid #e9ecef;
+}
+
+.support-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.support-logo {
+  max-height: 80px; /* Tamaño discreto pero visible */
+  width: auto;
+  opacity: 0.9;
+  mix-blend-mode: multiply; /* Para que se integre mejor si el fondo no es blanco puro */
+  transition: opacity 0.3s ease;
+}
+
+.support-logo:hover {
+  opacity: 1;
+}
